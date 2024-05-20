@@ -1,0 +1,321 @@
+[2024-05-20T12:34:42.958+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-05-20T12:34:42.970+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: domain_analysis_full.fetch_and_analyze_domains scheduled__2023-01-13T20:00:00+00:00 [queued]>
+[2024-05-20T12:34:42.973+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: domain_analysis_full.fetch_and_analyze_domains scheduled__2023-01-13T20:00:00+00:00 [queued]>
+[2024-05-20T12:34:42.973+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 2
+[2024-05-20T12:34:42.977+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): fetch_and_analyze_domains> on 2023-01-13 20:00:00+00:00
+[2024-05-20T12:34:42.980+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61 DeprecationWarning: This process (pid=1112) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2024-05-20T12:34:42.981+0000] {standard_task_runner.py:63} INFO - Started process 1113 to run task
+[2024-05-20T12:34:42.980+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'domain_analysis_full', 'fetch_and_analyze_domains', 'scheduled__2023-01-13T20:00:00+00:00', '--job-id', '1824', '--raw', '--subdir', 'DAGS_FOLDER/analysis_test_dag.py', '--cfg-path', '/tmp/tmpaua0sd4m']
+[2024-05-20T12:34:42.981+0000] {standard_task_runner.py:91} INFO - Job 1824: Subtask fetch_and_analyze_domains
+[2024-05-20T12:34:42.989+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.12/site-packages/***/settings.py:195 DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+[2024-05-20T12:34:43.007+0000] {task_command.py:426} INFO - Running <TaskInstance: domain_analysis_full.fetch_and_analyze_domains scheduled__2023-01-13T20:00:00+00:00 [running]> on host 667df64f43b9
+[2024-05-20T12:34:43.045+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='domain_analysis_full' AIRFLOW_CTX_TASK_ID='fetch_and_analyze_domains' AIRFLOW_CTX_EXECUTION_DATE='2023-01-13T20:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2023-01-13T20:00:00+00:00'
+[2024-05-20T12:34:43.046+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-05-20T12:34:43.051+0000] {analysis_test_dag.py:39} INFO - Starting to fetch domains
+[2024-05-20T12:34:43.053+0000] {analysis_test_dag.py:69} INFO - Inserted analysis into domain_analysis for domain google.com
+[2024-05-20T12:34:43.054+0000] {analysis_test_dag.py:81} INFO - Inserted analysis into url_analysis for domain google.com
+[2024-05-20T12:34:43.054+0000] {analysis_test_dag.py:84} INFO - Database session committed for domain google.com
+[2024-05-20T12:34:43.054+0000] {analysis_test_dag.py:69} INFO - Inserted analysis into domain_analysis for domain example.com
+[2024-05-20T12:34:43.055+0000] {analysis_test_dag.py:81} INFO - Inserted analysis into url_analysis for domain example.com
+[2024-05-20T12:34:43.055+0000] {analysis_test_dag.py:84} INFO - Database session committed for domain example.com
+[2024-05-20T12:34:43.056+0000] {analysis_test_dag.py:69} INFO - Inserted analysis into domain_analysis for domain openai.com
+[2024-05-20T12:34:43.056+0000] {analysis_test_dag.py:81} INFO - Inserted analysis into url_analysis for domain openai.com
+[2024-05-20T12:34:43.056+0000] {analysis_test_dag.py:84} INFO - Database session committed for domain openai.com
+[2024-05-20T12:34:43.057+0000] {analysis_test_dag.py:69} INFO - Inserted analysis into domain_analysis for domain github.com
+[2024-05-20T12:34:43.057+0000] {analysis_test_dag.py:81} INFO - Inserted analysis into url_analysis for domain github.com
+[2024-05-20T12:34:43.057+0000] {analysis_test_dag.py:84} INFO - Database session committed for domain github.com
+[2024-05-20T12:34:43.058+0000] {analysis_test_dag.py:69} INFO - Inserted analysis into domain_analysis for domain stackoverflow.com
+[2024-05-20T12:34:43.058+0000] {analysis_test_dag.py:81} INFO - Inserted analysis into url_analysis for domain stackoverflow.com
+[2024-05-20T12:34:43.058+0000] {analysis_test_dag.py:84} INFO - Database session committed for domain stackoverflow.com
+[2024-05-20T12:34:43.059+0000] {analysis_test_dag.py:69} INFO - Inserted analysis into domain_analysis for domain microsoft.com
+[2024-05-20T12:34:43.059+0000] {analysis_test_dag.py:81} INFO - Inserted analysis into url_analysis for domain microsoft.com
+[2024-05-20T12:34:43.060+0000] {analysis_test_dag.py:84} INFO - Database session committed for domain microsoft.com
+[2024-05-20T12:34:43.060+0000] {analysis_test_dag.py:69} INFO - Inserted analysis into domain_analysis for domain apple.com
+[2024-05-20T12:34:43.060+0000] {analysis_test_dag.py:81} INFO - Inserted analysis into url_analysis for domain apple.com
+[2024-05-20T12:34:43.060+0000] {analysis_test_dag.py:84} INFO - Database session committed for domain apple.com
+[2024-05-20T12:34:43.061+0000] {analysis_test_dag.py:69} INFO - Inserted analysis into domain_analysis for domain amazon.com
+[2024-05-20T12:34:43.061+0000] {analysis_test_dag.py:81} INFO - Inserted analysis into url_analysis for domain amazon.com
+[2024-05-20T12:34:43.061+0000] {analysis_test_dag.py:84} INFO - Database session committed for domain amazon.com
+[2024-05-20T12:34:43.062+0000] {analysis_test_dag.py:69} INFO - Inserted analysis into domain_analysis for domain facebook.com
+[2024-05-20T12:34:43.062+0000] {analysis_test_dag.py:81} INFO - Inserted analysis into url_analysis for domain facebook.com
+[2024-05-20T12:34:43.062+0000] {analysis_test_dag.py:84} INFO - Database session committed for domain facebook.com
+[2024-05-20T12:34:43.063+0000] {analysis_test_dag.py:69} INFO - Inserted analysis into domain_analysis for domain linkedin.com
+[2024-05-20T12:34:43.063+0000] {analysis_test_dag.py:81} INFO - Inserted analysis into url_analysis for domain linkedin.com
+[2024-05-20T12:34:43.064+0000] {analysis_test_dag.py:84} INFO - Database session committed for domain linkedin.com
+[2024-05-20T12:34:43.064+0000] {analysis_test_dag.py:69} INFO - Inserted analysis into domain_analysis for domain twitter.com
+[2024-05-20T12:34:43.064+0000] {analysis_test_dag.py:81} INFO - Inserted analysis into url_analysis for domain twitter.com
+[2024-05-20T12:34:43.064+0000] {analysis_test_dag.py:84} INFO - Database session committed for domain twitter.com
+[2024-05-20T12:34:43.065+0000] {analysis_test_dag.py:69} INFO - Inserted analysis into domain_analysis for domain instagram.com
+[2024-05-20T12:34:43.065+0000] {analysis_test_dag.py:81} INFO - Inserted analysis into url_analysis for domain instagram.com
+[2024-05-20T12:34:43.065+0000] {analysis_test_dag.py:84} INFO - Database session committed for domain instagram.com
+[2024-05-20T12:34:43.066+0000] {analysis_test_dag.py:69} INFO - Inserted analysis into domain_analysis for domain netflix.com
+[2024-05-20T12:34:43.066+0000] {analysis_test_dag.py:81} INFO - Inserted analysis into url_analysis for domain netflix.com
+[2024-05-20T12:34:43.066+0000] {analysis_test_dag.py:84} INFO - Database session committed for domain netflix.com
+[2024-05-20T12:34:43.067+0000] {analysis_test_dag.py:69} INFO - Inserted analysis into domain_analysis for domain youtube.com
+[2024-05-20T12:34:43.067+0000] {analysis_test_dag.py:81} INFO - Inserted analysis into url_analysis for domain youtube.com
+[2024-05-20T12:34:43.067+0000] {analysis_test_dag.py:84} INFO - Database session committed for domain youtube.com
+[2024-05-20T12:34:43.068+0000] {analysis_test_dag.py:69} INFO - Inserted analysis into domain_analysis for domain wikipedia.org
+[2024-05-20T12:34:43.068+0000] {analysis_test_dag.py:81} INFO - Inserted analysis into url_analysis for domain wikipedia.org
+[2024-05-20T12:34:43.068+0000] {analysis_test_dag.py:84} INFO - Database session committed for domain wikipedia.org
+[2024-05-20T12:34:43.069+0000] {analysis_test_dag.py:69} INFO - Inserted analysis into domain_analysis for domain yahoo.com
+[2024-05-20T12:34:43.069+0000] {analysis_test_dag.py:81} INFO - Inserted analysis into url_analysis for domain yahoo.com
+[2024-05-20T12:34:43.069+0000] {analysis_test_dag.py:84} INFO - Database session committed for domain yahoo.com
+[2024-05-20T12:34:43.070+0000] {analysis_test_dag.py:69} INFO - Inserted analysis into domain_analysis for domain reddit.com
+[2024-05-20T12:34:43.070+0000] {analysis_test_dag.py:81} INFO - Inserted analysis into url_analysis for domain reddit.com
+[2024-05-20T12:34:43.070+0000] {analysis_test_dag.py:84} INFO - Database session committed for domain reddit.com
+[2024-05-20T12:34:43.071+0000] {analysis_test_dag.py:69} INFO - Inserted analysis into domain_analysis for domain pinterest.com
+[2024-05-20T12:34:43.071+0000] {analysis_test_dag.py:81} INFO - Inserted analysis into url_analysis for domain pinterest.com
+[2024-05-20T12:34:43.071+0000] {analysis_test_dag.py:84} INFO - Database session committed for domain pinterest.com
+[2024-05-20T12:34:43.071+0000] {analysis_test_dag.py:69} INFO - Inserted analysis into domain_analysis for domain quora.com
+[2024-05-20T12:34:43.072+0000] {analysis_test_dag.py:81} INFO - Inserted analysis into url_analysis for domain quora.com
+[2024-05-20T12:34:43.072+0000] {analysis_test_dag.py:84} INFO - Database session committed for domain quora.com
+[2024-05-20T12:34:43.072+0000] {analysis_test_dag.py:69} INFO - Inserted analysis into domain_analysis for domain baidu.com
+[2024-05-20T12:34:43.073+0000] {analysis_test_dag.py:81} INFO - Inserted analysis into url_analysis for domain baidu.com
+[2024-05-20T12:34:43.073+0000] {analysis_test_dag.py:84} INFO - Database session committed for domain baidu.com
+[2024-05-20T12:34:43.073+0000] {analysis_test_dag.py:69} INFO - Inserted analysis into domain_analysis for domain aliexpress.com
+[2024-05-20T12:34:43.073+0000] {analysis_test_dag.py:81} INFO - Inserted analysis into url_analysis for domain aliexpress.com
+[2024-05-20T12:34:43.074+0000] {analysis_test_dag.py:84} INFO - Database session committed for domain aliexpress.com
+[2024-05-20T12:34:43.074+0000] {analysis_test_dag.py:69} INFO - Inserted analysis into domain_analysis for domain bbc.com
+[2024-05-20T12:34:43.074+0000] {analysis_test_dag.py:81} INFO - Inserted analysis into url_analysis for domain bbc.com
+[2024-05-20T12:34:43.075+0000] {analysis_test_dag.py:84} INFO - Database session committed for domain bbc.com
+[2024-05-20T12:34:43.075+0000] {analysis_test_dag.py:69} INFO - Inserted analysis into domain_analysis for domain cnn.com
+[2024-05-20T12:34:43.075+0000] {analysis_test_dag.py:81} INFO - Inserted analysis into url_analysis for domain cnn.com
+[2024-05-20T12:34:43.076+0000] {analysis_test_dag.py:84} INFO - Database session committed for domain cnn.com
+[2024-05-20T12:34:43.076+0000] {analysis_test_dag.py:69} INFO - Inserted analysis into domain_analysis for domain nytimes.com
+[2024-05-20T12:34:43.076+0000] {analysis_test_dag.py:81} INFO - Inserted analysis into url_analysis for domain nytimes.com
+[2024-05-20T12:34:43.077+0000] {analysis_test_dag.py:84} INFO - Database session committed for domain nytimes.com
+[2024-05-20T12:34:43.077+0000] {analysis_test_dag.py:69} INFO - Inserted analysis into domain_analysis for domain guardian.co.uk
+[2024-05-20T12:34:43.077+0000] {analysis_test_dag.py:81} INFO - Inserted analysis into url_analysis for domain guardian.co.uk
+[2024-05-20T12:34:43.078+0000] {analysis_test_dag.py:84} INFO - Database session committed for domain guardian.co.uk
+[2024-05-20T12:34:43.078+0000] {analysis_test_dag.py:69} INFO - Inserted analysis into domain_analysis for domain techcrunch.com
+[2024-05-20T12:34:43.078+0000] {analysis_test_dag.py:81} INFO - Inserted analysis into url_analysis for domain techcrunch.com
+[2024-05-20T12:34:43.079+0000] {analysis_test_dag.py:84} INFO - Database session committed for domain techcrunch.com
+[2024-05-20T12:34:43.079+0000] {analysis_test_dag.py:69} INFO - Inserted analysis into domain_analysis for domain wired.com
+[2024-05-20T12:34:43.079+0000] {analysis_test_dag.py:81} INFO - Inserted analysis into url_analysis for domain wired.com
+[2024-05-20T12:34:43.080+0000] {analysis_test_dag.py:84} INFO - Database session committed for domain wired.com
+[2024-05-20T12:34:43.080+0000] {analysis_test_dag.py:69} INFO - Inserted analysis into domain_analysis for domain forbes.com
+[2024-05-20T12:34:43.081+0000] {analysis_test_dag.py:81} INFO - Inserted analysis into url_analysis for domain forbes.com
+[2024-05-20T12:34:43.081+0000] {analysis_test_dag.py:84} INFO - Database session committed for domain forbes.com
+[2024-05-20T12:34:43.081+0000] {analysis_test_dag.py:69} INFO - Inserted analysis into domain_analysis for domain bloomberg.com
+[2024-05-20T12:34:43.082+0000] {analysis_test_dag.py:81} INFO - Inserted analysis into url_analysis for domain bloomberg.com
+[2024-05-20T12:34:43.082+0000] {analysis_test_dag.py:84} INFO - Database session committed for domain bloomberg.com
+[2024-05-20T12:34:43.082+0000] {analysis_test_dag.py:69} INFO - Inserted analysis into domain_analysis for domain reuters.com
+[2024-05-20T12:34:43.083+0000] {analysis_test_dag.py:81} INFO - Inserted analysis into url_analysis for domain reuters.com
+[2024-05-20T12:34:43.083+0000] {analysis_test_dag.py:84} INFO - Database session committed for domain reuters.com
+[2024-05-20T12:34:43.083+0000] {analysis_test_dag.py:69} INFO - Inserted analysis into domain_analysis for domain huffpost.com
+[2024-05-20T12:34:43.083+0000] {analysis_test_dag.py:81} INFO - Inserted analysis into url_analysis for domain huffpost.com
+[2024-05-20T12:34:43.084+0000] {analysis_test_dag.py:84} INFO - Database session committed for domain huffpost.com
+[2024-05-20T12:34:43.084+0000] {analysis_test_dag.py:69} INFO - Inserted analysis into domain_analysis for domain buzzfeed.com
+[2024-05-20T12:34:43.084+0000] {analysis_test_dag.py:81} INFO - Inserted analysis into url_analysis for domain buzzfeed.com
+[2024-05-20T12:34:43.084+0000] {analysis_test_dag.py:84} INFO - Database session committed for domain buzzfeed.com
+[2024-05-20T12:34:43.085+0000] {analysis_test_dag.py:69} INFO - Inserted analysis into domain_analysis for domain npr.org
+[2024-05-20T12:34:43.085+0000] {analysis_test_dag.py:81} INFO - Inserted analysis into url_analysis for domain npr.org
+[2024-05-20T12:34:43.085+0000] {analysis_test_dag.py:84} INFO - Database session committed for domain npr.org
+[2024-05-20T12:34:43.086+0000] {analysis_test_dag.py:69} INFO - Inserted analysis into domain_analysis for domain cnbc.com
+[2024-05-20T12:34:43.086+0000] {analysis_test_dag.py:81} INFO - Inserted analysis into url_analysis for domain cnbc.com
+[2024-05-20T12:34:43.086+0000] {analysis_test_dag.py:84} INFO - Database session committed for domain cnbc.com
+[2024-05-20T12:34:43.087+0000] {analysis_test_dag.py:69} INFO - Inserted analysis into domain_analysis for domain theverge.com
+[2024-05-20T12:34:43.087+0000] {analysis_test_dag.py:81} INFO - Inserted analysis into url_analysis for domain theverge.com
+[2024-05-20T12:34:43.087+0000] {analysis_test_dag.py:84} INFO - Database session committed for domain theverge.com
+[2024-05-20T12:34:43.087+0000] {analysis_test_dag.py:69} INFO - Inserted analysis into domain_analysis for domain engadget.com
+[2024-05-20T12:34:43.088+0000] {analysis_test_dag.py:81} INFO - Inserted analysis into url_analysis for domain engadget.com
+[2024-05-20T12:34:43.088+0000] {analysis_test_dag.py:84} INFO - Database session committed for domain engadget.com
+[2024-05-20T12:34:43.088+0000] {analysis_test_dag.py:69} INFO - Inserted analysis into domain_analysis for domain arstechnica.com
+[2024-05-20T12:34:43.089+0000] {analysis_test_dag.py:81} INFO - Inserted analysis into url_analysis for domain arstechnica.com
+[2024-05-20T12:34:43.089+0000] {analysis_test_dag.py:84} INFO - Database session committed for domain arstechnica.com
+[2024-05-20T12:34:43.089+0000] {analysis_test_dag.py:69} INFO - Inserted analysis into domain_analysis for domain gizmodo.com
+[2024-05-20T12:34:43.089+0000] {analysis_test_dag.py:81} INFO - Inserted analysis into url_analysis for domain gizmodo.com
+[2024-05-20T12:34:43.090+0000] {analysis_test_dag.py:84} INFO - Database session committed for domain gizmodo.com
+[2024-05-20T12:34:43.090+0000] {analysis_test_dag.py:69} INFO - Inserted analysis into domain_analysis for domain mashable.com
+[2024-05-20T12:34:43.090+0000] {analysis_test_dag.py:81} INFO - Inserted analysis into url_analysis for domain mashable.com
+[2024-05-20T12:34:43.091+0000] {analysis_test_dag.py:84} INFO - Database session committed for domain mashable.com
+[2024-05-20T12:34:43.091+0000] {analysis_test_dag.py:69} INFO - Inserted analysis into domain_analysis for domain slate.com
+[2024-05-20T12:34:43.091+0000] {analysis_test_dag.py:81} INFO - Inserted analysis into url_analysis for domain slate.com
+[2024-05-20T12:34:43.092+0000] {analysis_test_dag.py:84} INFO - Database session committed for domain slate.com
+[2024-05-20T12:34:43.092+0000] {analysis_test_dag.py:69} INFO - Inserted analysis into domain_analysis for domain vox.com
+[2024-05-20T12:34:43.092+0000] {analysis_test_dag.py:81} INFO - Inserted analysis into url_analysis for domain vox.com
+[2024-05-20T12:34:43.092+0000] {analysis_test_dag.py:84} INFO - Database session committed for domain vox.com
+[2024-05-20T12:34:43.093+0000] {analysis_test_dag.py:69} INFO - Inserted analysis into domain_analysis for domain lifehacker.com
+[2024-05-20T12:34:43.093+0000] {analysis_test_dag.py:81} INFO - Inserted analysis into url_analysis for domain lifehacker.com
+[2024-05-20T12:34:43.093+0000] {analysis_test_dag.py:84} INFO - Database session committed for domain lifehacker.com
+[2024-05-20T12:34:43.094+0000] {analysis_test_dag.py:69} INFO - Inserted analysis into domain_analysis for domain thenextweb.com
+[2024-05-20T12:34:43.094+0000] {analysis_test_dag.py:81} INFO - Inserted analysis into url_analysis for domain thenextweb.com
+[2024-05-20T12:34:43.094+0000] {analysis_test_dag.py:84} INFO - Database session committed for domain thenextweb.com
+[2024-05-20T12:34:43.095+0000] {analysis_test_dag.py:69} INFO - Inserted analysis into domain_analysis for domain digitaltrends.com
+[2024-05-20T12:34:43.095+0000] {analysis_test_dag.py:81} INFO - Inserted analysis into url_analysis for domain digitaltrends.com
+[2024-05-20T12:34:43.096+0000] {analysis_test_dag.py:84} INFO - Database session committed for domain digitaltrends.com
+[2024-05-20T12:34:43.096+0000] {analysis_test_dag.py:69} INFO - Inserted analysis into domain_analysis for domain venturebeat.com
+[2024-05-20T12:34:43.097+0000] {analysis_test_dag.py:81} INFO - Inserted analysis into url_analysis for domain venturebeat.com
+[2024-05-20T12:34:43.097+0000] {analysis_test_dag.py:84} INFO - Database session committed for domain venturebeat.com
+[2024-05-20T12:34:43.097+0000] {analysis_test_dag.py:69} INFO - Inserted analysis into domain_analysis for domain businessinsider.com
+[2024-05-20T12:34:43.098+0000] {analysis_test_dag.py:81} INFO - Inserted analysis into url_analysis for domain businessinsider.com
+[2024-05-20T12:34:43.098+0000] {analysis_test_dag.py:84} INFO - Database session committed for domain businessinsider.com
+[2024-05-20T12:34:43.098+0000] {analysis_test_dag.py:69} INFO - Inserted analysis into domain_analysis for domain fortune.com
+[2024-05-20T12:34:43.099+0000] {analysis_test_dag.py:81} INFO - Inserted analysis into url_analysis for domain fortune.com
+[2024-05-20T12:34:43.099+0000] {analysis_test_dag.py:84} INFO - Database session committed for domain fortune.com
+[2024-05-20T12:34:43.099+0000] {analysis_test_dag.py:69} INFO - Inserted analysis into domain_analysis for domain inc.com
+[2024-05-20T12:34:43.100+0000] {analysis_test_dag.py:81} INFO - Inserted analysis into url_analysis for domain inc.com
+[2024-05-20T12:34:43.100+0000] {analysis_test_dag.py:84} INFO - Database session committed for domain inc.com
+[2024-05-20T12:34:43.100+0000] {analysis_test_dag.py:69} INFO - Inserted analysis into domain_analysis for domain entrepreneur.com
+[2024-05-20T12:34:43.101+0000] {analysis_test_dag.py:81} INFO - Inserted analysis into url_analysis for domain entrepreneur.com
+[2024-05-20T12:34:43.101+0000] {analysis_test_dag.py:84} INFO - Database session committed for domain entrepreneur.com
+[2024-05-20T12:34:43.101+0000] {analysis_test_dag.py:69} INFO - Inserted analysis into domain_analysis for domain fakewebsite1.fake
+[2024-05-20T12:34:43.102+0000] {analysis_test_dag.py:81} INFO - Inserted analysis into url_analysis for domain fakewebsite1.fake
+[2024-05-20T12:34:43.102+0000] {analysis_test_dag.py:84} INFO - Database session committed for domain fakewebsite1.fake
+[2024-05-20T12:34:43.102+0000] {analysis_test_dag.py:69} INFO - Inserted analysis into domain_analysis for domain notarealdomain1.xyz
+[2024-05-20T12:34:43.103+0000] {analysis_test_dag.py:81} INFO - Inserted analysis into url_analysis for domain notarealdomain1.xyz
+[2024-05-20T12:34:43.103+0000] {analysis_test_dag.py:84} INFO - Database session committed for domain notarealdomain1.xyz
+[2024-05-20T12:34:43.104+0000] {analysis_test_dag.py:69} INFO - Inserted analysis into domain_analysis for domain fakedomain2.site
+[2024-05-20T12:34:43.104+0000] {analysis_test_dag.py:81} INFO - Inserted analysis into url_analysis for domain fakedomain2.site
+[2024-05-20T12:34:43.105+0000] {analysis_test_dag.py:84} INFO - Database session committed for domain fakedomain2.site
+[2024-05-20T12:34:43.105+0000] {analysis_test_dag.py:69} INFO - Inserted analysis into domain_analysis for domain imaginarysite3.com
+[2024-05-20T12:34:43.106+0000] {analysis_test_dag.py:81} INFO - Inserted analysis into url_analysis for domain imaginarysite3.com
+[2024-05-20T12:34:43.106+0000] {analysis_test_dag.py:84} INFO - Database session committed for domain imaginarysite3.com
+[2024-05-20T12:34:43.106+0000] {analysis_test_dag.py:69} INFO - Inserted analysis into domain_analysis for domain thisisnotreal4.fake
+[2024-05-20T12:34:43.107+0000] {analysis_test_dag.py:81} INFO - Inserted analysis into url_analysis for domain thisisnotreal4.fake
+[2024-05-20T12:34:43.107+0000] {analysis_test_dag.py:84} INFO - Database session committed for domain thisisnotreal4.fake
+[2024-05-20T12:34:43.108+0000] {analysis_test_dag.py:69} INFO - Inserted analysis into domain_analysis for domain madeupsite5.xyz
+[2024-05-20T12:34:43.108+0000] {analysis_test_dag.py:81} INFO - Inserted analysis into url_analysis for domain madeupsite5.xyz
+[2024-05-20T12:34:43.108+0000] {analysis_test_dag.py:84} INFO - Database session committed for domain madeupsite5.xyz
+[2024-05-20T12:34:43.109+0000] {analysis_test_dag.py:69} INFO - Inserted analysis into domain_analysis for domain nonexistent6.com
+[2024-05-20T12:34:43.109+0000] {analysis_test_dag.py:81} INFO - Inserted analysis into url_analysis for domain nonexistent6.com
+[2024-05-20T12:34:43.109+0000] {analysis_test_dag.py:84} INFO - Database session committed for domain nonexistent6.com
+[2024-05-20T12:34:43.110+0000] {analysis_test_dag.py:69} INFO - Inserted analysis into domain_analysis for domain boguswebsite7.fake
+[2024-05-20T12:34:43.110+0000] {analysis_test_dag.py:81} INFO - Inserted analysis into url_analysis for domain boguswebsite7.fake
+[2024-05-20T12:34:43.111+0000] {analysis_test_dag.py:84} INFO - Database session committed for domain boguswebsite7.fake
+[2024-05-20T12:34:43.111+0000] {analysis_test_dag.py:69} INFO - Inserted analysis into domain_analysis for domain phonyweb8.xyz
+[2024-05-20T12:34:43.113+0000] {analysis_test_dag.py:81} INFO - Inserted analysis into url_analysis for domain phonyweb8.xyz
+[2024-05-20T12:34:43.117+0000] {analysis_test_dag.py:84} INFO - Database session committed for domain phonyweb8.xyz
+[2024-05-20T12:34:43.118+0000] {analysis_test_dag.py:69} INFO - Inserted analysis into domain_analysis for domain pretenddomain9.com
+[2024-05-20T12:34:43.118+0000] {analysis_test_dag.py:81} INFO - Inserted analysis into url_analysis for domain pretenddomain9.com
+[2024-05-20T12:34:43.118+0000] {analysis_test_dag.py:84} INFO - Database session committed for domain pretenddomain9.com
+[2024-05-20T12:34:43.119+0000] {analysis_test_dag.py:69} INFO - Inserted analysis into domain_analysis for domain falsesite10.fake
+[2024-05-20T12:34:43.119+0000] {analysis_test_dag.py:81} INFO - Inserted analysis into url_analysis for domain falsesite10.fake
+[2024-05-20T12:34:43.119+0000] {analysis_test_dag.py:84} INFO - Database session committed for domain falsesite10.fake
+[2024-05-20T12:34:43.120+0000] {analysis_test_dag.py:69} INFO - Inserted analysis into domain_analysis for domain unrealwebsite11.xyz
+[2024-05-20T12:34:43.120+0000] {analysis_test_dag.py:81} INFO - Inserted analysis into url_analysis for domain unrealwebsite11.xyz
+[2024-05-20T12:34:43.120+0000] {analysis_test_dag.py:84} INFO - Database session committed for domain unrealwebsite11.xyz
+[2024-05-20T12:34:43.121+0000] {analysis_test_dag.py:69} INFO - Inserted analysis into domain_analysis for domain fabricated12.com
+[2024-05-20T12:34:43.121+0000] {analysis_test_dag.py:81} INFO - Inserted analysis into url_analysis for domain fabricated12.com
+[2024-05-20T12:34:43.121+0000] {analysis_test_dag.py:84} INFO - Database session committed for domain fabricated12.com
+[2024-05-20T12:34:43.122+0000] {analysis_test_dag.py:69} INFO - Inserted analysis into domain_analysis for domain hoaxdomain13.fake
+[2024-05-20T12:34:43.122+0000] {analysis_test_dag.py:81} INFO - Inserted analysis into url_analysis for domain hoaxdomain13.fake
+[2024-05-20T12:34:43.122+0000] {analysis_test_dag.py:84} INFO - Database session committed for domain hoaxdomain13.fake
+[2024-05-20T12:34:43.123+0000] {analysis_test_dag.py:69} INFO - Inserted analysis into domain_analysis for domain shamweb14.xyz
+[2024-05-20T12:34:43.123+0000] {analysis_test_dag.py:81} INFO - Inserted analysis into url_analysis for domain shamweb14.xyz
+[2024-05-20T12:34:43.123+0000] {analysis_test_dag.py:84} INFO - Database session committed for domain shamweb14.xyz
+[2024-05-20T12:34:43.124+0000] {analysis_test_dag.py:69} INFO - Inserted analysis into domain_analysis for domain mocksite15.com
+[2024-05-20T12:34:43.124+0000] {analysis_test_dag.py:81} INFO - Inserted analysis into url_analysis for domain mocksite15.com
+[2024-05-20T12:34:43.124+0000] {analysis_test_dag.py:84} INFO - Database session committed for domain mocksite15.com
+[2024-05-20T12:34:43.125+0000] {analysis_test_dag.py:69} INFO - Inserted analysis into domain_analysis for domain fictional16.fake
+[2024-05-20T12:34:43.125+0000] {analysis_test_dag.py:81} INFO - Inserted analysis into url_analysis for domain fictional16.fake
+[2024-05-20T12:34:43.125+0000] {analysis_test_dag.py:84} INFO - Database session committed for domain fictional16.fake
+[2024-05-20T12:34:43.126+0000] {analysis_test_dag.py:69} INFO - Inserted analysis into domain_analysis for domain mythicalweb17.xyz
+[2024-05-20T12:34:43.126+0000] {analysis_test_dag.py:81} INFO - Inserted analysis into url_analysis for domain mythicalweb17.xyz
+[2024-05-20T12:34:43.126+0000] {analysis_test_dag.py:84} INFO - Database session committed for domain mythicalweb17.xyz
+[2024-05-20T12:34:43.126+0000] {analysis_test_dag.py:69} INFO - Inserted analysis into domain_analysis for domain simulated18.com
+[2024-05-20T12:34:43.127+0000] {analysis_test_dag.py:81} INFO - Inserted analysis into url_analysis for domain simulated18.com
+[2024-05-20T12:34:43.127+0000] {analysis_test_dag.py:84} INFO - Database session committed for domain simulated18.com
+[2024-05-20T12:34:43.127+0000] {analysis_test_dag.py:69} INFO - Inserted analysis into domain_analysis for domain pseudo19.fake
+[2024-05-20T12:34:43.128+0000] {analysis_test_dag.py:81} INFO - Inserted analysis into url_analysis for domain pseudo19.fake
+[2024-05-20T12:34:43.128+0000] {analysis_test_dag.py:84} INFO - Database session committed for domain pseudo19.fake
+[2024-05-20T12:34:43.128+0000] {analysis_test_dag.py:69} INFO - Inserted analysis into domain_analysis for domain counterfeit20.xyz
+[2024-05-20T12:34:43.129+0000] {analysis_test_dag.py:81} INFO - Inserted analysis into url_analysis for domain counterfeit20.xyz
+[2024-05-20T12:34:43.129+0000] {analysis_test_dag.py:84} INFO - Database session committed for domain counterfeit20.xyz
+[2024-05-20T12:34:43.129+0000] {analysis_test_dag.py:69} INFO - Inserted analysis into domain_analysis for domain illusoryweb21.com
+[2024-05-20T12:34:43.129+0000] {analysis_test_dag.py:81} INFO - Inserted analysis into url_analysis for domain illusoryweb21.com
+[2024-05-20T12:34:43.130+0000] {analysis_test_dag.py:84} INFO - Database session committed for domain illusoryweb21.com
+[2024-05-20T12:34:43.130+0000] {analysis_test_dag.py:69} INFO - Inserted analysis into domain_analysis for domain feignedsite22.fake
+[2024-05-20T12:34:43.131+0000] {analysis_test_dag.py:81} INFO - Inserted analysis into url_analysis for domain feignedsite22.fake
+[2024-05-20T12:34:43.131+0000] {analysis_test_dag.py:84} INFO - Database session committed for domain feignedsite22.fake
+[2024-05-20T12:34:43.131+0000] {analysis_test_dag.py:69} INFO - Inserted analysis into domain_analysis for domain imitationweb23.xyz
+[2024-05-20T12:34:43.131+0000] {analysis_test_dag.py:81} INFO - Inserted analysis into url_analysis for domain imitationweb23.xyz
+[2024-05-20T12:34:43.132+0000] {analysis_test_dag.py:84} INFO - Database session committed for domain imitationweb23.xyz
+[2024-05-20T12:34:43.132+0000] {analysis_test_dag.py:69} INFO - Inserted analysis into domain_analysis for domain falsehood24.com
+[2024-05-20T12:34:43.132+0000] {analysis_test_dag.py:81} INFO - Inserted analysis into url_analysis for domain falsehood24.com
+[2024-05-20T12:34:43.132+0000] {analysis_test_dag.py:84} INFO - Database session committed for domain falsehood24.com
+[2024-05-20T12:34:43.133+0000] {analysis_test_dag.py:69} INFO - Inserted analysis into domain_analysis for domain fraudsite25.fake
+[2024-05-20T12:34:43.133+0000] {analysis_test_dag.py:81} INFO - Inserted analysis into url_analysis for domain fraudsite25.fake
+[2024-05-20T12:34:43.133+0000] {analysis_test_dag.py:84} INFO - Database session committed for domain fraudsite25.fake
+[2024-05-20T12:34:43.134+0000] {analysis_test_dag.py:69} INFO - Inserted analysis into domain_analysis for domain deceptiveweb26.xyz
+[2024-05-20T12:34:43.135+0000] {analysis_test_dag.py:81} INFO - Inserted analysis into url_analysis for domain deceptiveweb26.xyz
+[2024-05-20T12:34:43.135+0000] {analysis_test_dag.py:84} INFO - Database session committed for domain deceptiveweb26.xyz
+[2024-05-20T12:34:43.135+0000] {analysis_test_dag.py:69} INFO - Inserted analysis into domain_analysis for domain fictive27.com
+[2024-05-20T12:34:43.135+0000] {analysis_test_dag.py:81} INFO - Inserted analysis into url_analysis for domain fictive27.com
+[2024-05-20T12:34:43.136+0000] {analysis_test_dag.py:84} INFO - Database session committed for domain fictive27.com
+[2024-05-20T12:34:43.136+0000] {analysis_test_dag.py:69} INFO - Inserted analysis into domain_analysis for domain mythdomain28.fake
+[2024-05-20T12:34:43.136+0000] {analysis_test_dag.py:81} INFO - Inserted analysis into url_analysis for domain mythdomain28.fake
+[2024-05-20T12:34:43.137+0000] {analysis_test_dag.py:84} INFO - Database session committed for domain mythdomain28.fake
+[2024-05-20T12:34:43.137+0000] {analysis_test_dag.py:69} INFO - Inserted analysis into domain_analysis for domain inventedweb29.xyz
+[2024-05-20T12:34:43.137+0000] {analysis_test_dag.py:81} INFO - Inserted analysis into url_analysis for domain inventedweb29.xyz
+[2024-05-20T12:34:43.137+0000] {analysis_test_dag.py:84} INFO - Database session committed for domain inventedweb29.xyz
+[2024-05-20T12:34:43.138+0000] {analysis_test_dag.py:69} INFO - Inserted analysis into domain_analysis for domain falsified30.com
+[2024-05-20T12:34:43.138+0000] {analysis_test_dag.py:81} INFO - Inserted analysis into url_analysis for domain falsified30.com
+[2024-05-20T12:34:43.138+0000] {analysis_test_dag.py:84} INFO - Database session committed for domain falsified30.com
+[2024-05-20T12:34:43.138+0000] {analysis_test_dag.py:69} INFO - Inserted analysis into domain_analysis for domain makebelieve31.fake
+[2024-05-20T12:34:43.139+0000] {analysis_test_dag.py:81} INFO - Inserted analysis into url_analysis for domain makebelieve31.fake
+[2024-05-20T12:34:43.139+0000] {analysis_test_dag.py:84} INFO - Database session committed for domain makebelieve31.fake
+[2024-05-20T12:34:43.139+0000] {analysis_test_dag.py:69} INFO - Inserted analysis into domain_analysis for domain fakenews32.xyz
+[2024-05-20T12:34:43.140+0000] {analysis_test_dag.py:81} INFO - Inserted analysis into url_analysis for domain fakenews32.xyz
+[2024-05-20T12:34:43.140+0000] {analysis_test_dag.py:84} INFO - Database session committed for domain fakenews32.xyz
+[2024-05-20T12:34:43.140+0000] {analysis_test_dag.py:69} INFO - Inserted analysis into domain_analysis for domain concocted33.com
+[2024-05-20T12:34:43.140+0000] {analysis_test_dag.py:81} INFO - Inserted analysis into url_analysis for domain concocted33.com
+[2024-05-20T12:34:43.141+0000] {analysis_test_dag.py:84} INFO - Database session committed for domain concocted33.com
+[2024-05-20T12:34:43.141+0000] {analysis_test_dag.py:69} INFO - Inserted analysis into domain_analysis for domain fabricated34.fake
+[2024-05-20T12:34:43.141+0000] {analysis_test_dag.py:81} INFO - Inserted analysis into url_analysis for domain fabricated34.fake
+[2024-05-20T12:34:43.141+0000] {analysis_test_dag.py:84} INFO - Database session committed for domain fabricated34.fake
+[2024-05-20T12:34:43.142+0000] {analysis_test_dag.py:69} INFO - Inserted analysis into domain_analysis for domain untrueweb35.xyz
+[2024-05-20T12:34:43.142+0000] {analysis_test_dag.py:81} INFO - Inserted analysis into url_analysis for domain untrueweb35.xyz
+[2024-05-20T12:34:43.142+0000] {analysis_test_dag.py:84} INFO - Database session committed for domain untrueweb35.xyz
+[2024-05-20T12:34:43.143+0000] {analysis_test_dag.py:69} INFO - Inserted analysis into domain_analysis for domain spurious36.com
+[2024-05-20T12:34:43.143+0000] {analysis_test_dag.py:81} INFO - Inserted analysis into url_analysis for domain spurious36.com
+[2024-05-20T12:34:43.143+0000] {analysis_test_dag.py:84} INFO - Database session committed for domain spurious36.com
+[2024-05-20T12:34:43.144+0000] {analysis_test_dag.py:69} INFO - Inserted analysis into domain_analysis for domain mythical37.fake
+[2024-05-20T12:34:43.144+0000] {analysis_test_dag.py:81} INFO - Inserted analysis into url_analysis for domain mythical37.fake
+[2024-05-20T12:34:43.144+0000] {analysis_test_dag.py:84} INFO - Database session committed for domain mythical37.fake
+[2024-05-20T12:34:43.144+0000] {analysis_test_dag.py:69} INFO - Inserted analysis into domain_analysis for domain contrivedweb38.xyz
+[2024-05-20T12:34:43.145+0000] {analysis_test_dag.py:81} INFO - Inserted analysis into url_analysis for domain contrivedweb38.xyz
+[2024-05-20T12:34:43.145+0000] {analysis_test_dag.py:84} INFO - Database session committed for domain contrivedweb38.xyz
+[2024-05-20T12:34:43.145+0000] {analysis_test_dag.py:69} INFO - Inserted analysis into domain_analysis for domain inauthentic39.com
+[2024-05-20T12:34:43.146+0000] {analysis_test_dag.py:81} INFO - Inserted analysis into url_analysis for domain inauthentic39.com
+[2024-05-20T12:34:43.146+0000] {analysis_test_dag.py:84} INFO - Database session committed for domain inauthentic39.com
+[2024-05-20T12:34:43.146+0000] {analysis_test_dag.py:69} INFO - Inserted analysis into domain_analysis for domain fakedata40.fake
+[2024-05-20T12:34:43.146+0000] {analysis_test_dag.py:81} INFO - Inserted analysis into url_analysis for domain fakedata40.fake
+[2024-05-20T12:34:43.147+0000] {analysis_test_dag.py:84} INFO - Database session committed for domain fakedata40.fake
+[2024-05-20T12:34:43.147+0000] {analysis_test_dag.py:69} INFO - Inserted analysis into domain_analysis for domain nonexistent41.xyz
+[2024-05-20T12:34:43.147+0000] {analysis_test_dag.py:81} INFO - Inserted analysis into url_analysis for domain nonexistent41.xyz
+[2024-05-20T12:34:43.148+0000] {analysis_test_dag.py:84} INFO - Database session committed for domain nonexistent41.xyz
+[2024-05-20T12:34:43.148+0000] {analysis_test_dag.py:69} INFO - Inserted analysis into domain_analysis for domain pretend42.com
+[2024-05-20T12:34:43.148+0000] {analysis_test_dag.py:81} INFO - Inserted analysis into url_analysis for domain pretend42.com
+[2024-05-20T12:34:43.148+0000] {analysis_test_dag.py:84} INFO - Database session committed for domain pretend42.com
+[2024-05-20T12:34:43.149+0000] {analysis_test_dag.py:69} INFO - Inserted analysis into domain_analysis for domain fakeinfo43.fake
+[2024-05-20T12:34:43.149+0000] {analysis_test_dag.py:81} INFO - Inserted analysis into url_analysis for domain fakeinfo43.fake
+[2024-05-20T12:34:43.149+0000] {analysis_test_dag.py:84} INFO - Database session committed for domain fakeinfo43.fake
+[2024-05-20T12:34:43.149+0000] {analysis_test_dag.py:69} INFO - Inserted analysis into domain_analysis for domain bogus44.xyz
+[2024-05-20T12:34:43.150+0000] {analysis_test_dag.py:81} INFO - Inserted analysis into url_analysis for domain bogus44.xyz
+[2024-05-20T12:34:43.150+0000] {analysis_test_dag.py:84} INFO - Database session committed for domain bogus44.xyz
+[2024-05-20T12:34:43.150+0000] {analysis_test_dag.py:69} INFO - Inserted analysis into domain_analysis for domain hoaxsite45.com
+[2024-05-20T12:34:43.150+0000] {analysis_test_dag.py:81} INFO - Inserted analysis into url_analysis for domain hoaxsite45.com
+[2024-05-20T12:34:43.151+0000] {analysis_test_dag.py:84} INFO - Database session committed for domain hoaxsite45.com
+[2024-05-20T12:34:43.151+0000] {analysis_test_dag.py:69} INFO - Inserted analysis into domain_analysis for domain imaginary46.fake
+[2024-05-20T12:34:43.151+0000] {analysis_test_dag.py:81} INFO - Inserted analysis into url_analysis for domain imaginary46.fake
+[2024-05-20T12:34:43.152+0000] {analysis_test_dag.py:84} INFO - Database session committed for domain imaginary46.fake
+[2024-05-20T12:34:43.152+0000] {analysis_test_dag.py:69} INFO - Inserted analysis into domain_analysis for domain falsified47.xyz
+[2024-05-20T12:34:43.152+0000] {analysis_test_dag.py:81} INFO - Inserted analysis into url_analysis for domain falsified47.xyz
+[2024-05-20T12:34:43.153+0000] {analysis_test_dag.py:84} INFO - Database session committed for domain falsified47.xyz
+[2024-05-20T12:34:43.153+0000] {analysis_test_dag.py:69} INFO - Inserted analysis into domain_analysis for domain phony48.com
+[2024-05-20T12:34:43.153+0000] {analysis_test_dag.py:81} INFO - Inserted analysis into url_analysis for domain phony48.com
+[2024-05-20T12:34:43.154+0000] {analysis_test_dag.py:84} INFO - Database session committed for domain phony48.com
+[2024-05-20T12:34:43.154+0000] {analysis_test_dag.py:69} INFO - Inserted analysis into domain_analysis for domain unreal49.fake
+[2024-05-20T12:34:43.154+0000] {analysis_test_dag.py:81} INFO - Inserted analysis into url_analysis for domain unreal49.fake
+[2024-05-20T12:34:43.154+0000] {analysis_test_dag.py:84} INFO - Database session committed for domain unreal49.fake
+[2024-05-20T12:34:43.155+0000] {analysis_test_dag.py:69} INFO - Inserted analysis into domain_analysis for domain fictional50.xyz
+[2024-05-20T12:34:43.155+0000] {analysis_test_dag.py:81} INFO - Inserted analysis into url_analysis for domain fictional50.xyz
+[2024-05-20T12:34:43.155+0000] {analysis_test_dag.py:84} INFO - Database session committed for domain fictional50.xyz
+[2024-05-20T12:34:43.155+0000] {analysis_test_dag.py:49} INFO - Database session closed
+[2024-05-20T12:34:43.155+0000] {python.py:237} INFO - Done. Returned value was: None
+[2024-05-20T12:34:43.156+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-05-20T12:34:43.160+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=domain_analysis_full, task_id=fetch_and_analyze_domains, run_id=scheduled__2023-01-13T20:00:00+00:00, execution_date=20230113T200000, start_date=20240520T123442, end_date=20240520T123443
+[2024-05-20T12:34:43.166+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2024-05-20T12:34:43.173+0000] {taskinstance.py:3498} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-05-20T12:34:43.174+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

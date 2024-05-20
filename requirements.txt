@@ -1,0 +1,6 @@
+whois==0.9.7
+psycopg2-binary==2.9.1
+dnspython==2.6.1
+Flask==3.0.3
+python-whois==0.9.3
+requests==2.31.0
