@@ -1,15 +1,8 @@
-# requests
 # flask==2.2.3
 # flask-sqlalchemy==2.5.1
-# psycopg2-binary>=2.9.1
-# dnspython==2.6.1
-# python-whois==0.9.3
-
 # apache-airflow[postgres]==2.5.0
 # pendulum==2.1.2
-# whois
 # werkzeug==2.0.3
-
 whois==0.9.7
 psycopg2-binary==2.9.1
 dnspython==2.6.1

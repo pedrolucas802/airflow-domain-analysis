@@ -1,0 +1,735 @@
+[2024-06-01T04:52:36.950+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-06-01T04:52:36.961+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: soc_domain_analysis.iterate_domains manual__2024-06-01T04:52:36.288736+00:00 [queued]>
+[2024-06-01T04:52:36.964+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: soc_domain_analysis.iterate_domains manual__2024-06-01T04:52:36.288736+00:00 [queued]>
+[2024-06-01T04:52:36.964+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2024-06-01T04:52:36.968+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): iterate_domains> on 2024-06-01 04:52:36.288736+00:00
+[2024-06-01T04:52:36.970+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61 DeprecationWarning: This process (pid=831) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2024-06-01T04:52:36.971+0000] {standard_task_runner.py:63} INFO - Started process 832 to run task
+[2024-06-01T04:52:36.971+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'soc_domain_analysis', 'iterate_domains', 'manual__2024-06-01T04:52:36.288736+00:00', '--job-id', '3719', '--raw', '--subdir', 'DAGS_FOLDER/soc_dag.py', '--cfg-path', '/tmp/tmpx943g8k4']
+[2024-06-01T04:52:36.971+0000] {standard_task_runner.py:91} INFO - Job 3719: Subtask iterate_domains
+[2024-06-01T04:52:36.977+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.12/site-packages/***/settings.py:195 DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+[2024-06-01T04:52:36.989+0000] {task_command.py:426} INFO - Running <TaskInstance: soc_domain_analysis.iterate_domains manual__2024-06-01T04:52:36.288736+00:00 [running]> on host 01982e9630cb
+[2024-06-01T04:52:37.023+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='soc_domain_analysis' AIRFLOW_CTX_TASK_ID='iterate_domains' AIRFLOW_CTX_EXECUTION_DATE='2024-06-01T04:52:36.288736+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-06-01T04:52:36.288736+00:00'
+[2024-06-01T04:52:37.024+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-06-01T04:52:37.029+0000] {soc_dag.py:27} INFO - Starting to fetch domains
+[2024-06-01T04:52:37.047+0000] {soc_dag.py:39} INFO - Fetched domains
+[2024-06-01T04:52:37.061+0000] {soc_dag.py:78} INFO - Domains to analyze: [('7d0518a6-a686-4f2b-92e0-8f10709e55f1', 'goggle.com', 'google.com'), ('9b940d54-0952-4501-967f-19fed62073d7', 'gooogle.com', 'google.com'), ('f446857b-3938-4557-b94f-9bd0fcef8ffe', 'googl3.com', 'google.com'), ('fe5f49db-8df2-4257-8233-5c2c2fdbd02c', 'goolge.com', 'google.com'), ('0f179174-2cb9-46d1-a2f8-b35decbe55ed', 'go0gle.com', 'google.com'), ('1b1c4d2b-5dc6-436d-b1c9-4ba0ecd27c64', 'examp1e.com', 'example.com'), ('32e961a7-f141-4946-95d3-05ffda3ca023', 'exampel.com', 'example.com'), ('8d0a9e3c-e0fb-4eec-acb9-33acadfec06c', 'exampel.com', 'example.com'), ('753d10ff-5a62-4595-b4cf-b09ec30ab72f', 'exampl3.com', 'example.com'), ('e5161e38-8964-4719-84e9-c48c149c9f45', 'examp1e.com', 'example.com'), ('78ec3524-cd20-481b-a67e-b9b818fcb1ed', '0penai.com', 'openai.com'), ('c6251ea8-ee72-4b64-87f1-9648f70fde1a', 'openal.com', 'openai.com'), ('fa97b63f-b9cf-4d37-aae9-fe7d54825172', 'openaii.com', 'openai.com'), ('49cee5a8-06c4-4ece-947b-85d160037137', 'openaii.com', 'openai.com'), ('5eed0180-2797-417c-9c21-84e7a54ed3ba', 'op3nai.com', 'openai.com'), ('cecd37bd-a434-4c86-9096-aede7edf7759', '6d5bc1df50.org', 'google.com'), ('4b1f6ae7-80f6-4fe3-88f6-6ed525ee7f9c', '97ce810845.org', 'google.com'), ('e60365fd-3c0b-4fa9-9c27-b7169862ff44', '803000410e.co', 'google.com'), ('08428f81-f932-416e-8e2f-973e46ea1677', '6426fc1f67.us', 'google.com'), ('33507116-8a7b-4fc0-9a30-4b6cde13bea5', '55c5625e62.us', 'google.com'), ('cf62a163-e83d-41bc-8d66-f791ffc22708', '8e1a86b116.org', 'google.com'), ('cd2321d9-df80-41c3-bd1a-b381110a7133', 'f62617572d.org', 'google.com'), ('bc4f41ad-efc9-42b9-8aba-22f582677412', '3db959672b.net', 'google.com'), ('3a7cfd19-4a1a-48d9-a707-aca678297a9f', '842ad3669c.us', 'google.com'), ('3085e7f5-dceb-4577-bd06-3943bd5d9de0', 'eeefa248c2.com', 'google.com'), ('f6f6f32b-06f2-44a0-bc81-9bffb962b832', '8397445f80.net', 'google.com'), ('50bfaa16-1ead-4e99-8548-5253a61e3371', 'a5917dfb68.org', 'google.com'), ('d3fee9c0-3696-4f04-ac6c-35db297d4d0a', '0c05fe70b6.org', 'google.com'), ('a91fdb6e-f3e8-4b3c-8c37-2b520526359a', 'aa38f6b632.net', 'google.com'), ('e82cc427-1d5a-401c-8fca-ce44b417fc3e', '04bca49947.us', 'google.com'), ('08ab0978-36b3-4b9c-9e4b-55ca63e9a729', '424fe628f5.com', 'google.com'), ('59af72b5-0920-4299-9275-16bb2ea21937', 'ba379a541f.org', 'google.com'), ('28f36f59-4f8e-4bef-9639-0556c2b0c30e', '3eb0126a5e.com', 'google.com'), ('f98310ab-0743-4bb6-ac26-257a55c2b801', '22e1721bec.co', 'google.com'), ('690dd400-d2f9-41fe-bcd3-e36138bd13ee', '29f06ab427.net', 'google.com'), ('590b77f0-d90d-4e4a-a821-3ef5c9b765f9', 'f15c9a476a.org', 'google.com'), ('f3f37a8d-ac2c-4f0a-89df-bd7099ff0daa', '8db885536d.net', 'google.com'), ('227f73e4-d561-49a3-b6be-a76f22b1546e', 'c8912b3cb1.org', 'google.com'), ('cdd9bbe6-6d46-46d8-add1-b0d4ed0d6df9', '3d2e256dce.com', 'google.com'), ('dbd8ac09-e93c-4aa6-a9c3-5f38e17de364', 'c6238fc53f.us', 'google.com'), ('087f94a7-d67e-4c1a-9253-5f1d348cbb4e', 'a58c9e5599.net', 'google.com'), ('562c1b7a-b290-4904-8303-cf0afff5135f', '11c3cc4579.org', 'google.com'), ('2b73dbf5-bad5-4085-a7b1-0650d85fcb4f', '1b1979cbb4.org', 'google.com'), ('4d207f5d-7ab3-4927-b8c1-e9d5615cf0a3', 'a293c35099.org', 'google.com'), ('d537258e-d473-4fd8-b117-88f04072ec38', 'cf433b65a2.us', 'google.com'), ('5111e370-8e05-4370-969f-9e315d13beac', '807204c07e.net', 'google.com'), ('d9534f26-5ae7-4fc7-bf98-9ed1173bfac6', '0e70c99e88.us', 'google.com'), ('d61050b1-8cb9-4e49-82e7-4f3811e2d7fb', 'dfc0910044.us', 'google.com'), ('bca534b2-50f9-4f56-accc-243fbf9e9cec', 'dd88c10aee.com', 'google.com'), ('5af95de9-f11b-40d3-a3db-b40557739f77', '7bd7aea03f.org', 'google.com'), ('f3395db9-fc23-464a-804a-dd71fbb39001', 'b183955029.org', 'example.com'), ('e11e08f0-a801-4f3a-913e-5fe74a768e70', '930042341e.us', 'example.com'), ('78b11456-6ec5-4ccd-bcc5-4ee3a9df0e65', '9bfe5f29e4.net', 'example.com'), ('f2f4936d-4212-4b41-b32d-479394fc17e7', 'e85bdfb944.com', 'example.com'), ('01475883-713d-4dbf-bc99-888f9be1cf1d', '98cca362af.us', 'example.com'), ('6bdf17da-bfbd-4948-aed4-d0e5d500d707', '84388a701c.us', 'example.com'), ('ec01baea-819e-47d0-85c5-872bd08ff7c4', 'cd7ea1c4e4.net', 'example.com'), ('ba3a9dc9-2cce-4558-9387-dbed088ec57a', '6e06cc7b3f.com', 'example.com'), ('bb21f5f8-8322-4e46-90f1-50c79abc86a0', 'a3b6934110.net', 'example.com'), ('8e970666-103c-4dbb-9e07-ce90100e2c34', '7dda956047.us', 'example.com'), ('8acca89a-9f8b-417d-8183-f392671a2357', '03d3781c42.org', 'example.com'), ('2253fb51-d196-4797-8811-5c9a8d65eee8', '30de5919a2.org', 'example.com'), ('e789823e-ab72-47c1-a318-0aff8560f185', '92c0fb8703.co', 'example.com'), ('5d166efc-80f0-462d-95b9-807622d93a9d', '52f3aa7b18.net', 'example.com'), ('ec119124-e795-491c-a88f-1f843c832d89', '2e1ad911f6.co', 'example.com'), ('3648e853-c616-4205-9404-fa418c4d0381', 'cbdc0ba58f.org', 'example.com'), ('acb84149-abdb-401a-9736-8283b20f58eb', '58539cd311.org', 'example.com'), ('6e7b0066-0d1c-4e70-9032-74a79ddade13', 'f76a4548ff.net', 'example.com'), ('6d2ab466-960f-4b08-9e13-7e362eb2dd15', '2a8b108521.us', 'example.com'), ('75056195-ec5a-4361-90fe-f3157d24b297', 'd62dfa3a8e.us', 'example.com'), ('a7d37fec-671f-4281-ab83-e4aafe007ead', '26c1ea9aab.com', 'example.com'), ('5d1fb653-cd77-431c-bb53-9f3da82e4455', '8dcb88ea14.com', 'example.com'), ('d8f83ae6-ac61-4527-84a2-17864a8c2ee0', 'e391b01d15.net', 'example.com'), ('646440c9-65ca-4a3a-b696-e38497586cd0', '0611cc3b19.org', 'example.com'), ('15dcf191-97dc-4450-8e82-218298ca694d', 'dbc4a42279.net', 'example.com'), ('9edce496-aba8-4f04-8a34-93e5e5a2693e', 'a3b4b217b7.net', 'example.com'), ('5279501b-95bc-41f8-ba18-c381284bd353', 'f09424746f.net', 'example.com'), ('2b88d661-2f96-4946-9b27-c9c366117b07', 'cce18bea0e.us', 'example.com'), ('01dd5f61-6933-4d81-ae57-88b0d7675f70', '1619b37d87.co', 'example.com'), ('111e2bd1-fe48-4803-a48e-4d711f15dea5', '076fbd6098.us', 'example.com'), ('3f9aee9e-f1be-43a0-8eb6-1312fec03eaf', '460516eb27.us', 'example.com'), ('9214a126-46e3-4a99-967f-cd3d8bb2bd84', 'a897569b2b.com', 'example.com'), ('4418ec01-6194-4875-86b1-5414c4a8030b', '7f67921879.us', 'example.com'), ('e4020d66-4a23-454b-b2c8-d920fdc29a1a', 'f08b6db5a4.co', 'openai.com'), ('1e9c6b46-f200-4eb9-947b-293f80e43695', '4cf91ea44f.us', 'openai.com'), ('39ee0056-de34-40b9-bb1a-352c69745129', '6185780da1.org', 'openai.com'), ('255070c2-6a30-4d20-83a7-16595af5fe61', '666a3a3da8.com', 'openai.com'), ('f8f337bb-a64b-4aa4-a093-5044554d8d59', '7042ddfc48.us', 'openai.com'), ('2b51689d-ec74-4273-a760-618c9219eca4', '69081db551.net', 'openai.com'), ('a28e322f-dd4b-4830-a4fd-6aa295faa8e0', '59ef64e854.org', 'openai.com'), ('fb861946-13ab-4b61-af07-44d525fd3aff', '363ed97d12.com', 'openai.com'), ('3fab2bec-9198-4801-9c7b-c20e558e794b', 'e9069700cf.com', 'openai.com'), ('107f3673-62cc-4524-8577-450a6a76b196', '3b17312f2c.org', 'openai.com'), ('c9c2fe21-41b6-47aa-8a62-7ce76abed48f', '5a3d52ba63.org', 'openai.com'), ('7af8ccf5-a5d4-4544-9b28-bbc57ca9ff0d', '4bfafc9eb7.us', 'openai.com'), ('a99ff305-aeba-4d2f-88e1-d96cd5111e71', '9b2441fdbe.com', 'openai.com'), ('be9a3335-c9a7-479e-bf64-bb58b38bfe83', '270daa6cfb.co', 'openai.com'), ('a34ce029-2970-4a06-ab0e-cd968be5584c', '0ad79a865a.co', 'openai.com'), ('54345e55-d2ff-40c2-95ad-37ae385e3570', '9cd7138375.org', 'openai.com'), ('47555df1-c680-451a-8e71-89b30acbfa32', '47a90a51f2.org', 'openai.com'), ('eed2a472-e819-40f4-a1a9-d32d292ed13a', '87fe88d25d.net', 'openai.com'), ('7b161d60-01b8-4984-b8e4-4a317f650080', '3bbdf6fea7.org', 'openai.com'), ('a40690f6-8bf9-42c9-8f10-82ff050b0d4f', 'd7b9d51323.net', 'openai.com'), ('f042fcbb-3c2a-4575-aa3e-016ee343be47', 'a26e130d94.org', 'openai.com'), ('504a4ed4-4dd3-4d48-b489-fd6985cdde3c', '3836de0a4e.co', 'openai.com'), ('754da480-8ac3-46a4-8e1a-d2a8d9a1f81a', '87418ae107.org', 'openai.com'), ('43b0e335-c67f-41aa-a105-cce28237e878', 'ec8cc0ccb2.net', 'openai.com'), ('bdb83978-641a-4a37-9095-532aa80ef7db', '048e3bd8c6.us', 'openai.com'), ('1ddb82eb-e609-4b1b-af6a-8a90151bc1b0', '8b1f5ccab1.com', 'openai.com'), ('2133ee14-de93-4bc9-aaef-663d82ea3f62', '7f77e1e01d.org', 'openai.com'), ('7c627a86-4854-4f3a-9d6c-f03b163591fd', '405af0ff3f.org', 'openai.com'), ('10b0d9cd-b8f0-4ab6-8a94-801aef7edb3a', 'f79ead16b6.org', 'openai.com'), ('5dcb3a62-cbf4-4c9b-8218-85775f464679', 'cc0a48bbb2.co', 'openai.com'), ('a71dfb35-4967-4a59-b689-00d0cee834b3', 'cce6d49142.us', 'openai.com'), ('cdb829d3-18c1-4936-b030-3fc032b1cc76', 'd3d75141cb.com', 'openai.com'), ('2a518c3e-688b-4ca0-ba63-cef24d200bc7', 'f3c5e3cfca.co', 'openai.com'), ('9ee8d878-5b0c-4ce8-ba73-709aa0091f1f', '9e460e92c8.us', 'openai.com'), ('03992be3-ba50-4896-8170-e98302c80a4c', 'f8198e2c49.us', 'openai.com'), ('1d311a0f-4710-4e50-a986-09ed494b2972', '1c1946d122.net', 'openai.com'), ('778f02eb-a0ec-4515-894a-791709957ac7', 'dc513bf72c.net', 'openai.com'), ('074ca4d1-4b65-453c-8088-cf8887e9e4d7', '01fcbb7c64.us', 'github.com'), ('e52c5e54-75a9-4161-a52c-0bac98f8c8cb', 'cffc234f6a.net', 'github.com'), ('7280ee06-3d4a-4f61-b56f-17bafa1ebf0f', '05d5ed1387.co', 'github.com'), ('0b8d6cf6-f74f-4411-9246-a1edb3f590c1', 'e49ce1de56.co', 'github.com'), ('f24c387f-b16b-4c30-b910-1d2d2a87c3d4', 'a8701fa31b.net', 'github.com'), ('c742d877-b669-4e30-a611-dec2f610d01d', 'ae2ffc2a99.org', 'github.com'), ('cbdf287d-3060-4125-8965-4b8ee1a45394', '05d8e5e7f4.org', 'github.com'), ('f4a29998-25f0-483d-bb5e-1e89569cb88f', '7a9fc6b4a9.net', 'github.com'), ('b94cdc94-069e-4159-b302-546a9ce61c96', 'dc41772553.net', 'github.com'), ('f27244b8-1483-40b0-b53e-713b12465564', '6bdaf81728.us', 'github.com'), ('e3c05220-fc7b-4250-9f19-19c1c321df58', 'ec28f4f2de.org', 'github.com'), ('c9045c79-a196-42fc-9e59-2761b8dc7152', '527ef5f13e.com', 'github.com'), ('58b54c9b-d599-4b9a-8970-9e096a9c7770', 'b271510c44.net', 'github.com'), ('b685fe28-11b8-47f2-b9b6-1c06df8b93f2', 'c0dbf1821b.us', 'github.com'), ('972e872e-6342-4b53-889b-2e6dfc761c6e', 'b03911d846.org', 'github.com'), ('dfa33fa8-6538-4b0b-aad9-3918a493dda6', '94c39ed6af.net', 'github.com'), ('df636fc5-d836-4b37-acb4-1e74ce8b5408', '9390edc99e.us', 'github.com'), ('91e048ad-ceee-4f90-8629-aa3298c1d40e', '7a5587a2a4.org', 'github.com'), ('7662e0eb-bcd3-4583-a57d-4daf3dd06acb', '2457905dc7.org', 'github.com'), ('5221a66f-644a-4320-bc37-e560b69ec692', '182abaad01.us', 'github.com'), ('0beb60d6-361a-4cd8-8b22-c6c878ed6975', '7039896a89.net', 'github.com'), ('eff3c776-4100-43c9-9cb7-3cd71407571a', '1d10605b08.net', 'github.com'), ('19285d74-5b3e-4c48-ad11-fa75a3394553', 'b53bc57c2a.org', 'github.com'), ('07237bd1-b6de-4624-a4da-410bd0a0fbee', '383bb687b7.net', 'github.com'), ('995c3982-2eaf-4e0d-8b18-bc7330027fac', 'd31494b564.co', 'github.com'), ('de4c942f-5885-41b9-8496-159a42d91dab', 'e23a77af2d.org', 'github.com'), ('f1a81d59-6f4b-4324-b4ef-efe95c72129b', '46e01216f1.us', 'github.com'), ('09bc2d9a-4a9e-4d15-b90c-2c8ea551ad71', '1a58b8171b.org', 'github.com'), ('5e53e031-34c7-48b9-a60c-84ac25245d88', 'e9a2d5f614.co', 'github.com'), ('15a7d3e5-cdd0-4b42-a8fe-40b688376351', 'dee5a6f2cb.net', 'github.com'), ('8aecbcbc-22f5-47bc-95d7-0a6fd402f3f2', 'e71ae6ccaf.net', 'github.com'), ('79f75285-35e5-441e-837c-582a96e682b7', '8a3111e2ad.net', 'github.com'), ('d8666812-751c-442e-af89-8280bed43144', 'fe7a4f3237.co', 'github.com'), ('7b251a65-9cb6-4a47-ab57-4f1c3c556ee2', 'e3b15be5f7.org', 'github.com'), ('64cf816c-e8ff-4355-a384-833f484869e9', '276da471b9.org', 'github.com'), ('2cc5e65d-9e98-4753-94c6-4e8f2381c62a', 'cd82a73448.com', 'stackoverflow.com'), ('5449bc47-9d3b-4144-a94a-49856c3b4277', '301ed3ecaa.co', 'stackoverflow.com'), ('1ab90547-20ac-4845-9d28-c3cab20aa05c', '2947c5d6da.co', 'stackoverflow.com'), ('94695794-59ef-471e-b4b9-56da7729e049', 'f665219cab.co', 'stackoverflow.com'), ('7f7801ba-0f5e-4217-890e-8d47fea65336', '2030e62b93.us', 'stackoverflow.com'), ('3fb09860-04d0-4c0f-bf01-e47a5c82370d', '841b1b7aa1.net', 'stackoverflow.com'), ('c3ee6606-0933-40d3-b8b9-341e56e2f953', '77bcc6b7af.us', 'stackoverflow.com'), ('8438ce3d-0542-4b70-8dfd-8b07d11d605e', 'a940e08587.us', 'stackoverflow.com'), ('2dfd8738-87e1-4a9b-8437-056194318b1a', '935eeba22e.net', 'stackoverflow.com'), ('7d4727fb-6cfc-415c-837f-598d9c951dc2', 'c14b3af4a6.org', 'stackoverflow.com'), ('6913aeb7-5bee-4d2d-9df5-9f6b49cce3b1', '31a5112006.co', 'stackoverflow.com'), ('58971347-ff8a-44a6-857d-fafd28fe3f3d', '141e4f2b26.org', 'stackoverflow.com'), ('15a18fd0-cd51-4960-aedc-cdc807c4c180', '270164cd0e.us', 'stackoverflow.com'), ('3f540ee9-7acf-41c8-b263-34065bfc4de9', '34170b0aec.com', 'stackoverflow.com'), ('4fa1a817-469b-4392-82c4-e37b0fd89fcb', '84e0fbd7dc.org', 'stackoverflow.com'), ('63ac2793-a257-4e90-aa6e-b527d8ee2fb6', 'd3f1949f13.us', 'stackoverflow.com'), ('22cadddc-80c7-403d-8390-c6b9c9223022', 'b1b9082b5c.com', 'stackoverflow.com'), ('bb20f77b-15e7-49e6-911c-57ea950507bd', 'ebca05e8e8.org', 'stackoverflow.com'), ('1f7a608c-1548-4eb0-9ed3-c359fe9a0b8d', '0e87ac8bde.net', 'stackoverflow.com'), ('d95f7a67-e1b9-430e-b8e2-93cdd3abed73', 'e0774f7d2a.us', 'stackoverflow.com'), ('e61dd876-9441-4cf5-848b-1a06d569a94b', 'ff5bc51501.com', 'stackoverflow.com'), ('275616c5-5012-41df-910d-f7220af27648', 'd6887c2c4a.co', 'stackoverflow.com'), ('be7632cf-7e29-4427-a802-aad779ae7f8d', '189c5567b0.us', 'stackoverflow.com'), ('4c8ed083-262f-4140-bf51-e13167bf9419', 'd1b503fdcd.co', 'stackoverflow.com'), ('08773a78-7839-4419-8e53-ceff877f9f02', 'd37ef5fbe0.org', 'stackoverflow.com'), ('fc0345df-c189-4764-a4bb-1f8ecea17ad0', '8ca555f422.net', 'stackoverflow.com'), ('dcc4bbdd-322d-464d-9055-188e2f230a1b', '399364d79e.net', 'stackoverflow.com'), ('d73e1e44-5321-466f-a671-75e0c91473db', '4a505cf8fc.com', 'stackoverflow.com'), ('2385989b-0e38-40c3-9591-bbcb8c2d8584', '48907a2cdd.org', 'stackoverflow.com'), ('03af747a-ac8b-4293-a624-e0c2d867a268', '2ed16058af.us', 'stackoverflow.com'), ('c03333f9-bc1d-485f-9a64-fdf431bdbae0', '41d535c074.co', 'stackoverflow.com'), ('9c7515e0-ab5e-4610-ac50-91b404d47e90', '4c5bc03da6.us', 'stackoverflow.com'), ('722f7678-2d98-48b1-9d55-f5c65ab6db3b', '60c0256c61.us', 'stackoverflow.com'), ('998ef07e-f2ba-4d63-9b63-e909e2ca1d39', 'be179cd5b3.us', 'stackoverflow.com'), ('e2b36f38-5c9a-479a-b08e-cb3ef7c3f688', 'b205e74bea.net', 'microsoft.com'), ('22a9540e-3be5-4559-9a8d-326f97075105', '7fda43ea28.co', 'microsoft.com'), ('20c0a4e6-80d5-473b-a41f-cdd48cbf3286', '5e7c8a5062.net', 'microsoft.com'), ('99838b1a-3ee5-4d20-9337-d714774b995a', '79789df609.org', 'microsoft.com'), ('173acb83-62a7-42b3-b7c7-cc1639084fdd', '6db22bddfe.co', 'microsoft.com'), ('fc995e79-bfb4-4621-8a2b-5e246ec0d178', '8902e4d22d.co', 'microsoft.com'), ('670dc9fa-18c0-4eeb-9974-59946631dee2', 'd6fda1d867.us', 'microsoft.com'), ('fc1c276a-f24e-4d91-b521-bdbdd92c9ed3', '2b3c318a89.net', 'microsoft.com'), ('67b370d2-eacb-435a-ac49-9d80dd720847', '79b9ca02f3.net', 'microsoft.com'), ('d441ca89-6dff-4730-895a-a63554a847b5', '0693c411c6.co', 'microsoft.com'), ('0d1586d0-58aa-4da5-bf37-989470ccbafd', 'ec82670a4f.net', 'microsoft.com'), ('c241c6c4-ead2-46f9-a1b0-86c48655eb16', '6e8fe792be.net', 'microsoft.com'), ('cea8cbe1-18d1-4a4b-8f63-8a27ab949c32', 'a39d825c6d.net', 'microsoft.com'), ('af58bf88-057e-46b0-93d4-4bcdb85fdfdd', 'a207c548ff.co', 'microsoft.com'), ('136cd330-eae2-47fe-a0a0-07d3cccd2df1', '4d12ac3fb9.us', 'microsoft.com'), ('9f019c52-a70f-4390-9451-843f1439670a', 'b9c80b76e1.co', 'microsoft.com'), ('611c6c30-1fd3-4694-9f27-ed80816ef7c4', '688eac816b.net', 'microsoft.com'), ('a985b778-7339-4540-8ca0-3c3b7051e6d0', '0565899fd7.co', 'microsoft.com'), ('434113a5-45ed-4767-bb2f-936003dbe073', 'ec11c4d660.co', 'microsoft.com'), ('3e46b800-d753-4541-996c-1f127e9d03d7', 'd53cf22524.us', 'microsoft.com'), ('75d27e15-ca0c-49e4-a81d-77a74ce1c320', '0b6a1bd99c.org', 'microsoft.com'), ('39bdd48c-586d-44d4-a5c5-834fedda8b1c', '7149881ca0.net', 'microsoft.com'), ('f0741a30-9226-4d1c-b88b-584f28652108', '07e752d950.net', 'microsoft.com'), ('cf8933d6-ae34-41a2-927a-fb38c417f355', '51e36110bb.com', 'microsoft.com'), ('8c5c691a-a6ce-4ba5-a69e-518000c0ce9b', '09502e5460.net', 'microsoft.com'), ('dac88016-5051-4a4b-b2df-45f2e4a6d5d2', '430cef8cf1.us', 'microsoft.com'), ('6d184d99-d43c-4b2c-b1c6-f04f83224b07', 'fb91ba182e.net', 'microsoft.com'), ('39c3a342-befe-4b8e-9710-7d95f0560920', 'd9b652e88c.org', 'microsoft.com'), ('eecfd0ca-67fe-4785-af78-3263de980a4d', 'fa636ac80a.net', 'microsoft.com'), ('2aef1e2d-f661-4d9f-a91b-c4c5ecbf8aea', 'b220832590.us', 'microsoft.com'), ('7a1adacc-07b7-4243-979c-23658fb3c107', '6ef9f7fbe4.net', 'microsoft.com'), ('eeebb594-e4ce-488e-93a0-b4691ea9070c', 'ab08fc24e5.org', 'microsoft.com'), ('cb7fb2ad-67ad-49ea-a900-d25292651e7a', 'eb9adbcec7.org', 'microsoft.com'), ('d7f613fc-0aeb-4397-a35b-27c8e590680e', '933ee87db4.org', 'microsoft.com'), ('5ae83498-8713-4158-809e-c0c76b14e717', 'bb81b9c6b3.org', 'microsoft.com'), ('8e62b396-18e9-4d5b-b44a-1b9e4db12c68', '03f0b4038e.us', 'microsoft.com'), ('129831c4-06a8-46ad-9c37-0c61c8e93348', 'ffe41f1c57.co', 'apple.com'), ('82aaf600-b7e8-4411-bef4-dccfbfb53abb', 'd38d61561f.org', 'apple.com'), ('ddd9bc5b-b6ad-47a1-80a9-a48bbda57542', '72de57b824.us', 'apple.com'), ('cbf466b8-01f0-4ab9-8098-9bed011481d8', '133facfb58.net', 'apple.com'), ('2f4f26cd-0f05-4df5-abbe-805f7dc3a3c7', 'ce9cbfcd5c.co', 'apple.com'), ('9e9d3f57-0f8f-4a3f-94af-3cbc6967a5b7', '0ff33e992c.net', 'apple.com'), ('1a89e353-e6e8-43fc-b509-58b4ce1f6c33', '3451da325f.org', 'apple.com'), ('fefa345d-7f5e-4e7d-aaf4-d28eb3b1af39', 'e846ebb8a4.org', 'apple.com'), ('87044ae0-0687-4c9c-ade6-5de2e88344f4', 'caccfc1a48.com', 'apple.com'), ('f2f61b80-04ce-4467-98de-734e3dff0f61', '305d258a5b.us', 'apple.com'), ('b767b063-9519-4660-891d-ea4a2c89fc5a', '7e8ecfbd44.com', 'apple.com'), ('cc270409-37b8-4515-a75c-b77298b24f8b', '7702d2e59a.net', 'apple.com'), ('f6ea1097-7a05-4e47-8102-a458327841d4', '6b47abbcc6.co', 'apple.com'), ('66ee1ca5-3f3d-41a6-8160-a8daf869924e', 'ae807e1e84.net', 'apple.com'), ('4df75c38-6db4-4007-a5d7-271d3d709331', '8a6b048583.us', 'apple.com'), ('801e16c6-3506-49d9-b4c6-29aa51196fc2', 'b20134a58f.us', 'apple.com'), ('8d06e67e-9381-42ac-a493-1f2b67d10fdc', '14fbda9e6e.net', 'apple.com'), ('93cc16fa-8979-4222-b5bc-0260fb8c541a', '06137a0c07.us', 'apple.com'), ('478396ba-888c-4937-a82d-f07377c5a3b8', '9f4381f2f2.net', 'apple.com'), ('f0abbbdd-d38f-40e7-afe8-329b1c014b6f', 'e76954dfcc.org', 'apple.com'), ('d211b293-7360-458a-8d8d-a5e5910d61c3', '5d09a82e2e.org', 'apple.com'), ('de74fb41-4edd-461c-ac8d-e677d80554b3', 'f3d43f0243.org', 'apple.com'), ('ade1751f-8d48-4faa-9166-f41275af3172', '83233e318e.us', 'apple.com'), ('1be0cfd5-e11f-465d-8cf8-3bb92ca8ac4f', 'bf30e6e925.net', 'apple.com'), ('8df6936f-77d8-48c0-8589-ee1929a427d7', 'a8367bf973.org', 'apple.com'), ('eeec125a-ad17-4f57-99f8-8c0ada4d9854', 'f18ef2f812.us', 'apple.com'), ('2e37e5f5-652f-490c-ba36-95ca236e0262', '19449e0aab.us', 'apple.com'), ('63a0f813-2594-4b62-a9e8-fa5819f88b9c', '18b1bc2bc7.net', 'apple.com'), ('a4488057-a30f-4fc6-bebd-e3d7af8d0393', '77f6c6c816.co', 'apple.com'), ('0bea2583-14be-49d1-a988-0663782e2999', '9b281f1f80.us', 'apple.com'), ('18b56658-22d3-4c0d-8a47-b29fb9124ede', '380e1c951a.co', 'apple.com'), ('e74ceb45-cf71-4c61-a523-03220c326492', '8e7d9408e6.us', 'apple.com'), ('8c584960-db2d-46a4-81a1-d6f4fbfd40fc', '503e381027.us', 'apple.com'), ('7ca7d62e-1306-4913-bc09-60a40f69e049', '775488893e.org', 'apple.com'), ('dfc1e5d7-4661-4a83-ac72-938322de98db', 'd71721714f.us', 'apple.com'), ('e4923cfd-fb48-4191-be78-7825e432fb41', 'cbb22bb608.co', 'apple.com'), ('8508727a-5127-43d0-aa33-26de4373b85f', 'e670d0c8d1.co', 'apple.com'), ('a06b95c5-7ac2-40bd-a448-ac2c8094ea0f', '03cb5d3883.com', 'apple.com'), ('5eea21cd-4a10-42b4-9df4-7aec4005a05c', '27f2e7b4ff.net', 'amazon.com'), ('c73f0b74-d44c-4fc4-b5f8-08d0e4026cbb', '5b4071c994.com', 'amazon.com'), ('058d5487-5b81-4a6e-90fd-522f75341b99', '8095b9c255.org', 'amazon.com'), ('05f66120-fb19-463b-8abd-2066dbb19df7', '680b0564f7.org', 'amazon.com'), ('e3ef949f-157f-430f-87eb-37192a609a5b', 'd6a48655c3.us', 'amazon.com'), ('507ba394-6459-4099-bd71-10e1fc0eecbe', '50a2dd8123.co', 'amazon.com'), ('db282339-cffb-4c22-b8df-8f6a59b259d7', 'ca2a426a92.co', 'amazon.com'), ('bec45587-6484-4254-81ca-7d7a737d11c9', 'f66d0e4007.com', 'amazon.com'), ('14bac57e-1a23-4c7f-9739-c5dd77c5f538', '003c665097.co', 'amazon.com'), ('255a8b51-cb43-4589-87bb-3446dc73cc12', '71e67c71bd.org', 'amazon.com'), ('2327d54b-afb1-46ba-8447-40da7f3c5ffe', '1186427cea.net', 'amazon.com'), ('6e752357-ac96-41ec-8568-6b11be84abb8', '1a7498d549.co', 'amazon.com'), ('ac398700-d685-4395-801e-0a2cbc49a33b', '0f8bf87e97.net', 'amazon.com'), ('af59b2ec-f53a-456c-b934-7effa0c9943d', 'd48dcbdb7f.us', 'amazon.com'), ('a93dcf58-1294-41ca-a65f-7a15dcf4e7b9', 'c975066bc8.net', 'amazon.com'), ('45ec7bfe-010c-4ccf-b8ac-fd8135205ddc', '7c8a022f1b.us', 'amazon.com'), ('f704a6c4-da83-4d44-b255-ad6b2ee2eb81', '836a04185e.co', 'amazon.com'), ('ce29cbb6-9b38-4145-91ea-6319e1b1ef99', '6b74614c4c.org', 'amazon.com'), ('9a432763-24b0-4e1d-b0ea-f1a79dab5862', '7d00cda9b7.co', 'amazon.com'), ('a526dd54-0be0-4051-818d-e90f7e4f8870', 'c0441b95e4.co', 'amazon.com'), ('9abccb97-4338-4d10-ac1b-d00bec5ad367', '0cf2f302e8.org', 'amazon.com'), ('b9e580ea-3de1-4a5d-a335-08e798bc8f49', 'c0dbd51f8f.org', 'amazon.com'), ('f9496f84-64ac-4412-924c-e384b5ea8368', '95e75bafd7.net', 'amazon.com'), ('8f04aa1b-4154-4559-b1a1-d080be7a3989', '591bfe2923.us', 'amazon.com'), ('ce5b7495-4b94-424b-bf04-528489d95f84', 'db9e2a9722.net', 'amazon.com'), ('cafc0376-0ba6-4886-8cf3-9c5be36deea7', '203963380c.com', 'amazon.com'), ('6dc3241a-05ba-4473-a264-b28b610c4360', 'f1f899c54b.net', 'amazon.com'), ('793ee5ad-e320-4b9e-a880-94638850af56', 'c9f18c47a9.org', 'amazon.com'), ('9a7272d3-4f11-4f1a-8852-f7c2d932932f', 'ee415b9717.com', 'amazon.com'), ('38d5b3a8-70b3-409f-9c7f-c703d312de7a', '240723d888.org', 'amazon.com'), ('1da09c50-7c41-4537-bc20-b24eff35bc8a', '89157c4299.net', 'amazon.com'), ('c20e7c42-a627-4db7-9a1c-497a0ef6a4f5', 'f839cdc6d9.co', 'amazon.com'), ('ca6311f5-69cc-4bfb-ab90-d1df815e290e', 'bcd2d362bf.us', 'amazon.com'), ('ffc7709a-60d7-4ce4-b637-ab6794791142', 'f7b532c810.co', 'amazon.com'), ('88a82032-b08a-4f40-804f-410a3764f5d1', '51b7ea751a.co', 'amazon.com'), ('8dc0197a-8679-4e46-b7d1-4462e6a10d7f', 'cc76219d60.us', 'amazon.com'), ('0ed7412c-528f-434f-af76-dd46bfc344db', '01b0975057.co', 'facebook.com'), ('00c462ad-f76f-495e-ad74-c0e2e87e640b', '3152972586.net', 'facebook.com'), ('3a4c9a6f-0307-4f0b-9fe2-679f0a818423', 'cd0ba3d33b.us', 'facebook.com'), ('a6e39b52-4ba3-496c-8369-6ca7ba1905da', '0e736c84e3.net', 'facebook.com'), ('e61a5d6c-9ed4-4816-bb35-98f6f6d02faa', '3e4fa8a507.us', 'facebook.com'), ('0d427dc2-c85b-4f85-87b4-c7134c802748', 'c06898ca73.us', 'facebook.com'), ('1b718ff5-cf4c-4427-87fa-bb97210f1ba1', '430644ae67.com', 'facebook.com'), ('1a5d96ed-5247-4ea6-be17-0207ff0d4fd5', '1333b0571e.us', 'facebook.com'), ('7e76be69-d5f7-4a1b-9edc-35596526e7d7', '72998c0662.com', 'facebook.com'), ('e7e14dae-bee6-45a7-93cb-1661dd50bf93', '29d538794c.us', 'facebook.com'), ('1f1fd1dd-f80a-4901-bb34-5cd20d87ca9f', 'ebfa49ed76.net', 'facebook.com'), ('1be36fb8-f000-4e8d-b217-116fa7436be5', '776d14cca5.org', 'facebook.com'), ('2af67dd7-d12a-49ff-98e5-b35f5171348f', '0a9cea5ad3.net', 'facebook.com'), ('a831a4f7-b467-45be-b0ec-624dc42b98a0', 'd6967b20e6.org', 'facebook.com'), ('8b9b177e-61b8-424f-ab96-19d6704d8a58', 'bb1a89a9a4.co', 'facebook.com'), ('abebe5d5-412c-4917-82c0-0624448b65c5', '900ce315ac.com', 'facebook.com'), ('84959896-5ca7-41e3-ad8d-0af203b67bec', '0186402405.org', 'facebook.com'), ('07591a1c-1e3b-43dc-b15e-2bfdc333d5ee', '7796e1f865.us', 'facebook.com'), ('8b1b66c9-ea6f-42bb-a18e-3c84996fc5d7', 'a9aec6dd5e.com', 'facebook.com'), ('6fb0a4a1-d3a3-4729-9694-8d4c3101857b', 'f029e1542d.net', 'facebook.com'), ('c6f583a5-08b3-4dfc-b191-3e93218154f9', 'f5aaba42b7.net', 'facebook.com'), ('c2041e7b-252e-47ba-8eec-4baa6e408e60', 'b5c5ce4aca.org', 'facebook.com'), ('fb6c9e35-c747-431e-ad5a-606503093659', '419fcf8807.com', 'facebook.com'), ('a51b88e6-f7ec-4abc-9cd6-83625e596f9e', '7d6127f08a.co', 'facebook.com'), ('4fc9361e-c1fd-487f-ba61-1fae731e7981', 'ecc0da8a5f.us', 'facebook.com'), ('ec290b8f-f015-404e-a212-d2f04c2599e3', 'f5b73638f2.org', 'facebook.com'), ('5ed07b27-566b-4c6e-8e70-0030089272c6', 'c9846b38ed.net', 'facebook.com'), ('09af5733-d705-4914-a7bc-b56de52c98da', 'b669deb896.us', 'facebook.com'), ('ee05073b-606d-4e07-9fda-5e0fd55390ed', 'f0bb00b36a.us', 'facebook.com'), ('273a50d4-39ad-47f9-9cef-3ad73af8a289', '228de44773.com', 'facebook.com'), ('2b4bf14d-5b88-4dff-8598-95f4d4e1a01f', '0a7381f14f.us', 'facebook.com'), ('ff441d19-93fe-499e-b0d0-768a290066db', '3f710cc302.org', 'facebook.com'), ('0528f560-e0ba-47fa-a5c0-5db2bb2d4cf3', '8f85deb242.net', 'facebook.com'), ('337dcbf6-f787-4ad0-ab72-52545d7c1004', '06cbe7f2ca.net', 'facebook.com'), ('3f839d21-4163-4b5a-80af-af6e9c064538', 'cfdd02a818.com', 'facebook.com'), ('a4240deb-373f-4882-ba35-7d7f509923cf', '26ce28f07e.net', 'facebook.com'), ('5de8fa12-a5f3-42a6-b5e1-c2024a7d60ed', '58e9e52785.co', 'linkedin.com'), ('31e14738-53dd-41d0-b7f5-0787cfa1e1bf', 'f753101393.co', 'linkedin.com'), ('7f72864d-067a-464c-aefa-9d037aa47bdc', 'dd39f5ca74.org', 'linkedin.com'), ('e957b31d-1531-464a-84c3-49aa7b7b7cde', '768aa4df2c.us', 'linkedin.com'), ('44a1709c-00a2-47e2-96fe-960385bc73d5', '8a87e3b3eb.net', 'linkedin.com'), ('1acb03ba-7ab3-495f-9689-65a13dccd851', '0c7173faf3.com', 'linkedin.com'), ('4e201f5a-faa0-47a6-a91a-b4cce0eda42e', 'f6a6505039.org', 'linkedin.com'), ('c09cfa9a-dc60-4b19-a594-51c38559c4c7', '10414a379c.co', 'linkedin.com'), ('7dffb9fc-61b9-416e-baea-0a0c374b7aa0', '7fb0831be1.org', 'linkedin.com'), ('9e58abf2-5341-44ef-9ef1-478309571cc9', 'a2db4113c8.net', 'linkedin.com'), ('dbe59036-f230-435b-af2c-84f7eb760b98', '8534524a43.com', 'linkedin.com'), ('15c5498a-d019-46c2-a662-0641501a03a0', 'b39ddc284e.org', 'linkedin.com'), ('0d7bb77e-6f22-4e64-afeb-f8ccccfbe269', '4d60905dcf.com', 'linkedin.com'), ('b0ae8d07-b302-496b-a475-e4cda6490491', '33102c12bd.us', 'linkedin.com'), ('eaf44d5c-3664-440f-a275-fc7f829d54f7', 'a51e4d86a9.net', 'linkedin.com'), ('8196cd7c-1394-4600-a36a-70e89da71d22', 'beb8434a39.com', 'linkedin.com'), ('821023f4-d34c-4077-b153-e1ce8ff937b0', '199d20decd.us', 'linkedin.com'), ('6c6a3835-043c-4b0c-928c-d16fc9d1f9e8', 'e19adc6524.org', 'linkedin.com'), ('2921166a-595e-46c9-9e36-a7b4b8ae6155', '6de271c056.co', 'linkedin.com'), ('141804f0-9d5c-4ec7-8505-a9ad13ee6a2a', 'f8d906f91d.com', 'linkedin.com'), ('9d358971-ec56-4254-b0ee-70e38dee3b01', '187f3ca35b.co', 'linkedin.com'), ('a3838b3f-fcb9-451f-b712-d719cde61e1c', 'be5648c08e.co', 'linkedin.com'), ('7e40d0a0-2d0c-4da4-b62b-303aff6940b5', 'fdbbaa92c9.co', 'linkedin.com'), ('3b5733a9-e171-471e-afe4-adde088c2533', 'aed74d1407.us', 'linkedin.com'), ('614c8426-9e94-4e0c-b956-5b127a6480d1', 'c4e492807e.co', 'linkedin.com'), ('26aee4d8-9bf5-483d-9f0e-4b8fa1ae1af1', '6d8e1023fa.com', 'linkedin.com'), ('5c71ec4c-1861-46c6-961d-8388f1fa2899', 'e275f0361f.co', 'linkedin.com'), ('dcf89dc3-af37-492b-a563-b6ff7a1d711a', '6627f7c54f.net', 'linkedin.com'), ('595f7dec-a887-4809-b212-213442eb2bf4', '0b39ebd80c.co', 'linkedin.com'), ('252e0b67-501e-4d43-a92e-9756eafec8a1', '66dc016e4c.com', 'linkedin.com'), ('fcfa9ded-5379-4d8c-a124-de5c245f3b1a', '14b36efbcf.us', 'linkedin.com'), ('3d56bfb5-1155-43da-a388-a35fe25b1304', '784054b096.co', 'linkedin.com'), ('752abc04-d317-4a20-87d6-da4b5ded3a01', 'e7c64ab642.co', 'linkedin.com'), ('25c71d86-e453-419c-9205-88bb7c59c6b4', 'f3ded4287c.us', 'linkedin.com'), ('05df25f5-5cea-462e-8e9d-0d01202aabf4', '77149c0af1.com', 'linkedin.com'), ('bfa3f17a-1599-42d4-bd8f-6a7f177cc736', '0d4390ba3e.us', 'linkedin.com'), ('637d5693-7605-4780-ac19-a79f4159d11e', '1cac2b6c61.us', 'linkedin.com'), ('af7a932b-0742-484f-8591-b7f552f4b499', 'd6a29c59d0.us', 'twitter.com'), ('c6d36742-77cd-4c0c-9252-e912fae27de0', 'e29031a1c0.us', 'twitter.com'), ('ee60b1c5-bd93-4ec3-84e2-c0e8206c9f32', '488de9c916.net', 'twitter.com'), ('c5305017-3735-4277-95ca-a2e049fb5725', '8fde42b26f.co', 'twitter.com'), ('79284982-836d-4b05-94dc-d94c7db8073c', 'c28e75f83f.org', 'twitter.com'), ('0e311471-0212-4240-971d-7a4ca142e3ef', 'afb63b92cd.org', 'twitter.com'), ('958b337d-a9b1-46a0-bd07-1cf8658e06d6', 'b5bbf13566.co', 'twitter.com'), ('1ab7e8c2-5015-4bc1-b614-c08045107758', 'a1a8afb672.co', 'twitter.com'), ('d0279bb0-66d9-4c2e-b094-c44b9f23a807', '11d26a9b05.net', 'twitter.com'), ('b7ecf06e-0771-477a-84d2-04dbeeb1d3ee', 'ce7cdfbb1b.org', 'twitter.com'), ('df3894cd-1b0c-4655-a230-2f336bfd55a9', '9f5e947f97.org', 'twitter.com'), ('8a5b885a-6971-4eb7-9307-cb63d59a6896', 'c32d2944f5.net', 'twitter.com'), ('ca2d63bd-141d-4ecc-a586-08927050ddfb', 'a72ac2e1d3.co', 'twitter.com'), ('0573a077-4ea5-476b-b39c-fbe5113db47c', '9bd1524297.us', 'twitter.com'), ('c0914af3-bb37-42d7-a8ac-e4b06f890f42', '1b1f247b5a.co', 'twitter.com'), ('5220c763-fe41-4706-9bc1-e1a38002324f', 'f133784c53.net', 'twitter.com'), ('399a48d3-68e0-4e01-985f-7b5262515589', '617d694daf.co', 'twitter.com'), ('605334c0-c773-4afd-9c1a-f670c8378012', '8c7c6d7100.us', 'twitter.com'), ('98ee3f64-c5b1-4766-b29a-096caed77d08', 'd9de3369b3.net', 'twitter.com'), ('756cd350-f5b4-44da-b3bd-825393639b8c', '8bcc0b21a3.us', 'twitter.com'), ('bf3201e0-fc88-4a84-8c08-56e1b07ff2aa', 'ac70a55e49.co', 'twitter.com'), ('2cf051d7-0470-4437-861e-d03047805a9d', '83f7b6e1af.org', 'twitter.com'), ('7d842e32-78c3-4f9c-a656-c035d65f1875', '68716213e5.co', 'twitter.com'), ('049f934a-a0dd-4aad-942a-1bbd25cadc19', 'bb75fac738.org', 'twitter.com'), ('4aa52242-95f0-420a-847b-d27d4e334613', '99565df141.net', 'twitter.com'), ('38f36d82-d296-4714-87fa-052318b8a95c', 'ae2fd5a0ff.com', 'twitter.com'), ('f100b462-a59c-4587-bd1c-6a399a649d90', '072db40381.com', 'twitter.com'), ('11df477d-09cc-45cd-8469-d66b78119952', 'ea2e152898.us', 'twitter.com'), ('ee9064f8-2e98-473a-af56-9e2941185d5a', 'f4b0fa2d4a.us', 'twitter.com'), ('52e21162-558e-40e5-92c6-6137521fa581', '56ed7909aa.co', 'twitter.com'), ('5f2bf705-b25d-4889-90fe-1f5687cbc3f5', 'e698d07d21.net', 'twitter.com'), ('0990e593-5376-439d-8180-848c678a2e42', '3f2dcb8901.co', 'twitter.com'), ('ca7f58fa-4603-4e1d-9aee-ccf024dfc9e9', '0bc700bb6c.us', 'twitter.com'), ('c04d72e9-b3df-4f2b-9c42-61cdf65a71b2', 'ff24ef8388.co', 'twitter.com'), ('af35b2bb-9ad0-41b1-b97d-02f3d26be6c6', '6c9ee50231.com', 'twitter.com'), ('f19ed0e4-f46f-44f1-bbdb-1ca3365e2109', '5af4d9c166.com', 'twitter.com'), ('5b97694d-cd8f-4e2f-b332-d5fe4c6a02fa', '522d6f7529.us', 'twitter.com'), ('5ade582d-1c73-4ab5-a5ea-38e2e58a7ca6', 'a3dbb725cf.com', 'twitter.com'), ('d9e23c2b-8776-4030-8077-a81c5caee966', '69181eb9af.org', 'instagram.com'), ('c5d73c3e-7ca4-4902-ae88-48c08e3a33f6', 'c27efe91e4.us', 'instagram.com'), ('243f2269-9932-4b21-844c-6106f2c7f8cb', 'bec452ed7d.us', 'instagram.com'), ('14756cf8-cd6f-4fa8-9391-39c66018ec53', 'da5e83e6cb.us', 'instagram.com'), ('b6ce93e3-22eb-4e57-ad31-2399b8610ddd', '4fcdea3c17.co', 'instagram.com'), ('66021eaa-8877-4c70-b101-20a737cb180d', '781273e40f.us', 'instagram.com'), ('8df1fef9-9fe0-4b18-90ab-9d62a3e69d47', 'c11436500c.org', 'instagram.com'), ('2bedb889-f7bc-49aa-8b3b-d347927039d9', '53e7d28ca8.org', 'instagram.com'), ('f1ec8e1d-08e5-4578-933b-dd85ba747dc7', '9b855418c3.org', 'instagram.com'), ('c514da5d-5b1f-47fa-920c-4d3eeadc79a1', 'ab10799e33.net', 'instagram.com'), ('e531a090-b79e-42b5-8fd8-632c831bfafa', 'd5114b06f6.org', 'instagram.com'), ('1583fdee-d499-4f6b-b077-530748c17219', '4902ec068c.us', 'instagram.com'), ('3cdd283e-902d-4659-bc2e-24d961e90034', '21fc6e6177.us', 'instagram.com'), ('fd8be2da-914c-446d-b59b-db332ec5fc47', '9a37698b3c.net', 'instagram.com'), ('39f1f54c-637a-4904-9586-376a721d0359', '9a96f950f1.co', 'instagram.com'), ('8f5fd742-3ed5-4445-8212-123854260b60', 'bdce42fe76.org', 'instagram.com'), ('72e9f635-82c0-49e9-95a4-71771be68406', '60092fd3fe.us', 'instagram.com'), ('0e77ae99-5877-4d80-8a13-ee9406d9851e', '40c27bc1b2.org', 'instagram.com'), ('ab9c6e5e-4330-41e2-b122-4195513b0735', 'e9e3b2f4e8.us', 'instagram.com'), ('6b642d4e-5cfe-42bc-9021-704697a46478', 'a09a24f516.net', 'instagram.com'), ('1707a768-8866-43f4-9484-e825aafde73d', 'ea7c76ffc2.net', 'instagram.com'), ('ecf86a46-0662-433c-929b-3921066ab41e', 'bffcb92d3e.org', 'instagram.com'), ('fb01590e-ee73-4558-90e1-74d6d8ff995d', '7bc08405ac.org', 'instagram.com'), ('ee9936f4-20f1-41d8-a233-b910f1f70405', '7b604e671d.co', 'instagram.com'), ('4e368baa-928c-4037-8ffb-c70320d51ca6', 'd967ee8756.org', 'instagram.com'), ('8d3bbfe7-b126-41cd-9d33-02244035fdc9', '16e1100d72.co', 'instagram.com'), ('538c567a-5cdc-4dda-9fb2-4bd09bb9050e', 'aa24993f0f.us', 'instagram.com'), ('1b8c29b6-d6f4-4ad7-8c2f-838cf733e47b', '0368acfea8.com', 'instagram.com'), ('d0893b72-29a4-4c58-b1df-bec63e6f009f', '6900317821.com', 'instagram.com'), ('f062ed19-0946-4ca6-850c-a5a7c86b4dff', 'e3a4e923a6.us', 'instagram.com'), ('7554c57f-7e4c-44c8-8fcd-137fdeceb9f7', '079e84431d.us', 'instagram.com'), ('65d0fe81-6ba0-41d5-84a4-ec4a650d7c30', '5fa5020c8a.co', 'instagram.com'), ('0d64d27b-c035-42fe-ad9d-19e3a904bc33', '3821b95d58.org', 'instagram.com'), ('2afe4b66-6b19-4d46-bafd-15333ce2a5dd', 'db9e8ea9b9.org', 'instagram.com'), ('52d6303a-77f9-477b-ab98-711f9a3b2b6a', '9768e89471.com', 'netflix.com'), ('08bc5d7b-513c-47f2-94db-3e11f2449ba4', '08d8b364de.org', 'netflix.com'), ('611b0fec-73cc-4302-89c0-1071f480049d', '7ca5c2cd46.us', 'netflix.com'), ('3e782e3e-9b7f-47ae-b9a3-e601bd9af018', 'd054b6d1ec.co', 'netflix.com'), ('3a0e6e1e-f462-4407-a70c-fb0baed698a8', '4f00be9707.net', 'netflix.com'), ('5dd1d9f4-910d-43e2-aabb-3c4215a2f817', 'd93c8a1812.net', 'netflix.com'), ('c041952d-c8f2-4760-9061-5e534db6b224', '3342e7bae1.net', 'netflix.com'), ('cc8ac0d4-c4fe-4bfa-a95f-24d2aaf7b435', '717cf64077.net', 'netflix.com'), ('8071bb91-d817-4432-a329-7bd43959fe9d', '1b2cc0def1.us', 'netflix.com'), ('d3101375-cee2-451a-81e7-f5e54645c197', '1d0df27f77.org', 'netflix.com'), ('ed5fc197-e775-4333-9754-9f76486bbca8', 'c2a9b6628e.us', 'netflix.com'), ('b690355b-931d-4f09-be3d-fa3bc121539f', '2f6f0a6632.us', 'netflix.com'), ('e41133f5-62b6-43cb-8b63-caf5a5a11475', '46e56e4ff1.us', 'netflix.com'), ('3d69aa95-ce0b-4389-bc7f-73d7439d8335', '3cf3973b41.us', 'netflix.com'), ('9ea1e1e4-69fd-440a-ab71-84f92a354f45', '24fa3da856.net', 'netflix.com'), ('70cfdff4-4d4d-4b0d-92a6-8f2762777aa6', 'f427a3b04a.co', 'netflix.com'), ('7e63fa81-2499-474b-a231-a4b56cc3fa8a', '5d6f16225c.co', 'netflix.com'), ('7918260f-0834-4f7a-ac19-212d8f96262a', '4f259c8e20.us', 'netflix.com'), ('55a3e7af-cbb7-4bfb-beed-b8e48fec8c95', 'c1bbe5f208.net', 'netflix.com'), ('d28fe043-7910-464a-9617-46623f876cd6', '053d51aa0a.com', 'netflix.com'), ('47cc4817-7d89-4941-8af8-78163566b807', '9c871e2c5d.net', 'netflix.com'), ('e6526554-434d-429a-80fe-0de9a395abf0', 'e2946ecf10.com', 'netflix.com'), ('3fc1d587-42b0-46c9-beef-c43a18c45eff', 'abe930d1ed.us', 'netflix.com'), ('a1efcf7a-8541-47ca-a5f0-a8cc05c32356', 'b1f6342091.net', 'netflix.com'), ('f47273a5-847e-4f20-b3c1-d0de040c905f', 'ab670642ae.org', 'netflix.com'), ('27703807-0dbb-422c-a943-f7e62ddf4f05', '5fdf5ed28c.co', 'netflix.com'), ('3bc140cd-7854-48aa-acf1-87081cfb9379', '31f4ec25b6.us', 'netflix.com'), ('4b773ff1-df10-4f99-ba57-f2b0b35c5207', 'e28674fdcd.co', 'netflix.com'), ('cad49826-d77d-494d-8c36-28247d07d6e2', '7b26dcc721.us', 'netflix.com'), ('59fb24b3-6ae3-464a-a6c6-3d50fec2df97', 'eb5ebabe10.us', 'netflix.com'), ('949b0560-c487-45bb-8616-e41bc6464ec6', '9c2e177968.co', 'netflix.com'), ('25a62796-2e59-456a-8160-58edfd4ac46c', '9f97ed3e8d.co', 'netflix.com'), ('5d3bb85f-c1eb-4162-a9c4-98341e4cfdce', 'd393192935.net', 'netflix.com'), ('4c7c4708-9e00-459d-862f-b2fdf8698a95', '6463365503.us', 'netflix.com'), ('b962c8fd-6402-43e5-bbfa-ef77286cf061', '8ba14f8a9a.us', 'youtube.com'), ('840bf355-878e-434f-b6b9-9e25fe7bdfbf', 'f25a88927b.us', 'youtube.com'), ('2265f304-86f4-4c94-87a5-e3f508b67dbb', 'e1c0cd5caf.org', 'youtube.com'), ('e378ef9c-96dc-4bb8-abf4-583a4f5b8dc5', '8dbf00f261.co', 'youtube.com'), ('a49b91a5-7f1f-4f16-9f88-e38f7e8944e8', '5592db12cf.us', 'youtube.com'), ('effb827b-9e89-4ff0-bdad-01d9c3888ff1', '04eb1e2dfb.org', 'youtube.com'), ('11790e08-7f34-48ad-a6c5-eeca5035e9ca', 'bb0d1da0fc.net', 'youtube.com'), ('fe59dd37-9b43-40db-a8e5-f4f47bebaa11', '16646fa19c.us', 'youtube.com'), ('e27c8964-7997-45aa-a469-50dc0d415548', '9cf69bcbc3.us', 'youtube.com'), ('7c444977-cb30-49fd-8071-60b7ef6794ed', '0280b72182.net', 'youtube.com'), ('aa056645-9af2-451f-93f5-b2927416a30b', '1f8b0cd75a.co', 'youtube.com'), ('2ca4a5c0-0ae9-4095-b736-d384a7b70019', '6f72678686.us', 'youtube.com'), ('b955f90c-ad30-4e12-a3df-36ea7a1fad69', '309abbe481.co', 'youtube.com'), ('45eb91f4-2a53-4f7a-aa43-6a23002269d9', '70470558a6.co', 'youtube.com'), ('11fe938d-533d-43a5-915e-fb4faeecd4e8', '03fbd8f36b.us', 'youtube.com'), ('3d32bcb9-8adf-427e-9d10-869bb97490b0', 'cf9c5b7327.co', 'youtube.com'), ('2c4dd2cc-1996-4dcd-b809-ae4d2160db78', '6e3df11763.org', 'youtube.com'), ('09aedb2b-0f00-4ae9-a460-9fe5d66311f9', 'c29d19c258.net', 'youtube.com'), ('4b80c1f8-a045-4657-9909-65a0e8cf31b3', '9288a136ec.net', 'youtube.com'), ('49d6c5d2-c863-4742-b923-b35fab219e04', '5dd0de50d9.net', 'youtube.com'), ('a806532f-6523-42e8-8f14-95f238dd3023', 'f1730afa77.co', 'youtube.com'), ('ed8d2323-e924-4a74-8c11-1a3d721511a5', '3782015c5e.net', 'youtube.com'), ('2a00cdb9-a4a9-4df9-8f9d-afefdd67b775', '675343cecb.net', 'youtube.com'), ('c311a40a-ac91-4894-bfe1-c0e836c283e0', '8a27299a2f.us', 'youtube.com'), ('fd48adbe-b651-44f0-a148-15d7a18d0d58', 'fc6f027d73.com', 'youtube.com'), ('7882c94c-e2ee-486a-acf1-7ee8e9624a09', 'd0e8d78edc.org', 'youtube.com'), ('aee9c71a-99dd-4d15-8f9d-c64db0e71e03', '358cdb9323.us', 'youtube.com'), ('c0015344-8c15-4893-af7c-313b22ff797f', 'f7e493e7f2.org', 'youtube.com'), ('c484c57c-57c2-43d4-8f2b-32989441116c', 'b80692a76a.us', 'youtube.com'), ('a435d478-1bcb-4323-b508-64bb47fd902d', '54fb6cbbe8.net', 'youtube.com'), ('79f44b7d-1bdc-437b-a7d4-26bde8508e19', '353b02a8b1.us', 'youtube.com'), ('1436df28-72c3-46e6-bdb4-92883db80583', 'df483e954c.net', 'youtube.com'), ('d016fd4e-9574-4b51-925b-ba3f6c96e4c7', '3c139208ef.net', 'youtube.com'), ('7bdf2577-7835-4778-bdef-719abb3b6c6e', '633b9f4725.com', 'youtube.com'), ('69dbbbd8-f1fb-46c5-98e5-12fa536ef050', 'a7e13234ed.net', 'youtube.com'), ('4d41538b-81bc-4318-9586-c59e39b6baf3', '3ea9d53bbf.us', 'youtube.com'), ('b9f8ef52-f16c-47bb-a290-da77e0921878', 'ea7b9e8a7e.org', 'youtube.com'), ('e7735ab5-80fb-45da-af4c-e9d9a861ddf4', '5883e47b8b.us', 'wikipedia.org'), ('ee599b46-a4fc-4589-899c-538d49632d24', 'd67baa574c.us', 'wikipedia.org'), ('824da9a0-af16-4871-866c-26014c39f090', 'f818879565.com', 'wikipedia.org'), ('ad795805-bf48-44d7-96cf-456a47a8aacc', 'ea3c5e482a.net', 'wikipedia.org'), ('addcdd85-f9bc-42d9-a779-222745be6e2c', 'c0f4e0a1fa.org', 'wikipedia.org'), ('a6e4e4de-0ea6-4ec4-b979-0d6da44d4522', '8354fae646.us', 'wikipedia.org'), ('7b94ed76-a0f7-41e9-89bf-6528b18a0217', '60be7d6693.org', 'wikipedia.org'), ('7827d0ef-8145-414c-8ef1-180c3ff1c7af', '44dda5d1d2.co', 'wikipedia.org'), ('3c2d83ee-cbce-4c5b-a1b2-cfa661eb940f', '2cde4d0a83.org', 'wikipedia.org'), ('3ff48dd2-6e22-4c0a-8407-308e5fc8ce32', '2197232109.org', 'wikipedia.org'), ('28e6e3ff-a88a-4e24-a29e-08b70cd7a90f', '10fee18b6c.org', 'wikipedia.org'), ('2a5958d0-0164-4dd6-96a6-fc7fbb5f4a36', '7b95f2d91b.net', 'wikipedia.org'), ('20ff8ce1-4d7f-43c5-9952-d1d9fb4a8f50', '883518a349.org', 'wikipedia.org'), ('d70f17ee-8be3-4c3e-b067-edd4b1b07fb9', 'c14462f29e.net', 'wikipedia.org'), ('8dc2782a-dded-4ffa-908f-e473f63dc74c', 'dabfb74bbe.org', 'wikipedia.org'), ('3fd7131c-4c26-4bc1-a5bc-bb04bdad9766', '9e96018d3c.org', 'wikipedia.org'), ('bd19f178-44ed-4f1c-a89f-7c35a8b57205', 'd1697c8002.net', 'wikipedia.org'), ('a87450fd-d1a2-47a4-a07b-8b4a4981a5be', '13f456a940.net', 'wikipedia.org'), ('d19f2d2c-fe3d-4938-90b6-7806c773d9d8', '25dd8ea0c7.us', 'wikipedia.org'), ('0e2ce8fe-7bbd-4915-a5e8-bb0c4614888c', 'c1a6da15d8.net', 'wikipedia.org'), ('48484dd3-185a-471b-8a53-72614a742502', '5289ecbe81.org', 'wikipedia.org'), ('cc90d2aa-2ce4-4051-a2e1-2a7f3872b0b7', '2be554e7b5.us', 'wikipedia.org'), ('35c1bd0e-9140-4cd7-8388-76a2fcb93d1b', '62dacf99a8.org', 'wikipedia.org'), ('fc37f552-c149-40d0-9a97-790cbe4cb8bc', '10d66e2261.net', 'wikipedia.org'), ('1ac8ddad-386c-44ff-95bd-8af40f8f5f26', 'd0bbbd7e04.us', 'wikipedia.org'), ('05492f4d-8734-41de-80cc-45a59d25f8d2', '87a51d5450.com', 'wikipedia.org'), ('b1f95925-2757-4b23-b843-828db9afe14a', '737d16c449.us', 'wikipedia.org'), ('a0fcffe1-c647-4835-8296-9672c552c14d', '27b6d4470d.us', 'wikipedia.org'), ('56b5a6d1-7a94-4628-b878-644436cb2fc2', '309c7072a4.us', 'wikipedia.org'), ('2f1c871a-3490-41aa-a89d-91b9eb491417', 'bea12556ab.us', 'wikipedia.org'), ('3b157a6c-a378-4cac-a9e6-363c0cc5e208', '2e939d50be.net', 'wikipedia.org'), ('9ff52cb5-4c0b-497d-8f3d-16b3b08f387e', 'd4a16ae1d9.net', 'wikipedia.org'), ('9d52c9e6-cc28-4036-bd25-26f2d965930b', '1d7cad6b88.co', 'wikipedia.org'), ('be9cb6ca-f1ec-4036-aa93-c0f98587e80a', '983a051d8e.net', 'yahoo.com'), ('17a1fc0a-31e9-476f-b802-6619f9d80d22', '0165cde7a7.org', 'yahoo.com'), ('ced60ed2-a0ae-463a-96fd-3ea675a8cd3a', 'fb9b07522c.co', 'yahoo.com'), ('71fc5623-442d-42ca-8d60-c625c1285d5f', '54f1f6c6ef.net', 'yahoo.com'), ('ec1d0547-9459-4c97-8632-672c240adfb6', '5349f7966a.org', 'yahoo.com'), ('880e13ee-bc97-4f58-9d55-8168919bf5f0', '9b3e986d79.org', 'yahoo.com'), ('b05970f5-6d51-407b-ac23-e959261f9ec0', 'dac806fa8d.net', 'yahoo.com'), ('0eb7e810-38f8-43fa-845a-a9b6d193fdb1', 'fdf6d40155.us', 'yahoo.com'), ('b0f6b2dc-6398-4f11-85c9-58ba6b7a1c5d', '16931fa323.net', 'yahoo.com'), ('7115e007-c40d-4b37-9628-9efc36fe2b8d', '637906b8a9.us', 'yahoo.com'), ('7db1c820-fb9e-40b4-b90c-e11313b9cafb', 'caf442a599.net', 'yahoo.com'), ('c576ea35-b39b-49f9-bb99-8acf21e9eb64', '445039ecc1.net', 'yahoo.com'), ('c5c60139-931f-4f84-81e9-f14afa2dd485', 'd2d547ec46.net', 'yahoo.com'), ('8d801ded-56ed-45fc-9757-e7ca52da124d', '46a3ced759.net', 'yahoo.com'), ('2f7bea89-184b-4abc-962f-a8d0c283b415', '06e7dd9b7a.us', 'yahoo.com'), ('8fd60a73-339a-413e-8bb2-08f62bce6e53', '6301681802.org', 'yahoo.com'), ('e9f3446d-acf4-4437-b970-90b1bc367aef', 'cbe7343714.org', 'yahoo.com'), ('c52a055a-d8ff-4c5c-8f1f-fe917f03a72a', '772a9698c1.us', 'yahoo.com'), ('9a044397-37d0-42c7-a228-3efa13ae4f05', '840ec91114.net', 'yahoo.com'), ('c1c8a384-21f4-48d8-a516-7eb2523850e6', 'ba95842a8c.us', 'yahoo.com'), ('bcbc8874-25b4-4003-91aa-ceb3d09e6107', 'b3ff3cf6c2.us', 'yahoo.com'), ('08f77aa2-73d5-4301-97e7-f260fc5ef9f2', 'b6f19c0efe.org', 'yahoo.com'), ('fd16347d-af44-49da-afe1-fe03f364fd66', '3d1a93a694.us', 'yahoo.com'), ('11246f43-3ec6-4aad-b262-eb6ccdedfdbd', '447071c70a.us', 'yahoo.com'), ('7bc88628-4597-42a1-bbc6-78e51b1ccb36', 'a7a0325f3b.net', 'yahoo.com'), ('62ee3605-8df3-4ae7-ba32-b12b6154c0f1', '52a8c2d810.net', 'yahoo.com'), ('eb3d5abe-f2e0-405c-bdff-e6563d532868', '43f0226d22.org', 'yahoo.com'), ('9123779f-32d1-4f48-a151-f93a4866e177', 'a002e4df61.co', 'yahoo.com'), ('f7740f01-0799-4853-9dc9-579f2dc9b51b', '59222f4000.net', 'yahoo.com'), ('80374731-78db-4ff2-8c4a-08094fa0b4d4', '84db71ea87.us', 'yahoo.com'), ('a60a31a6-0fe2-461c-9035-780c8484121f', '30696efcf8.co', 'yahoo.com'), ('d58885a7-711b-4300-a08b-b6007eada561', '1bb7050a0f.us', 'yahoo.com'), ('896265bb-7925-4554-aeaf-754e0b1c0681', '47a1dff2a4.com', 'yahoo.com'), ('d2c543d7-fde4-47e8-bebe-5ddf664bf740', 'ac7725c21d.com', 'yahoo.com'), ('499cb1f7-c7bb-43c6-b865-afb84fffff1c', 'c188dca8d0.org', 'yahoo.com'), ('3827215a-189d-4eb6-a958-4810525d7096', '1923a32127.co', 'yahoo.com'), ('1a66cea1-0167-4b80-b004-e1ec87e2546d', 'c3c9fd7634.org', 'yahoo.com'), ('f659808a-fbfa-4cea-a275-51d99d7a6466', '33e3e15be4.us', 'yahoo.com'), ('15d1df7a-214f-4f12-a3e6-92ccbc7ef1a0', 'b13bac0b4a.net', 'yahoo.com'), ('3de57edb-a8ac-483e-b013-a0665df57ca2', '6689ba5140.org', 'reddit.com'), ('9a3537ea-e13c-48a2-9f54-3b9be9282c60', '8e007cf0ea.us', 'reddit.com'), ('45eca275-5210-4bdc-a3f1-026b9423d051', '72e1fda730.net', 'reddit.com'), ('6cb91a47-f96d-4a54-80ec-d3c9f40bebed', 'c1c30030a6.net', 'reddit.com'), ('3d62f9eb-bb25-4f3b-8471-714529af74dd', '1b8a5ed332.us', 'reddit.com'), ('1f6fa11e-d4a2-4417-9bbd-4b220eb8dcf2', '747a6d6e54.net', 'reddit.com'), ('34113df6-e9c0-4559-a79c-953e9cbf1b59', 'c9be28f727.org', 'reddit.com'), ('d045333f-cc8e-46da-8cdf-6ad9bab5b41e', '32650e2acb.us', 'reddit.com'), ('ee23e85a-2e1c-49cc-b9a7-a3e78a721a4c', 'c13acceb5e.org', 'reddit.com'), ('39380586-3e37-432b-bd99-e2e70408c738', '1023a388b2.org', 'reddit.com'), ('ec11e17d-066a-408e-84fb-edd698ded7bb', '97f8218211.org', 'reddit.com'), ('a51d0502-e002-4ec8-8b08-8dcd67886410', '398006c4f3.net', 'reddit.com'), ('1a286030-d465-4ea5-a0b6-ac5cbdef48e0', '863c1a996e.co', 'reddit.com'), ('3ec74845-66ca-44d4-826b-b68b19a974cf', 'cfb9b38f7b.co', 'reddit.com'), ('b341f14c-1432-49fe-a672-bd405ea6d70d', 'c07a7801a9.us', 'reddit.com'), ('cd08fa4a-6aa7-43fe-ac84-d01e4a8ab2f3', 'db7fde9c98.org', 'reddit.com'), ('e053ce7f-43d8-486b-9898-ede2406db914', '6ff1705d24.co', 'reddit.com'), ('6b3841db-9506-4fff-998a-eec60ac47247', '926ec4529d.net', 'reddit.com'), ('448b888b-dd7b-4caf-b500-c80f4bc0e288', 'faa2fadb8c.co', 'reddit.com'), ('bd42b2e8-cd25-4435-8f17-7776c5058c48', '0053d47e33.org', 'reddit.com'), ('7fbb1a39-f561-4d62-8c16-9505b8e20cb2', '69c8561103.net', 'reddit.com'), ('90dcd46a-1d72-4c71-b496-e857508d678d', '5f59d0f748.net', 'reddit.com'), ('4c02b839-fe1b-4c84-adcf-dcf4e077de6d', '2eeb6e106b.co', 'reddit.com'), ('14bf15fa-7a49-4324-87c8-e0c0d732d9e7', '6b9321e963.net', 'reddit.com'), ('4537e037-259b-4c6e-a9de-b56ee91af4a0', '2997150b9c.us', 'reddit.com'), ('e9f2b67f-bb52-494a-ae16-21410c43bc3d', 'f243210e25.org', 'reddit.com'), ('46dae71b-3da5-41b0-be9a-e19784cb11a6', '62a9d26b74.net', 'reddit.com'), ('ee2fcc3e-04e9-4fe5-af12-3c9cf23f7b63', '4a9dda8e1f.us', 'reddit.com'), ('793fadc8-0609-4d7f-8fbb-a6c92db3cf35', 'aafdcf051a.org', 'reddit.com'), ('16f039d7-e387-4b6e-9a90-d6f7a7af1e04', 'c354b053d7.net', 'reddit.com'), ('bae9f1f3-9b36-4c40-8ead-999b4544864c', '949eca5aa5.org', 'reddit.com'), ('dec2ea0d-d404-4136-a85c-cfc0208c39b7', '87d739db59.net', 'reddit.com'), ('ee24d844-7448-4a50-abd8-97453d6f0431', 'b99183e140.net', 'reddit.com'), ('a3eecb33-b0b6-4007-9daa-8fe79315c10f', 'eaafa6a8bb.co', 'pinterest.com'), ('6cc1afff-51c7-4619-9445-6f9fb734066b', '0a6d39637b.us', 'pinterest.com'), ('242c9aed-e56e-47df-8d69-b80e233ef2ee', '18c0ff69b0.us', 'pinterest.com'), ('2bcafbc5-c6ed-4cc1-a127-75a1edc28ca7', '33b841a77e.us', 'pinterest.com'), ('c6ba2110-e227-4513-a606-2103d15c9bbc', '347559ed07.net', 'pinterest.com'), ('1fb19189-2e82-4293-a292-e039352c4a8a', '95956cedf2.co', 'pinterest.com'), ('045682da-3619-4216-bfde-ce97ee23c98d', '54926f7b17.co', 'pinterest.com'), ('45fe332b-690a-48bf-97a1-484300612c83', 'f6c96a088c.org', 'pinterest.com'), ('9ad98bbd-0a34-498f-a1af-400c6d5e2169', 'bcc600dd9c.net', 'pinterest.com'), ('9aaacff3-78d0-4c3d-bddf-c6997767176e', '4b3438d20e.co', 'pinterest.com'), ('e703afda-e160-453e-9e56-454accbeeb4a', '7627623626.co', 'pinterest.com'), ('2ce59bd7-4536-4820-a8f6-6d6556c81f5c', '9ee9948a8c.net', 'pinterest.com'), ('8f180145-a83f-4eca-ab92-8573df5582de', '7b5c6ece35.us', 'pinterest.com'), ('2de95598-b2ab-4c08-95a6-239ccf4178b8', '1eb23fe677.co', 'pinterest.com'), ('e5f5afb8-28d5-46bb-a397-9c381cc87e09', '618f932cfc.us', 'pinterest.com'), ('6dbbe386-2688-4f94-abfb-d61e0499804a', '01cc1b5e17.com', 'pinterest.com'), ('35123862-445f-4afe-ad9a-0314ea0b1001', '7a731c3bac.co', 'pinterest.com'), ('d97ed8b5-6bfe-4be4-ab70-f819a0e1b8a2', '3e55fee228.org', 'pinterest.com'), ('98e92de5-1bd3-4772-9759-6dba825951b4', '223975f5fd.org', 'pinterest.com'), ('177402f6-4858-4156-b8c3-890270a8cb8a', '346b80f2e8.org', 'pinterest.com'), ('094352f7-3e73-4f75-9e03-c5f8e34af8c5', 'bf898e3b13.us', 'pinterest.com'), ('c9f008e4-cd07-4d4e-90aa-03d29012d5b9', 'd76735f419.org', 'pinterest.com'), ('fcea96ff-05a0-4850-9016-465f666105ce', '84915f038d.co', 'pinterest.com'), ('a048a241-b1f6-4946-87ff-f308f9c87032', 'f1be4f7287.org', 'pinterest.com'), ('7a179bfc-f993-4c6d-a69a-d5652cc19219', 'f23674514b.com', 'pinterest.com'), ('0dace084-16c6-40c9-ab8e-c846dab18a27', '9ca7a3c2a5.org', 'pinterest.com'), ('a77cfab8-8071-4b6d-923d-32a3c8bb716a', '8363a67fc5.org', 'pinterest.com'), ('e052e843-36c0-42a4-9d61-c6cff3a196e9', '09f418b45a.co', 'pinterest.com'), ('8bc72d68-5a41-4925-9aea-e3ec896b53b3', '5d0b7d1148.org', 'pinterest.com'), ('f9b5feb2-28cb-4d4a-bdee-eba3c607484e', '1546dd4aec.co', 'pinterest.com'), ('4d382709-ff6e-4dd0-a594-d1d0b6b0b0e4', '2b8fd98a26.org', 'pinterest.com'), ('ef968cc7-b348-4146-86f7-a7868cf2b8fd', '9cff6e849c.us', 'pinterest.com'), ('1990bbc5-edb4-44d4-befb-267bed176b24', 'eb4dafea30.com', 'pinterest.com'), ('1246b067-90be-4e96-a92d-b5f2738dd02e', '36fc09e1c0.net', 'pinterest.com'), ('f43d433c-5c51-4530-aa95-c00b93d72406', 'bad7099a10.net', 'pinterest.com'), ('c6d6cf11-dded-45d5-89fa-f0e931f7aaa6', '51dab94417.us', 'pinterest.com'), ('7251ebc6-aeeb-4a50-be8b-ecb0f56330d0', 'ab125ff4a1.us', 'quora.com'), ('fb432084-8fb8-443a-b857-ce7c73db0c64', '2e039eb81b.us', 'quora.com'), ('6abe3cf9-d670-4a1a-a580-e0f453f058f8', '528ba29df7.net', 'quora.com'), ('52f5e4f8-df60-45a9-97d1-ec972b901533', 'cde1dc353a.co', 'quora.com'), ('20b96d2e-9085-4614-b55b-f1a4f8155f4e', '8d1e57564c.org', 'quora.com'), ('23d7a0d5-23c5-4756-bd01-50cfc8ee47ac', 'fe743c2ead.com', 'quora.com'), ('14ffd9dc-a9aa-48e9-9728-1adc8fc60041', '53373f6bc7.org', 'quora.com'), ('4ac13f53-426d-48f3-b037-abc57e351489', '49c136517d.com', 'quora.com'), ('0d3563cf-5948-4c5d-adf5-7bb78bc031a9', '6c0915240c.net', 'quora.com'), ('77ec8d97-0862-4bc3-87cb-2efc216bab7c', '4a51ced3fc.org', 'quora.com'), ('c6f7ebc8-3b33-44d8-bddc-beb81207ffbe', 'f32ded6a0b.us', 'quora.com'), ('b0fc08f2-4198-417a-bbc2-b81e479c4360', '18152a4e4d.co', 'quora.com'), ('d8a58536-f89d-4ab3-bcf4-0a11be914915', '7f8f1c4baf.net', 'quora.com'), ('aac39604-161f-439f-b72a-605df3ca6a43', '78caf9b9f9.net', 'quora.com'), ('e266a9d1-3c96-4e40-9344-81b0b52232fc', '1449947390.co', 'quora.com'), ('b089556b-347a-4476-8b9c-ccb5dc5a5ae7', '260a758c00.us', 'quora.com'), ('c66c3791-7f13-465b-968e-4ce823f0de10', '6b3e9beea2.co', 'quora.com'), ('71c6a8c9-9015-42f1-af09-c30eb618dde6', 'd13806baf5.co', 'quora.com'), ('fa13c84e-9950-4ac8-a0bf-27e98cd5ca7f', '4c333d5d1a.co', 'quora.com'), ('0b6fe66c-c22e-46c4-bfb4-d5730dad89a6', '214a4d8616.com', 'quora.com'), ('6cddf8f3-f971-46de-91a3-684880606e2f', 'ac53366769.net', 'quora.com'), ('c53577cf-2f83-4038-8a21-d96f366da919', 'a5fdbd84be.net', 'quora.com'), ('28262a82-62c9-4d05-8965-b647442b5bb5', '5fd2bad7c1.com', 'quora.com'), ('d092941d-1dbe-4d10-a845-412192125f6d', 'cbc014b3c3.org', 'quora.com'), ('d1280fe8-d67c-44d7-9acc-d35b480bed3c', '31715b5fb6.us', 'quora.com'), ('62340a50-a795-458d-8645-824fdd08d7ff', 'c94b2e2704.co', 'quora.com'), ('c4751332-208e-44c7-b1bb-9ce7c3e7d096', '928f3a6780.co', 'quora.com'), ('91f6c39e-fe15-4a22-be37-c77431794cf7', 'eda6427797.us', 'quora.com'), ('9f89dda7-bd8e-46a2-b657-ec97bbbf770c', '5a2d4fa181.us', 'quora.com'), ('965f352e-7202-4a4d-b2a7-20eb8571067f', '730cee8c13.com', 'quora.com'), ('8eaca4f4-7a3f-4f9d-89c3-c1f8f0247af9', 'cf93ccde67.com', 'quora.com'), ('7b8f3d9e-66e7-4375-89a8-82bca26a1963', '3a1b86d7d7.us', 'quora.com'), ('c89dcc4c-f2c2-4010-a27c-8f929ae6c79d', 'fd7aa854c9.org', 'quora.com'), ('a2639f2b-db68-4903-bc38-9589a07f2aa6', '56ceaaded8.org', 'quora.com'), ('7235801c-8760-4374-b45d-8e8440e4615f', 'f8ca17d51a.us', 'quora.com'), ('b2f3ca4f-e96c-4539-b62b-77a5ad14690c', '4b06ee6c74.us', 'quora.com'), ('51aeed7c-71fb-47b7-af0e-4ec7e11f433e', '3c20416589.co', 'quora.com'), ('1bcb073e-0929-470f-a6c1-10c498253311', '581e2680d0.com', 'baidu.com'), ('21b52459-9a41-4851-855f-11c18567f55f', 'c327e38599.net', 'baidu.com'), ('7ca17521-9d5e-4f0e-83dd-c72909f4cfcf', '0b9a01157e.us', 'baidu.com'), ('50c75a7e-efc3-46d9-9514-97e07955eb34', '3c238d04c4.net', 'baidu.com'), ('21d78ce6-2d53-408d-9e22-622ef3b8204a', '3d2bae9839.org', 'baidu.com'), ('48fdb91e-ccfc-4034-b401-553709606e5f', 'a0072f3ef7.us', 'baidu.com'), ('9dbf39b0-727c-4cf5-9c8e-2c90fd1dec15', '830828ba38.us', 'baidu.com'), ('8038ea2d-3dc5-4e85-8cc6-81990286224c', '2eacb322e4.org', 'baidu.com'), ('e0e631c4-2a1f-4ceb-a2c7-f9556c269ae6', '8a446e3e18.us', 'baidu.com'), ('901232b3-8c86-4eaf-a689-957ca3ae3c97', '27db8726ae.us', 'baidu.com'), ('a593aa17-6f4c-46d6-b513-8b8475e1fa9e', 'a74ffe6a2d.net', 'baidu.com'), ('f32bdc2a-f4c2-4e26-b113-0bd75d9e3d97', '6805f81a23.co', 'baidu.com'), ('e2e92a31-055d-4043-a2dd-1f2b0d77355b', '2b7d4d5a96.co', 'baidu.com'), ('d2e027ac-b9ff-4a3c-8980-8c68957113ea', 'ea9c058f68.org', 'baidu.com'), ('a8752810-1000-4b30-867f-d36ecbfc86e0', '636bbd747e.co', 'baidu.com'), ('9ea639a5-4800-41ae-a0cd-2d697be63c87', '9fc7fae741.co', 'baidu.com'), ('342870da-be49-4e27-a146-14c833bfadaa', '3a5d33a9bf.org', 'baidu.com'), ('fced338d-515c-4226-818f-45f1b568828d', '3f730cd062.net', 'baidu.com'), ('28262fba-3a04-4b87-840d-cc2e230c8671', 'c662d0ef86.com', 'baidu.com'), ('77a1beb3-a58c-47ec-9a9d-d6dec39b6855', '5323dc7fa6.org', 'baidu.com'), ('f6585ee8-7edc-4f46-b223-bd97e03ad2b0', 'cb60405800.us', 'baidu.com'), ('f7a214d3-fc49-4b1a-a28a-dfc76fba843b', '386113a0ff.org', 'baidu.com'), ('a163395b-c00b-4286-a232-6db4dda4c0d2', 'a1a58fd872.net', 'baidu.com'), ('2b5cf358-602d-40c2-a5e3-eb76e859b455', '13a397e17e.net', 'baidu.com'), ('2a5a2154-6ad2-4fab-be32-16a992baf1ef', 'd5a6c4b0b4.net', 'baidu.com'), ('cf0874db-cabd-46bb-9c0e-5f3e464488c4', '40f9a4520b.org', 'baidu.com'), ('9c9c2fbe-7b9b-4bfb-9ee9-fd2b98c166eb', 'a30393776d.us', 'baidu.com'), ('cd794303-3a47-4361-be10-dd6bf3f4fa9a', '8aa4eb6f3b.us', 'baidu.com'), ('1c44b9a0-135f-4689-83da-b01dc4718509', 'bd24d8634f.us', 'baidu.com'), ('e961180d-3760-4789-a154-effb0b50c8ff', '5c6b0631e0.co', 'baidu.com'), ('060fd478-720d-4a04-964c-15febb5f2968', '88d1193518.co', 'baidu.com'), ('dacd033b-790a-4148-afde-6b6163d334ee', '7db4f6b003.org', 'baidu.com'), ('9ed2b8f4-e3f0-40ac-b816-9c04feb2e81c', '72d3c36934.co', 'baidu.com'), ('2a5fd1a4-f41a-4d33-af86-2d420621e4b1', '83c739963a.co', 'baidu.com'), ('9d5f889a-2376-4f1b-acb7-b7778f8c5b35', '8e31f80609.org', 'baidu.com'), ('a4d58596-1f0c-4ca4-a73f-dd7e63a69809', 'f0ec931419.co', 'aliexpress.com'), ('cd52c0ed-1db2-4c31-bb27-2cffa1401e3e', '1c061fa3b2.org', 'aliexpress.com'), ('53b9b4fb-8a07-4566-b76c-755ad74040f3', '7879d57cf5.co', 'aliexpress.com'), ('5e8a08cd-dd3f-4fb7-afd5-af7ccd8cdb73', 'a17b4f69df.us', 'aliexpress.com'), ('361cf9ab-23e6-4df8-8436-638dd3edcb3f', '445e768aaf.us', 'aliexpress.com'), ('cd4b393b-757e-4237-8bed-b89870701c5a', '71a5ac60f2.net', 'aliexpress.com'), ('a4f2c0c8-a457-4aee-b34c-cfa3ec66ff43', '4a23c4f488.co', 'aliexpress.com'), ('4b0003b5-8c73-4fbb-a4e8-a05213f33070', 'cb3b28e54b.co', 'aliexpress.com'), ('f1d646dc-0ccf-4175-b745-05989c44e252', '12a8b083ee.com', 'aliexpress.com'), ('01b1c076-f7c2-459a-a51c-c206ef8f9c7d', '74f550fc28.org', 'aliexpress.com'), ('3061ed14-d8f3-4781-8a1f-9c41193ec21c', 'c64b6c092b.co', 'aliexpress.com'), ('17159ab6-a4aa-4666-af1f-3556ef5e4be5', '2ff785904f.co', 'aliexpress.com'), ('256e82c8-1108-462c-964e-e1183880908d', '03f157f79b.org', 'aliexpress.com'), ('8b12127b-22aa-40a6-aef4-f113111861ec', '44e3e2c3e4.co', 'aliexpress.com'), ('289c16fd-52a3-4e6e-9f95-cea6d79b872a', '8a378c0a70.net', 'aliexpress.com'), ('3f9ba91d-01da-45c2-8054-2eac9804f3bf', '7a0ba597b3.com', 'aliexpress.com'), ('d4061e23-f3eb-4e83-bb03-3fbe7ff157f7', '3d5da237af.us', 'aliexpress.com'), ('7053094d-03de-4ada-92cc-ce28d5d0291a', 'dff0efd19e.co', 'aliexpress.com'), ('9bd464d1-4f21-47a8-ac74-b2794e6345fc', 'b4d6312734.org', 'aliexpress.com'), ('4135a68b-8e58-419e-871c-e4419a66c234', '49a5eb3858.com', 'aliexpress.com'), ('d5422c68-4974-411b-a591-82cfdbb94906', '8cef5afed7.net', 'aliexpress.com'), ('df3c19f1-3577-4c54-8e79-7da0820af270', '12c6fa727d.com', 'aliexpress.com'), ('342b09ca-9b5d-4f38-9ec8-9f36784cff2d', 'f072314d6c.org', 'aliexpress.com'), ('409c70b2-ef08-42f8-b981-9dd8bc7bb9c6', '876ea7e21c.us', 'aliexpress.com'), ('47aa0e12-863c-4d18-8e6a-096a627e6a12', '4c00394c2e.com', 'aliexpress.com'), ('a62dfeaf-b758-4f71-9c42-f4a4caa2ddfd', '59109ee53a.net', 'aliexpress.com'), ('fa8b63d1-3e38-4906-8296-6f88cb739e2a', '607dd5eaba.net', 'aliexpress.com'), ('c3e26752-855c-4771-bf11-8ddb36b48231', 'b30b8030d8.org', 'aliexpress.com'), ('94a569ca-d87e-408b-8706-6bc7be4e3273', 'a37953e20b.co', 'aliexpress.com'), ('023b4921-5c13-4ca2-891f-c4e4098ee737', 'da386c968a.us', 'aliexpress.com'), ('ea248a5e-0def-4a7f-b746-306add38f0f3', 'fccb35f82d.net', 'aliexpress.com'), ('e716bdd0-fcba-4c90-a247-52563373624a', 'd8c39f7e7e.org', 'aliexpress.com'), ('1fdd4b39-d274-48d2-a7b9-25cd01181134', 'ed0c828c49.us', 'aliexpress.com'), ('43ac0c0e-b4b5-4fbb-a54b-353abcc8cfc8', '83942fc6b6.us', 'aliexpress.com'), ('63399946-a588-4e68-9187-38f184e57b2a', 'e30ae9d3a1.net', 'aliexpress.com'), ('84ac419a-dbb6-4a05-9775-ef9f86b8fe1d', '7735dc3a6b.com', 'aliexpress.com'), ('ba4b7172-bb7d-4e7e-94e7-dd41f4c5f219', '4d3c7ff820.com', 'aliexpress.com'), ('d67090fc-19ae-458a-82f9-027c67f7c811', 'ebf878c11e.org', 'bbc.com'), ('ca5ca0f8-d324-4737-986f-2436070bb029', '6e86628968.us', 'bbc.com'), ('ea4c3f23-7eb1-4551-b52f-84bd02dc3d82', '705f5b97a8.net', 'bbc.com'), ('61a55410-6e16-4eba-a615-b2bfe116c300', '8a379afdf6.com', 'bbc.com'), ('15c8d0c7-dad6-40f8-a7d7-80d5c57af70a', 'fb2991dfe9.co', 'bbc.com'), ('cc161a13-8f7b-40a1-bdda-b83b0522fad7', '9bc3924415.org', 'bbc.com'), ('7c68b313-230c-4f57-8064-5535a29b1631', 'd1bd5b245b.org', 'bbc.com'), ('6d273530-1fef-4336-a713-3f80ab2a74a7', 'a90ef6ceef.co', 'bbc.com'), ('c213b05f-9294-4f4d-ade7-ddce0540d904', '2145595f4e.net', 'bbc.com'), ('d774b3a8-f925-4232-9136-c49147f3f1ac', '3c721f6015.com', 'bbc.com'), ('7b97ca81-1e64-474d-8a89-9dde9ebbd92f', 'c4bad82267.co', 'bbc.com'), ('4cfe25f3-7e60-406b-ad4b-6ec6e9c18a7c', 'ec69775e7a.co', 'bbc.com'), ('2c87f36a-e7b6-4310-9b30-c17e69467165', '27acb039bc.us', 'bbc.com'), ('12fd86e9-5bc0-4445-bba9-b2ec6806894b', 'b1af191458.org', 'bbc.com'), ('d946b28a-7fbe-4c03-8ba8-f8eff5b37e26', 'a43fd75cf1.us', 'bbc.com'), ('dd08a989-87f0-45c7-813d-1f7f273bba9d', '67a63b64ff.co', 'bbc.com'), ('dfa42c7e-2a80-43d0-b344-e18e2e10d789', 'cc4bdb0696.co', 'bbc.com'), ('800bd6a9-86a4-4475-bf47-00bc47e59fd2', '8aa722654b.net', 'bbc.com'), ('c4f2c35a-8af0-47e8-b109-56a5a5d0cf84', '233b635c98.us', 'bbc.com'), ('57593696-d3d6-466d-a40d-d83cfa2ee1cd', 'd92a8c73d2.us', 'bbc.com'), ('846ac702-1ab0-4a5d-8d73-327d284fd131', '72ba693d3e.org', 'bbc.com'), ('e0739307-aea1-4870-a8ff-9ca26b604410', 'c2f8e4b3c0.us', 'bbc.com'), ('1fbbdb66-922f-4f92-bc98-aa368f1800bc', '7f4db96bba.us', 'bbc.com'), ('79e12d9a-7412-4c05-baff-4eefd13188e2', 'e9be3405b1.org', 'bbc.com'), ('ad407fa9-bcd2-4135-9da8-030ab5a78852', '091992d595.net', 'bbc.com'), ('6ed7b475-d1d1-4517-aa29-3a6b2ec96859', '31cf36cea7.org', 'bbc.com'), ('f6d10082-d0d0-4cc2-9055-3423b493bd3a', '2da9feaaf4.net', 'bbc.com'), ('05563f85-6f05-4ea0-bf87-53bed2f9a0f7', 'ca752cbcd1.co', 'bbc.com'), ('10f5d30e-1509-4692-a9f6-1b797b5a384e', '20c6e7dc7c.co', 'bbc.com'), ('0290c3be-5fb2-48b4-8fa2-b0fda966fcf3', '31c88059e8.com', 'bbc.com'), ('3bab6dc7-fd1a-47b0-805b-ffec89b99c59', '2092201ef0.com', 'bbc.com'), ('c424e071-c688-471a-ab7a-d64ea744b6d2', '01796b5639.org', 'bbc.com'), ('2f90e385-0263-4fc9-acc5-a16851b160b2', '8eb9205bb8.us', 'bbc.com'), ('ea4ef83d-7e42-4835-849e-3401369340f1', '970c442b81.us', 'bbc.com'), ('6499b5b8-299d-4b8e-9276-30d83f62b6ce', 'd5a6578160.org', 'bbc.com'), ('f67002e7-53e5-4726-b633-214ae9e7d946', '7575969c7c.us', 'bbc.com'), ('ac6046d1-c1f8-459d-b8c9-55a7e4aceefc', 'fdd4c25634.us', 'bbc.com'), ('16900b95-b14c-4737-9e40-bd6e5d4bcf54', '8682828881.net', 'bbc.com'), ('37d58995-7dc5-40ae-9948-07366515de1e', 'a5821c5831.net', 'bbc.com'), ('a5152031-5aeb-44ac-8a7a-b8b2470c5c2e', 'a4e476d560.co', 'cnn.com'), ('80fbd1bc-3244-404f-9a9d-2d90cfe1a67d', 'aec6f306ef.net', 'cnn.com'), ('95e01b8d-6e3f-4011-b8ce-514928bdba59', 'dd5f89b5ca.net', 'cnn.com'), ('69b0224d-7a5a-4254-9c51-665f230a7929', 'a65f514a29.net', 'cnn.com'), ('e5b4b734-9d6d-465c-87c5-04a2d0d0497e', 'd1336cf71e.us', 'cnn.com'), ('d91cf3ac-26de-4513-9842-c248c0a7c2ca', 'f6074d8d3e.net', 'cnn.com'), ('2d58e7af-d519-4d94-a793-9c324cbeec24', 'a0ced9d2a9.co', 'cnn.com'), ('5938e2b9-b306-4b7e-aec8-4e1eda2175a7', '05092074bf.org', 'cnn.com'), ('096d4aea-1c1e-4eee-b0bc-3bcfc6bb1854', 'ecffc80273.org', 'cnn.com'), ('4302af78-ce9b-4718-ba21-d71c8bb0764d', '4d8c7c9f42.co', 'cnn.com'), ('e5ab963f-8615-4b5e-a149-dfce886be19e', 'd714df08e1.com', 'cnn.com'), ('4ea49d2d-8240-43f2-92f0-7ac8bfc31f42', '22fc1b7e9f.us', 'cnn.com'), ('ce4193cb-1bc0-4c3c-ac91-e4653e7ad670', '991e0e6e0e.com', 'cnn.com'), ('b675a7b7-211d-4ee0-8356-ec8d74f7224b', '4a876f4c66.co', 'cnn.com'), ('32eae1f7-b8b6-4fb4-9411-8e2539e69b19', '6d03a81e24.com', 'cnn.com'), ('1576e569-229e-4e2c-b42d-01689a9267cb', '6c2b7d41f9.org', 'cnn.com'), ('a3878a67-744a-4d74-83a5-9a02fe182532', 'f91d2d58e4.net', 'cnn.com'), ('ea6b4d63-1e2f-4b4d-b2f9-fb55c3be3e4a', '3aaa2e4f64.net', 'cnn.com'), ('6d0d6902-1528-4ec9-bd27-76f8baf0efb3', '0c52f35317.us', 'cnn.com'), ('39feee02-7db5-4602-b801-8609f54d9ae8', '5958649257.net', 'cnn.com'), ('2657b9ea-68a9-4f83-a425-513c5f175860', '0747af0390.net', 'cnn.com'), ('71a8b402-d618-4507-8d1e-ddf1f87a6a98', '909a8e0cfc.com', 'cnn.com'), ('dff1ba80-7351-4717-92e8-577960b9431f', '66b9cfd947.us', 'cnn.com'), ('8d572146-14a6-4bee-8107-3d14f38dc977', '30cded1de8.us', 'cnn.com'), ('36f1c805-2188-48be-bca2-e8bd35d05227', '018dc46d35.co', 'cnn.com'), ('35fe8420-c502-4959-8bdf-0ba5004ae611', '500585bd25.com', 'cnn.com'), ('3ced1db6-7f36-435a-9900-96cd08110456', '330ba2935c.org', 'cnn.com'), ('7e0193ee-2ec2-4a56-a715-da4e79578b58', '4aff918a62.org', 'cnn.com'), ('9a68b4af-3e31-4940-961a-b8672c201e84', '4aac190666.us', 'cnn.com'), ('d8df3c63-8732-47d8-bfb8-fd0651be4ca1', '4d0cbe74d8.us', 'cnn.com'), ('6b34c886-a220-411f-9b98-0c12ee3a29ed', 'b4b5d69608.net', 'cnn.com'), ('2234c02b-caef-481c-a3e3-a8c819912281', '891c7690f9.us', 'cnn.com'), ('6993c60d-80a8-4c74-ac7b-63c80d95d398', 'fd2936f6a7.us', 'nytimes.com'), ('81d827d5-d7c5-438e-97d7-e6893ba22520', 'b441f865ee.co', 'nytimes.com'), ('2ecf5d86-a772-4309-bbfc-d6489c54169a', '310f350207.co', 'nytimes.com'), ('367ded53-5236-4bc1-a853-67e5daf2a6bb', 'a580c02eb2.net', 'nytimes.com'), ('534c4504-aa8b-42b9-82ec-5960c857c231', '8d8375cd5e.net', 'nytimes.com'), ('98ad89ab-8230-4d87-a728-de4decdd3982', '2b91c925eb.org', 'nytimes.com'), ('6af642ae-c13d-4720-b09e-36ac039531a7', 'c3698431b2.co', 'nytimes.com'), ('ac591a97-8936-4550-a9b8-d859297e2130', '5217cb3820.com', 'nytimes.com'), ('e994e73a-38f9-4709-87c7-e050dde935e3', '2842e5f35e.com', 'nytimes.com'), ('d9a80f6f-4bf2-41f8-b19c-36a125ee71ac', '5f7b2f777b.org', 'nytimes.com'), ('01e8ce64-28db-47ef-884a-0e19d536864d', '45107d9d14.com', 'nytimes.com'), ('85f60aa0-8847-4e53-a78c-1eafde1c8939', '754c839dae.co', 'nytimes.com'), ('8f9347a9-1c24-4cdb-9859-2e549a0a33ce', '114ae993a6.co', 'nytimes.com'), ('da77e1fe-acce-418a-8759-eaa83e229d57', 'f75c80d8fe.us', 'nytimes.com'), ('3daa3736-14fa-4763-a5a4-59273a4ac39a', '09eaec65da.us', 'nytimes.com'), ('705f7f55-3507-4cff-b998-b47cee121e24', '970c3cb786.org', 'nytimes.com'), ('8504c5af-ed16-4359-a43b-ee0ceeebfc2b', '344aafe152.us', 'nytimes.com'), ('8afc6aee-426d-4114-91f2-29738813a322', '3d6d4f5426.org', 'nytimes.com'), ('b22869db-bd42-4091-86b8-d148329ec813', '0df4f84269.us', 'nytimes.com'), ('be10caa7-f358-42ab-91d8-63d643a8ebea', '2e1995a38c.co', 'nytimes.com'), ('92719cf1-fb0b-4170-9a4b-26ff8662bfbc', '5109bc42c3.org', 'nytimes.com'), ('53bcbacd-91ae-4174-a392-3393f8b9225a', '2e9529c7c6.org', 'nytimes.com'), ('6e205a3f-8e9b-445b-9246-96f347cd1eed', 'd2972b10af.co', 'nytimes.com'), ('24cc69fb-8ba3-4448-9366-ff0b8abd5fcd', 'e5469176cd.us', 'nytimes.com'), ('7e43a326-f421-44f6-b94d-7d598602a453', '9af2e5991c.co', 'nytimes.com'), ('0231e7e6-8520-4c49-a16f-36cceef67d1d', '66499ff099.net', 'nytimes.com'), ('0f002775-3ddd-444f-adf1-dae6a067b039', '898e5c371b.org', 'nytimes.com'), ('d1d07904-af49-43db-bbf1-061b3311230c', '880b3e60ea.co', 'nytimes.com'), ('fb9f9da3-f060-4506-be27-1d1f5cd4d7d7', 'b25f0288a9.co', 'nytimes.com'), ('fa17b1d3-8d8a-4164-aedc-c0dac3a5b241', '92d8d06b14.com', 'nytimes.com'), ('ec0fe498-0814-446b-8c63-3f7e452e4a1e', '5a85cc1e7e.net', 'nytimes.com'), ('8bc86d97-6983-4206-9116-f82e3c191ccd', '7517b782d9.org', 'nytimes.com'), ('b3203c9e-c167-4699-b19a-39171d899302', 'f2724abe51.co', 'nytimes.com'), ('65259154-c815-4e55-abb6-06270b8e44c6', '03d172261c.co', 'nytimes.com'), ('509cc136-6ec9-4fcc-a046-f3c97a866eae', '095eccd525.co', 'nytimes.com'), ('721f2879-5063-4b4a-a7ff-38f80ae7d60b', 'a6ccb2b00e.org', 'nytimes.com'), ('8bcebc64-fbb1-43c5-9015-20d97e2c474f', 'dc0e6c360d.net', 'nytimes.com')]
+[2024-06-01T04:52:37.062+0000] {soc_dag.py:48} INFO - Analyzing domain: goggle.com with original domain: google.com
+[2024-06-01T04:52:38.051+0000] {soc_dag.py:64} INFO - Completed analysis for domain: goggle.com
+[2024-06-01T04:52:38.052+0000] {soc_dag.py:48} INFO - Analyzing domain: gooogle.com with original domain: google.com
+[2024-06-01T04:52:40.113+0000] {soc_dag.py:64} INFO - Completed analysis for domain: gooogle.com
+[2024-06-01T04:52:40.114+0000] {soc_dag.py:48} INFO - Analyzing domain: googl3.com with original domain: google.com
+[2024-06-01T04:52:41.346+0000] {soc_dag.py:64} INFO - Completed analysis for domain: googl3.com
+[2024-06-01T04:52:41.348+0000] {soc_dag.py:48} INFO - Analyzing domain: goolge.com with original domain: google.com
+[2024-06-01T04:52:43.424+0000] {soc_dag.py:64} INFO - Completed analysis for domain: goolge.com
+[2024-06-01T04:52:43.425+0000] {soc_dag.py:48} INFO - Analyzing domain: go0gle.com with original domain: google.com
+[2024-06-01T04:52:44.616+0000] {soc_dag.py:64} INFO - Completed analysis for domain: go0gle.com
+[2024-06-01T04:52:44.617+0000] {soc_dag.py:48} INFO - Analyzing domain: examp1e.com with original domain: example.com
+[2024-06-01T04:52:45.529+0000] {soc_dag.py:64} INFO - Completed analysis for domain: examp1e.com
+[2024-06-01T04:52:45.530+0000] {soc_dag.py:48} INFO - Analyzing domain: exampel.com with original domain: example.com
+[2024-06-01T04:52:52.332+0000] {soc_dag.py:64} INFO - Completed analysis for domain: exampel.com
+[2024-06-01T04:52:52.333+0000] {soc_dag.py:48} INFO - Analyzing domain: exampel.com with original domain: example.com
+[2024-06-01T04:52:58.205+0000] {soc_dag.py:64} INFO - Completed analysis for domain: exampel.com
+[2024-06-01T04:52:58.206+0000] {soc_dag.py:48} INFO - Analyzing domain: exampl3.com with original domain: example.com
+[2024-06-01T04:52:59.692+0000] {soc_dag.py:64} INFO - Completed analysis for domain: exampl3.com
+[2024-06-01T04:52:59.692+0000] {soc_dag.py:48} INFO - Analyzing domain: examp1e.com with original domain: example.com
+[2024-06-01T04:53:00.308+0000] {soc_dag.py:64} INFO - Completed analysis for domain: examp1e.com
+[2024-06-01T04:53:00.309+0000] {soc_dag.py:48} INFO - Analyzing domain: 0penai.com with original domain: openai.com
+[2024-06-01T04:53:02.468+0000] {soc_dag.py:64} INFO - Completed analysis for domain: 0penai.com
+[2024-06-01T04:53:02.469+0000] {soc_dag.py:48} INFO - Analyzing domain: openal.com with original domain: openai.com
+[2024-06-01T04:53:15.719+0000] {soc_dag.py:64} INFO - Completed analysis for domain: openal.com
+[2024-06-01T04:53:15.720+0000] {soc_dag.py:48} INFO - Analyzing domain: openaii.com with original domain: openai.com
+[2024-06-01T04:53:17.552+0000] {soc_dag.py:64} INFO - Completed analysis for domain: openaii.com
+[2024-06-01T04:53:17.553+0000] {soc_dag.py:48} INFO - Analyzing domain: openaii.com with original domain: openai.com
+[2024-06-01T04:53:18.986+0000] {soc_dag.py:64} INFO - Completed analysis for domain: openaii.com
+[2024-06-01T04:53:18.987+0000] {soc_dag.py:48} INFO - Analyzing domain: op3nai.com with original domain: openai.com
+[2024-06-01T04:53:26.171+0000] {soc_dag.py:64} INFO - Completed analysis for domain: op3nai.com
+[2024-06-01T04:53:26.172+0000] {soc_dag.py:48} INFO - Analyzing domain: 6d5bc1df50.org with original domain: google.com
+[2024-06-01T04:53:27.214+0000] {soc_dag.py:64} INFO - Completed analysis for domain: 6d5bc1df50.org
+[2024-06-01T04:53:27.215+0000] {soc_dag.py:48} INFO - Analyzing domain: 97ce810845.org with original domain: google.com
+[2024-06-01T04:53:28.370+0000] {soc_dag.py:64} INFO - Completed analysis for domain: 97ce810845.org
+[2024-06-01T04:53:28.371+0000] {soc_dag.py:48} INFO - Analyzing domain: 803000410e.co with original domain: google.com
+[2024-06-01T04:53:29.521+0000] {soc_dag.py:64} INFO - Completed analysis for domain: 803000410e.co
+[2024-06-01T04:53:29.522+0000] {soc_dag.py:48} INFO - Analyzing domain: 6426fc1f67.us with original domain: google.com
+[2024-06-01T04:53:30.645+0000] {soc_dag.py:64} INFO - Completed analysis for domain: 6426fc1f67.us
+[2024-06-01T04:53:30.646+0000] {soc_dag.py:48} INFO - Analyzing domain: 55c5625e62.us with original domain: google.com
+[2024-06-01T04:53:31.734+0000] {soc_dag.py:64} INFO - Completed analysis for domain: 55c5625e62.us
+[2024-06-01T04:53:31.735+0000] {soc_dag.py:48} INFO - Analyzing domain: 8e1a86b116.org with original domain: google.com
+[2024-06-01T04:53:32.780+0000] {soc_dag.py:64} INFO - Completed analysis for domain: 8e1a86b116.org
+[2024-06-01T04:53:32.781+0000] {soc_dag.py:48} INFO - Analyzing domain: f62617572d.org with original domain: google.com
+[2024-06-01T04:53:33.805+0000] {soc_dag.py:64} INFO - Completed analysis for domain: f62617572d.org
+[2024-06-01T04:53:33.806+0000] {soc_dag.py:48} INFO - Analyzing domain: 3db959672b.net with original domain: google.com
+[2024-06-01T04:53:34.859+0000] {soc_dag.py:64} INFO - Completed analysis for domain: 3db959672b.net
+[2024-06-01T04:53:34.861+0000] {soc_dag.py:48} INFO - Analyzing domain: 842ad3669c.us with original domain: google.com
+[2024-06-01T04:53:35.962+0000] {soc_dag.py:64} INFO - Completed analysis for domain: 842ad3669c.us
+[2024-06-01T04:53:35.963+0000] {soc_dag.py:48} INFO - Analyzing domain: eeefa248c2.com with original domain: google.com
+[2024-06-01T04:53:37.439+0000] {soc_dag.py:64} INFO - Completed analysis for domain: eeefa248c2.com
+[2024-06-01T04:53:37.439+0000] {soc_dag.py:48} INFO - Analyzing domain: 8397445f80.net with original domain: google.com
+[2024-06-01T04:53:38.485+0000] {soc_dag.py:64} INFO - Completed analysis for domain: 8397445f80.net
+[2024-06-01T04:53:38.485+0000] {soc_dag.py:48} INFO - Analyzing domain: a5917dfb68.org with original domain: google.com
+[2024-06-01T04:53:39.519+0000] {soc_dag.py:64} INFO - Completed analysis for domain: a5917dfb68.org
+[2024-06-01T04:53:39.520+0000] {soc_dag.py:48} INFO - Analyzing domain: 0c05fe70b6.org with original domain: google.com
+[2024-06-01T04:53:40.578+0000] {soc_dag.py:64} INFO - Completed analysis for domain: 0c05fe70b6.org
+[2024-06-01T04:53:40.579+0000] {soc_dag.py:48} INFO - Analyzing domain: aa38f6b632.net with original domain: google.com
+[2024-06-01T04:53:41.631+0000] {soc_dag.py:64} INFO - Completed analysis for domain: aa38f6b632.net
+[2024-06-01T04:53:41.632+0000] {soc_dag.py:48} INFO - Analyzing domain: 04bca49947.us with original domain: google.com
+[2024-06-01T04:53:42.719+0000] {soc_dag.py:64} INFO - Completed analysis for domain: 04bca49947.us
+[2024-06-01T04:53:42.720+0000] {soc_dag.py:48} INFO - Analyzing domain: 424fe628f5.com with original domain: google.com
+[2024-06-01T04:53:43.761+0000] {soc_dag.py:64} INFO - Completed analysis for domain: 424fe628f5.com
+[2024-06-01T04:53:43.762+0000] {soc_dag.py:48} INFO - Analyzing domain: ba379a541f.org with original domain: google.com
+[2024-06-01T04:53:44.823+0000] {soc_dag.py:64} INFO - Completed analysis for domain: ba379a541f.org
+[2024-06-01T04:53:44.824+0000] {soc_dag.py:48} INFO - Analyzing domain: 3eb0126a5e.com with original domain: google.com
+[2024-06-01T04:53:45.884+0000] {soc_dag.py:64} INFO - Completed analysis for domain: 3eb0126a5e.com
+[2024-06-01T04:53:45.885+0000] {soc_dag.py:48} INFO - Analyzing domain: 22e1721bec.co with original domain: google.com
+[2024-06-01T04:53:46.991+0000] {soc_dag.py:64} INFO - Completed analysis for domain: 22e1721bec.co
+[2024-06-01T04:53:46.992+0000] {soc_dag.py:48} INFO - Analyzing domain: 29f06ab427.net with original domain: google.com
+[2024-06-01T04:53:48.041+0000] {soc_dag.py:64} INFO - Completed analysis for domain: 29f06ab427.net
+[2024-06-01T04:53:48.042+0000] {soc_dag.py:48} INFO - Analyzing domain: f15c9a476a.org with original domain: google.com
+[2024-06-01T04:53:49.060+0000] {soc_dag.py:64} INFO - Completed analysis for domain: f15c9a476a.org
+[2024-06-01T04:53:49.061+0000] {soc_dag.py:48} INFO - Analyzing domain: 8db885536d.net with original domain: google.com
+[2024-06-01T04:53:50.100+0000] {soc_dag.py:64} INFO - Completed analysis for domain: 8db885536d.net
+[2024-06-01T04:53:50.101+0000] {soc_dag.py:48} INFO - Analyzing domain: c8912b3cb1.org with original domain: google.com
+[2024-06-01T04:53:51.137+0000] {soc_dag.py:64} INFO - Completed analysis for domain: c8912b3cb1.org
+[2024-06-01T04:53:51.139+0000] {soc_dag.py:48} INFO - Analyzing domain: 3d2e256dce.com with original domain: google.com
+[2024-06-01T04:53:52.193+0000] {soc_dag.py:64} INFO - Completed analysis for domain: 3d2e256dce.com
+[2024-06-01T04:53:52.193+0000] {soc_dag.py:48} INFO - Analyzing domain: c6238fc53f.us with original domain: google.com
+[2024-06-01T04:53:53.312+0000] {soc_dag.py:64} INFO - Completed analysis for domain: c6238fc53f.us
+[2024-06-01T04:53:53.313+0000] {soc_dag.py:48} INFO - Analyzing domain: a58c9e5599.net with original domain: google.com
+[2024-06-01T04:53:54.357+0000] {soc_dag.py:64} INFO - Completed analysis for domain: a58c9e5599.net
+[2024-06-01T04:53:54.358+0000] {soc_dag.py:48} INFO - Analyzing domain: 11c3cc4579.org with original domain: google.com
+[2024-06-01T04:53:55.377+0000] {soc_dag.py:64} INFO - Completed analysis for domain: 11c3cc4579.org
+[2024-06-01T04:53:55.378+0000] {soc_dag.py:48} INFO - Analyzing domain: 1b1979cbb4.org with original domain: google.com
+[2024-06-01T04:53:56.385+0000] {soc_dag.py:64} INFO - Completed analysis for domain: 1b1979cbb4.org
+[2024-06-01T04:53:56.386+0000] {soc_dag.py:48} INFO - Analyzing domain: a293c35099.org with original domain: google.com
+[2024-06-01T04:53:57.777+0000] {soc_dag.py:64} INFO - Completed analysis for domain: a293c35099.org
+[2024-06-01T04:53:57.778+0000] {soc_dag.py:48} INFO - Analyzing domain: cf433b65a2.us with original domain: google.com
+[2024-06-01T04:53:58.904+0000] {soc_dag.py:64} INFO - Completed analysis for domain: cf433b65a2.us
+[2024-06-01T04:53:58.905+0000] {soc_dag.py:48} INFO - Analyzing domain: 807204c07e.net with original domain: google.com
+[2024-06-01T04:53:59.948+0000] {soc_dag.py:64} INFO - Completed analysis for domain: 807204c07e.net
+[2024-06-01T04:53:59.949+0000] {soc_dag.py:48} INFO - Analyzing domain: 0e70c99e88.us with original domain: google.com
+[2024-06-01T04:54:01.054+0000] {soc_dag.py:64} INFO - Completed analysis for domain: 0e70c99e88.us
+[2024-06-01T04:54:01.055+0000] {soc_dag.py:48} INFO - Analyzing domain: dfc0910044.us with original domain: google.com
+[2024-06-01T04:54:02.135+0000] {soc_dag.py:64} INFO - Completed analysis for domain: dfc0910044.us
+[2024-06-01T04:54:02.136+0000] {soc_dag.py:48} INFO - Analyzing domain: dd88c10aee.com with original domain: google.com
+[2024-06-01T04:54:03.218+0000] {soc_dag.py:64} INFO - Completed analysis for domain: dd88c10aee.com
+[2024-06-01T04:54:03.219+0000] {soc_dag.py:48} INFO - Analyzing domain: 7bd7aea03f.org with original domain: google.com
+[2024-06-01T04:54:04.222+0000] {soc_dag.py:64} INFO - Completed analysis for domain: 7bd7aea03f.org
+[2024-06-01T04:54:04.224+0000] {soc_dag.py:48} INFO - Analyzing domain: b183955029.org with original domain: example.com
+[2024-06-01T04:54:04.862+0000] {soc_dag.py:64} INFO - Completed analysis for domain: b183955029.org
+[2024-06-01T04:54:04.863+0000] {soc_dag.py:48} INFO - Analyzing domain: 930042341e.us with original domain: example.com
+[2024-06-01T04:54:05.558+0000] {soc_dag.py:64} INFO - Completed analysis for domain: 930042341e.us
+[2024-06-01T04:54:05.559+0000] {soc_dag.py:48} INFO - Analyzing domain: 9bfe5f29e4.net with original domain: example.com
+[2024-06-01T04:54:06.197+0000] {soc_dag.py:64} INFO - Completed analysis for domain: 9bfe5f29e4.net
+[2024-06-01T04:54:06.198+0000] {soc_dag.py:48} INFO - Analyzing domain: e85bdfb944.com with original domain: example.com
+[2024-06-01T04:54:06.825+0000] {soc_dag.py:64} INFO - Completed analysis for domain: e85bdfb944.com
+[2024-06-01T04:54:06.826+0000] {soc_dag.py:48} INFO - Analyzing domain: 98cca362af.us with original domain: example.com
+[2024-06-01T04:54:07.512+0000] {soc_dag.py:64} INFO - Completed analysis for domain: 98cca362af.us
+[2024-06-01T04:54:07.513+0000] {soc_dag.py:48} INFO - Analyzing domain: 84388a701c.us with original domain: example.com
+[2024-06-01T04:54:08.172+0000] {soc_dag.py:64} INFO - Completed analysis for domain: 84388a701c.us
+[2024-06-01T04:54:08.173+0000] {soc_dag.py:48} INFO - Analyzing domain: cd7ea1c4e4.net with original domain: example.com
+[2024-06-01T04:54:08.844+0000] {soc_dag.py:64} INFO - Completed analysis for domain: cd7ea1c4e4.net
+[2024-06-01T04:54:08.845+0000] {soc_dag.py:48} INFO - Analyzing domain: 6e06cc7b3f.com with original domain: example.com
+[2024-06-01T04:54:09.499+0000] {soc_dag.py:64} INFO - Completed analysis for domain: 6e06cc7b3f.com
+[2024-06-01T04:54:09.500+0000] {soc_dag.py:48} INFO - Analyzing domain: a3b6934110.net with original domain: example.com
+[2024-06-01T04:54:10.117+0000] {soc_dag.py:64} INFO - Completed analysis for domain: a3b6934110.net
+[2024-06-01T04:54:10.118+0000] {soc_dag.py:48} INFO - Analyzing domain: 7dda956047.us with original domain: example.com
+[2024-06-01T04:54:10.822+0000] {soc_dag.py:64} INFO - Completed analysis for domain: 7dda956047.us
+[2024-06-01T04:54:10.823+0000] {soc_dag.py:48} INFO - Analyzing domain: 03d3781c42.org with original domain: example.com
+[2024-06-01T04:54:11.419+0000] {soc_dag.py:64} INFO - Completed analysis for domain: 03d3781c42.org
+[2024-06-01T04:54:11.420+0000] {soc_dag.py:48} INFO - Analyzing domain: 30de5919a2.org with original domain: example.com
+[2024-06-01T04:54:12.042+0000] {soc_dag.py:64} INFO - Completed analysis for domain: 30de5919a2.org
+[2024-06-01T04:54:12.043+0000] {soc_dag.py:48} INFO - Analyzing domain: 92c0fb8703.co with original domain: example.com
+[2024-06-01T04:54:12.713+0000] {soc_dag.py:64} INFO - Completed analysis for domain: 92c0fb8703.co
+[2024-06-01T04:54:12.713+0000] {soc_dag.py:48} INFO - Analyzing domain: 52f3aa7b18.net with original domain: example.com
+[2024-06-01T04:54:13.379+0000] {soc_dag.py:64} INFO - Completed analysis for domain: 52f3aa7b18.net
+[2024-06-01T04:54:13.380+0000] {soc_dag.py:48} INFO - Analyzing domain: 2e1ad911f6.co with original domain: example.com
+[2024-06-01T04:54:14.090+0000] {soc_dag.py:64} INFO - Completed analysis for domain: 2e1ad911f6.co
+[2024-06-01T04:54:14.091+0000] {soc_dag.py:48} INFO - Analyzing domain: cbdc0ba58f.org with original domain: example.com
+[2024-06-01T04:54:14.721+0000] {soc_dag.py:64} INFO - Completed analysis for domain: cbdc0ba58f.org
+[2024-06-01T04:54:14.722+0000] {soc_dag.py:48} INFO - Analyzing domain: 58539cd311.org with original domain: example.com
+[2024-06-01T04:54:15.345+0000] {soc_dag.py:64} INFO - Completed analysis for domain: 58539cd311.org
+[2024-06-01T04:54:15.346+0000] {soc_dag.py:48} INFO - Analyzing domain: f76a4548ff.net with original domain: example.com
+[2024-06-01T04:54:15.982+0000] {soc_dag.py:64} INFO - Completed analysis for domain: f76a4548ff.net
+[2024-06-01T04:54:15.982+0000] {soc_dag.py:48} INFO - Analyzing domain: 2a8b108521.us with original domain: example.com
+[2024-06-01T04:54:16.706+0000] {soc_dag.py:64} INFO - Completed analysis for domain: 2a8b108521.us
+[2024-06-01T04:54:16.707+0000] {soc_dag.py:48} INFO - Analyzing domain: d62dfa3a8e.us with original domain: example.com
+[2024-06-01T04:54:17.442+0000] {soc_dag.py:64} INFO - Completed analysis for domain: d62dfa3a8e.us
+[2024-06-01T04:54:17.443+0000] {soc_dag.py:48} INFO - Analyzing domain: 26c1ea9aab.com with original domain: example.com
+[2024-06-01T04:54:18.080+0000] {soc_dag.py:64} INFO - Completed analysis for domain: 26c1ea9aab.com
+[2024-06-01T04:54:18.081+0000] {soc_dag.py:48} INFO - Analyzing domain: 8dcb88ea14.com with original domain: example.com
+[2024-06-01T04:54:18.712+0000] {soc_dag.py:64} INFO - Completed analysis for domain: 8dcb88ea14.com
+[2024-06-01T04:54:18.713+0000] {soc_dag.py:48} INFO - Analyzing domain: e391b01d15.net with original domain: example.com
+[2024-06-01T04:54:19.355+0000] {soc_dag.py:64} INFO - Completed analysis for domain: e391b01d15.net
+[2024-06-01T04:54:19.356+0000] {soc_dag.py:48} INFO - Analyzing domain: 0611cc3b19.org with original domain: example.com
+[2024-06-01T04:54:19.950+0000] {soc_dag.py:64} INFO - Completed analysis for domain: 0611cc3b19.org
+[2024-06-01T04:54:19.951+0000] {soc_dag.py:48} INFO - Analyzing domain: dbc4a42279.net with original domain: example.com
+[2024-06-01T04:54:20.610+0000] {soc_dag.py:64} INFO - Completed analysis for domain: dbc4a42279.net
+[2024-06-01T04:54:20.611+0000] {soc_dag.py:48} INFO - Analyzing domain: a3b4b217b7.net with original domain: example.com
+[2024-06-01T04:54:21.186+0000] {soc_dag.py:64} INFO - Completed analysis for domain: a3b4b217b7.net
+[2024-06-01T04:54:21.187+0000] {soc_dag.py:48} INFO - Analyzing domain: f09424746f.net with original domain: example.com
+[2024-06-01T04:54:21.786+0000] {soc_dag.py:64} INFO - Completed analysis for domain: f09424746f.net
+[2024-06-01T04:54:21.787+0000] {soc_dag.py:48} INFO - Analyzing domain: cce18bea0e.us with original domain: example.com
+[2024-06-01T04:54:22.505+0000] {soc_dag.py:64} INFO - Completed analysis for domain: cce18bea0e.us
+[2024-06-01T04:54:22.506+0000] {soc_dag.py:48} INFO - Analyzing domain: 1619b37d87.co with original domain: example.com
+[2024-06-01T04:54:23.212+0000] {soc_dag.py:64} INFO - Completed analysis for domain: 1619b37d87.co
+[2024-06-01T04:54:23.213+0000] {soc_dag.py:48} INFO - Analyzing domain: 076fbd6098.us with original domain: example.com
+[2024-06-01T04:54:23.858+0000] {soc_dag.py:64} INFO - Completed analysis for domain: 076fbd6098.us
+[2024-06-01T04:54:23.859+0000] {soc_dag.py:48} INFO - Analyzing domain: 460516eb27.us with original domain: example.com
+[2024-06-01T04:54:24.592+0000] {soc_dag.py:64} INFO - Completed analysis for domain: 460516eb27.us
+[2024-06-01T04:54:24.593+0000] {soc_dag.py:48} INFO - Analyzing domain: a897569b2b.com with original domain: example.com
+[2024-06-01T04:54:25.212+0000] {soc_dag.py:64} INFO - Completed analysis for domain: a897569b2b.com
+[2024-06-01T04:54:25.213+0000] {soc_dag.py:48} INFO - Analyzing domain: 7f67921879.us with original domain: example.com
+[2024-06-01T04:54:25.939+0000] {soc_dag.py:64} INFO - Completed analysis for domain: 7f67921879.us
+[2024-06-01T04:54:25.940+0000] {soc_dag.py:48} INFO - Analyzing domain: f08b6db5a4.co with original domain: openai.com
+[2024-06-01T04:54:26.796+0000] {soc_dag.py:64} INFO - Completed analysis for domain: f08b6db5a4.co
+[2024-06-01T04:54:26.797+0000] {soc_dag.py:48} INFO - Analyzing domain: 4cf91ea44f.us with original domain: openai.com
+[2024-06-01T04:54:27.270+0000] {soc_dag.py:64} INFO - Completed analysis for domain: 4cf91ea44f.us
+[2024-06-01T04:54:27.271+0000] {soc_dag.py:48} INFO - Analyzing domain: 6185780da1.org with original domain: openai.com
+[2024-06-01T04:54:27.777+0000] {soc_dag.py:64} INFO - Completed analysis for domain: 6185780da1.org
+[2024-06-01T04:54:27.778+0000] {soc_dag.py:48} INFO - Analyzing domain: 666a3a3da8.com with original domain: openai.com
+[2024-06-01T04:54:28.189+0000] {soc_dag.py:64} INFO - Completed analysis for domain: 666a3a3da8.com
+[2024-06-01T04:54:28.190+0000] {soc_dag.py:48} INFO - Analyzing domain: 7042ddfc48.us with original domain: openai.com
+[2024-06-01T04:54:28.713+0000] {soc_dag.py:64} INFO - Completed analysis for domain: 7042ddfc48.us
+[2024-06-01T04:54:28.715+0000] {soc_dag.py:48} INFO - Analyzing domain: 69081db551.net with original domain: openai.com
+[2024-06-01T04:54:29.151+0000] {soc_dag.py:64} INFO - Completed analysis for domain: 69081db551.net
+[2024-06-01T04:54:29.152+0000] {soc_dag.py:48} INFO - Analyzing domain: 59ef64e854.org with original domain: openai.com
+[2024-06-01T04:54:29.527+0000] {soc_dag.py:64} INFO - Completed analysis for domain: 59ef64e854.org
+[2024-06-01T04:54:29.528+0000] {soc_dag.py:48} INFO - Analyzing domain: 363ed97d12.com with original domain: openai.com
+[2024-06-01T04:54:29.986+0000] {soc_dag.py:64} INFO - Completed analysis for domain: 363ed97d12.com
+[2024-06-01T04:54:29.987+0000] {soc_dag.py:48} INFO - Analyzing domain: e9069700cf.com with original domain: openai.com
+[2024-06-01T04:54:30.405+0000] {soc_dag.py:64} INFO - Completed analysis for domain: e9069700cf.com
+[2024-06-01T04:54:30.406+0000] {soc_dag.py:48} INFO - Analyzing domain: 3b17312f2c.org with original domain: openai.com
+[2024-06-01T04:54:30.810+0000] {soc_dag.py:64} INFO - Completed analysis for domain: 3b17312f2c.org
+[2024-06-01T04:54:30.811+0000] {soc_dag.py:48} INFO - Analyzing domain: 5a3d52ba63.org with original domain: openai.com
+[2024-06-01T04:54:31.188+0000] {soc_dag.py:64} INFO - Completed analysis for domain: 5a3d52ba63.org
+[2024-06-01T04:54:31.189+0000] {soc_dag.py:48} INFO - Analyzing domain: 4bfafc9eb7.us with original domain: openai.com
+[2024-06-01T04:54:31.686+0000] {soc_dag.py:64} INFO - Completed analysis for domain: 4bfafc9eb7.us
+[2024-06-01T04:54:31.687+0000] {soc_dag.py:48} INFO - Analyzing domain: 9b2441fdbe.com with original domain: openai.com
+[2024-06-01T04:54:32.116+0000] {soc_dag.py:64} INFO - Completed analysis for domain: 9b2441fdbe.com
+[2024-06-01T04:54:32.116+0000] {soc_dag.py:48} INFO - Analyzing domain: 270daa6cfb.co with original domain: openai.com
+[2024-06-01T04:54:32.547+0000] {soc_dag.py:64} INFO - Completed analysis for domain: 270daa6cfb.co
+[2024-06-01T04:54:32.549+0000] {soc_dag.py:48} INFO - Analyzing domain: 0ad79a865a.co with original domain: openai.com
+[2024-06-01T04:54:33.119+0000] {soc_dag.py:64} INFO - Completed analysis for domain: 0ad79a865a.co
+[2024-06-01T04:54:33.120+0000] {soc_dag.py:48} INFO - Analyzing domain: 9cd7138375.org with original domain: openai.com
+[2024-06-01T04:54:33.601+0000] {soc_dag.py:64} INFO - Completed analysis for domain: 9cd7138375.org
+[2024-06-01T04:54:33.602+0000] {soc_dag.py:48} INFO - Analyzing domain: 47a90a51f2.org with original domain: openai.com
+[2024-06-01T04:54:34.010+0000] {soc_dag.py:64} INFO - Completed analysis for domain: 47a90a51f2.org
+[2024-06-01T04:54:34.010+0000] {soc_dag.py:48} INFO - Analyzing domain: 87fe88d25d.net with original domain: openai.com
+[2024-06-01T04:54:34.446+0000] {soc_dag.py:64} INFO - Completed analysis for domain: 87fe88d25d.net
+[2024-06-01T04:54:34.446+0000] {soc_dag.py:48} INFO - Analyzing domain: 3bbdf6fea7.org with original domain: openai.com
+[2024-06-01T04:54:34.930+0000] {soc_dag.py:64} INFO - Completed analysis for domain: 3bbdf6fea7.org
+[2024-06-01T04:54:34.931+0000] {soc_dag.py:48} INFO - Analyzing domain: d7b9d51323.net with original domain: openai.com
+[2024-06-01T04:54:35.345+0000] {soc_dag.py:64} INFO - Completed analysis for domain: d7b9d51323.net
+[2024-06-01T04:54:35.347+0000] {soc_dag.py:48} INFO - Analyzing domain: a26e130d94.org with original domain: openai.com
+[2024-06-01T04:54:35.763+0000] {soc_dag.py:64} INFO - Completed analysis for domain: a26e130d94.org
+[2024-06-01T04:54:35.764+0000] {soc_dag.py:48} INFO - Analyzing domain: 3836de0a4e.co with original domain: openai.com
+[2024-06-01T04:54:36.251+0000] {soc_dag.py:64} INFO - Completed analysis for domain: 3836de0a4e.co
+[2024-06-01T04:54:36.252+0000] {soc_dag.py:48} INFO - Analyzing domain: 87418ae107.org with original domain: openai.com
+[2024-06-01T04:54:36.648+0000] {soc_dag.py:64} INFO - Completed analysis for domain: 87418ae107.org
+[2024-06-01T04:54:36.649+0000] {soc_dag.py:48} INFO - Analyzing domain: ec8cc0ccb2.net with original domain: openai.com
+[2024-06-01T04:54:37.089+0000] {soc_dag.py:64} INFO - Completed analysis for domain: ec8cc0ccb2.net
+[2024-06-01T04:54:37.089+0000] {soc_dag.py:48} INFO - Analyzing domain: 048e3bd8c6.us with original domain: openai.com
+[2024-06-01T04:54:37.561+0000] {soc_dag.py:64} INFO - Completed analysis for domain: 048e3bd8c6.us
+[2024-06-01T04:54:37.562+0000] {soc_dag.py:48} INFO - Analyzing domain: 8b1f5ccab1.com with original domain: openai.com
+[2024-06-01T04:54:37.995+0000] {soc_dag.py:64} INFO - Completed analysis for domain: 8b1f5ccab1.com
+[2024-06-01T04:54:37.995+0000] {soc_dag.py:48} INFO - Analyzing domain: 7f77e1e01d.org with original domain: openai.com
+[2024-06-01T04:54:38.392+0000] {soc_dag.py:64} INFO - Completed analysis for domain: 7f77e1e01d.org
+[2024-06-01T04:54:38.392+0000] {soc_dag.py:48} INFO - Analyzing domain: 405af0ff3f.org with original domain: openai.com
+[2024-06-01T04:54:38.838+0000] {soc_dag.py:64} INFO - Completed analysis for domain: 405af0ff3f.org
+[2024-06-01T04:54:38.839+0000] {soc_dag.py:48} INFO - Analyzing domain: f79ead16b6.org with original domain: openai.com
+[2024-06-01T04:54:39.250+0000] {soc_dag.py:64} INFO - Completed analysis for domain: f79ead16b6.org
+[2024-06-01T04:54:39.251+0000] {soc_dag.py:48} INFO - Analyzing domain: cc0a48bbb2.co with original domain: openai.com
+[2024-06-01T04:54:39.728+0000] {soc_dag.py:64} INFO - Completed analysis for domain: cc0a48bbb2.co
+[2024-06-01T04:54:39.729+0000] {soc_dag.py:48} INFO - Analyzing domain: cce6d49142.us with original domain: openai.com
+[2024-06-01T04:54:40.233+0000] {soc_dag.py:64} INFO - Completed analysis for domain: cce6d49142.us
+[2024-06-01T04:54:40.234+0000] {soc_dag.py:48} INFO - Analyzing domain: d3d75141cb.com with original domain: openai.com
+[2024-06-01T04:54:40.672+0000] {soc_dag.py:64} INFO - Completed analysis for domain: d3d75141cb.com
+[2024-06-01T04:54:40.672+0000] {soc_dag.py:48} INFO - Analyzing domain: f3c5e3cfca.co with original domain: openai.com
+[2024-06-01T04:54:41.163+0000] {soc_dag.py:64} INFO - Completed analysis for domain: f3c5e3cfca.co
+[2024-06-01T04:54:41.164+0000] {soc_dag.py:48} INFO - Analyzing domain: 9e460e92c8.us with original domain: openai.com
+[2024-06-01T04:54:41.671+0000] {soc_dag.py:64} INFO - Completed analysis for domain: 9e460e92c8.us
+[2024-06-01T04:54:41.672+0000] {soc_dag.py:48} INFO - Analyzing domain: f8198e2c49.us with original domain: openai.com
+[2024-06-01T04:54:42.137+0000] {soc_dag.py:64} INFO - Completed analysis for domain: f8198e2c49.us
+[2024-06-01T04:54:42.138+0000] {soc_dag.py:48} INFO - Analyzing domain: 1c1946d122.net with original domain: openai.com
+[2024-06-01T04:54:42.514+0000] {soc_dag.py:64} INFO - Completed analysis for domain: 1c1946d122.net
+[2024-06-01T04:54:42.515+0000] {soc_dag.py:48} INFO - Analyzing domain: dc513bf72c.net with original domain: openai.com
+[2024-06-01T04:54:42.959+0000] {soc_dag.py:64} INFO - Completed analysis for domain: dc513bf72c.net
+[2024-06-01T04:54:42.960+0000] {soc_dag.py:48} INFO - Analyzing domain: 01fcbb7c64.us with original domain: github.com
+[2024-06-01T04:54:44.208+0000] {soc_dag.py:64} INFO - Completed analysis for domain: 01fcbb7c64.us
+[2024-06-01T04:54:44.209+0000] {soc_dag.py:48} INFO - Analyzing domain: cffc234f6a.net with original domain: github.com
+[2024-06-01T04:54:45.151+0000] {soc_dag.py:64} INFO - Completed analysis for domain: cffc234f6a.net
+[2024-06-01T04:54:45.152+0000] {soc_dag.py:48} INFO - Analyzing domain: 05d5ed1387.co with original domain: github.com
+[2024-06-01T04:54:46.162+0000] {soc_dag.py:64} INFO - Completed analysis for domain: 05d5ed1387.co
+[2024-06-01T04:54:46.163+0000] {soc_dag.py:48} INFO - Analyzing domain: e49ce1de56.co with original domain: github.com
+[2024-06-01T04:54:47.173+0000] {soc_dag.py:64} INFO - Completed analysis for domain: e49ce1de56.co
+[2024-06-01T04:54:47.174+0000] {soc_dag.py:48} INFO - Analyzing domain: a8701fa31b.net with original domain: github.com
+[2024-06-01T04:54:48.118+0000] {soc_dag.py:64} INFO - Completed analysis for domain: a8701fa31b.net
+[2024-06-01T04:54:48.119+0000] {soc_dag.py:48} INFO - Analyzing domain: ae2ffc2a99.org with original domain: github.com
+[2024-06-01T04:54:49.040+0000] {soc_dag.py:64} INFO - Completed analysis for domain: ae2ffc2a99.org
+[2024-06-01T04:54:49.041+0000] {soc_dag.py:48} INFO - Analyzing domain: 05d8e5e7f4.org with original domain: github.com
+[2024-06-01T04:54:50.011+0000] {soc_dag.py:64} INFO - Completed analysis for domain: 05d8e5e7f4.org
+[2024-06-01T04:54:50.012+0000] {soc_dag.py:48} INFO - Analyzing domain: 7a9fc6b4a9.net with original domain: github.com
+[2024-06-01T04:54:50.983+0000] {soc_dag.py:64} INFO - Completed analysis for domain: 7a9fc6b4a9.net
+[2024-06-01T04:54:50.984+0000] {soc_dag.py:48} INFO - Analyzing domain: dc41772553.net with original domain: github.com
+[2024-06-01T04:54:51.937+0000] {soc_dag.py:64} INFO - Completed analysis for domain: dc41772553.net
+[2024-06-01T04:54:51.938+0000] {soc_dag.py:48} INFO - Analyzing domain: 6bdaf81728.us with original domain: github.com
+[2024-06-01T04:54:52.894+0000] {soc_dag.py:64} INFO - Completed analysis for domain: 6bdaf81728.us
+[2024-06-01T04:54:52.895+0000] {soc_dag.py:48} INFO - Analyzing domain: ec28f4f2de.org with original domain: github.com
+[2024-06-01T04:54:53.789+0000] {soc_dag.py:64} INFO - Completed analysis for domain: ec28f4f2de.org
+[2024-06-01T04:54:53.791+0000] {soc_dag.py:48} INFO - Analyzing domain: 527ef5f13e.com with original domain: github.com
+[2024-06-01T04:54:54.719+0000] {soc_dag.py:64} INFO - Completed analysis for domain: 527ef5f13e.com
+[2024-06-01T04:54:54.720+0000] {soc_dag.py:48} INFO - Analyzing domain: b271510c44.net with original domain: github.com
+[2024-06-01T04:54:55.656+0000] {soc_dag.py:64} INFO - Completed analysis for domain: b271510c44.net
+[2024-06-01T04:54:55.657+0000] {soc_dag.py:48} INFO - Analyzing domain: c0dbf1821b.us with original domain: github.com
+[2024-06-01T04:54:56.661+0000] {soc_dag.py:64} INFO - Completed analysis for domain: c0dbf1821b.us
+[2024-06-01T04:54:56.662+0000] {soc_dag.py:48} INFO - Analyzing domain: b03911d846.org with original domain: github.com
+[2024-06-01T04:54:57.574+0000] {soc_dag.py:64} INFO - Completed analysis for domain: b03911d846.org
+[2024-06-01T04:54:57.575+0000] {soc_dag.py:48} INFO - Analyzing domain: 94c39ed6af.net with original domain: github.com
+[2024-06-01T04:54:58.530+0000] {soc_dag.py:64} INFO - Completed analysis for domain: 94c39ed6af.net
+[2024-06-01T04:54:58.531+0000] {soc_dag.py:48} INFO - Analyzing domain: 9390edc99e.us with original domain: github.com
+[2024-06-01T04:54:59.543+0000] {soc_dag.py:64} INFO - Completed analysis for domain: 9390edc99e.us
+[2024-06-01T04:54:59.544+0000] {soc_dag.py:48} INFO - Analyzing domain: 7a5587a2a4.org with original domain: github.com
+[2024-06-01T04:55:00.457+0000] {soc_dag.py:64} INFO - Completed analysis for domain: 7a5587a2a4.org
+[2024-06-01T04:55:00.458+0000] {soc_dag.py:48} INFO - Analyzing domain: 2457905dc7.org with original domain: github.com
+[2024-06-01T04:55:01.366+0000] {soc_dag.py:64} INFO - Completed analysis for domain: 2457905dc7.org
+[2024-06-01T04:55:01.367+0000] {soc_dag.py:48} INFO - Analyzing domain: 182abaad01.us with original domain: github.com
+[2024-06-01T04:55:02.364+0000] {soc_dag.py:64} INFO - Completed analysis for domain: 182abaad01.us
+[2024-06-01T04:55:02.364+0000] {soc_dag.py:48} INFO - Analyzing domain: 7039896a89.net with original domain: github.com
+[2024-06-01T04:55:03.307+0000] {soc_dag.py:64} INFO - Completed analysis for domain: 7039896a89.net
+[2024-06-01T04:55:03.308+0000] {soc_dag.py:48} INFO - Analyzing domain: 1d10605b08.net with original domain: github.com
+[2024-06-01T04:55:04.247+0000] {soc_dag.py:64} INFO - Completed analysis for domain: 1d10605b08.net
+[2024-06-01T04:55:04.247+0000] {soc_dag.py:48} INFO - Analyzing domain: b53bc57c2a.org with original domain: github.com
+[2024-06-01T04:55:05.152+0000] {soc_dag.py:64} INFO - Completed analysis for domain: b53bc57c2a.org
+[2024-06-01T04:55:05.154+0000] {soc_dag.py:48} INFO - Analyzing domain: 383bb687b7.net with original domain: github.com
+[2024-06-01T04:55:06.140+0000] {soc_dag.py:64} INFO - Completed analysis for domain: 383bb687b7.net
+[2024-06-01T04:55:06.141+0000] {soc_dag.py:48} INFO - Analyzing domain: d31494b564.co with original domain: github.com
+[2024-06-01T04:55:07.120+0000] {soc_dag.py:64} INFO - Completed analysis for domain: d31494b564.co
+[2024-06-01T04:55:07.121+0000] {soc_dag.py:48} INFO - Analyzing domain: e23a77af2d.org with original domain: github.com
+[2024-06-01T04:55:08.046+0000] {soc_dag.py:64} INFO - Completed analysis for domain: e23a77af2d.org
+[2024-06-01T04:55:08.047+0000] {soc_dag.py:48} INFO - Analyzing domain: 46e01216f1.us with original domain: github.com
+[2024-06-01T04:55:09.025+0000] {soc_dag.py:64} INFO - Completed analysis for domain: 46e01216f1.us
+[2024-06-01T04:55:09.026+0000] {soc_dag.py:48} INFO - Analyzing domain: 1a58b8171b.org with original domain: github.com
+[2024-06-01T04:55:09.968+0000] {soc_dag.py:64} INFO - Completed analysis for domain: 1a58b8171b.org
+[2024-06-01T04:55:09.969+0000] {soc_dag.py:48} INFO - Analyzing domain: e9a2d5f614.co with original domain: github.com
+[2024-06-01T04:55:10.968+0000] {soc_dag.py:64} INFO - Completed analysis for domain: e9a2d5f614.co
+[2024-06-01T04:55:10.969+0000] {soc_dag.py:48} INFO - Analyzing domain: dee5a6f2cb.net with original domain: github.com
+[2024-06-01T04:55:11.912+0000] {soc_dag.py:64} INFO - Completed analysis for domain: dee5a6f2cb.net
+[2024-06-01T04:55:11.913+0000] {soc_dag.py:48} INFO - Analyzing domain: e71ae6ccaf.net with original domain: github.com
+[2024-06-01T04:55:12.815+0000] {soc_dag.py:64} INFO - Completed analysis for domain: e71ae6ccaf.net
+[2024-06-01T04:55:12.816+0000] {soc_dag.py:48} INFO - Analyzing domain: 8a3111e2ad.net with original domain: github.com
+[2024-06-01T04:55:13.742+0000] {soc_dag.py:64} INFO - Completed analysis for domain: 8a3111e2ad.net
+[2024-06-01T04:55:13.743+0000] {soc_dag.py:48} INFO - Analyzing domain: fe7a4f3237.co with original domain: github.com
+[2024-06-01T04:55:14.753+0000] {soc_dag.py:64} INFO - Completed analysis for domain: fe7a4f3237.co
+[2024-06-01T04:55:14.754+0000] {soc_dag.py:48} INFO - Analyzing domain: e3b15be5f7.org with original domain: github.com
+[2024-06-01T04:55:15.687+0000] {soc_dag.py:64} INFO - Completed analysis for domain: e3b15be5f7.org
+[2024-06-01T04:55:15.688+0000] {soc_dag.py:48} INFO - Analyzing domain: 276da471b9.org with original domain: github.com
+[2024-06-01T04:55:16.596+0000] {soc_dag.py:64} INFO - Completed analysis for domain: 276da471b9.org
+[2024-06-01T04:55:16.597+0000] {soc_dag.py:48} INFO - Analyzing domain: cd82a73448.com with original domain: stackoverflow.com
+[2024-06-01T04:55:17.438+0000] {soc_dag.py:64} INFO - Completed analysis for domain: cd82a73448.com
+[2024-06-01T04:55:17.440+0000] {soc_dag.py:48} INFO - Analyzing domain: 301ed3ecaa.co with original domain: stackoverflow.com
+[2024-06-01T04:55:18.306+0000] {soc_dag.py:64} INFO - Completed analysis for domain: 301ed3ecaa.co
+[2024-06-01T04:55:18.307+0000] {soc_dag.py:48} INFO - Analyzing domain: 2947c5d6da.co with original domain: stackoverflow.com
+[2024-06-01T04:55:19.131+0000] {soc_dag.py:64} INFO - Completed analysis for domain: 2947c5d6da.co
+[2024-06-01T04:55:19.132+0000] {soc_dag.py:48} INFO - Analyzing domain: f665219cab.co with original domain: stackoverflow.com
+[2024-06-01T04:55:20.300+0000] {soc_dag.py:64} INFO - Completed analysis for domain: f665219cab.co
+[2024-06-01T04:55:20.301+0000] {soc_dag.py:48} INFO - Analyzing domain: 2030e62b93.us with original domain: stackoverflow.com
+[2024-06-01T04:55:21.119+0000] {soc_dag.py:64} INFO - Completed analysis for domain: 2030e62b93.us
+[2024-06-01T04:55:21.120+0000] {soc_dag.py:48} INFO - Analyzing domain: 841b1b7aa1.net with original domain: stackoverflow.com
+[2024-06-01T04:55:22.132+0000] {soc_dag.py:64} INFO - Completed analysis for domain: 841b1b7aa1.net
+[2024-06-01T04:55:22.132+0000] {soc_dag.py:48} INFO - Analyzing domain: 77bcc6b7af.us with original domain: stackoverflow.com
+[2024-06-01T04:55:22.877+0000] {soc_dag.py:64} INFO - Completed analysis for domain: 77bcc6b7af.us
+[2024-06-01T04:55:22.878+0000] {soc_dag.py:48} INFO - Analyzing domain: a940e08587.us with original domain: stackoverflow.com
+[2024-06-01T04:55:23.705+0000] {soc_dag.py:64} INFO - Completed analysis for domain: a940e08587.us
+[2024-06-01T04:55:23.706+0000] {soc_dag.py:48} INFO - Analyzing domain: 935eeba22e.net with original domain: stackoverflow.com
+[2024-06-01T04:55:24.476+0000] {soc_dag.py:64} INFO - Completed analysis for domain: 935eeba22e.net
+[2024-06-01T04:55:24.476+0000] {soc_dag.py:48} INFO - Analyzing domain: c14b3af4a6.org with original domain: stackoverflow.com
+[2024-06-01T04:55:25.227+0000] {soc_dag.py:64} INFO - Completed analysis for domain: c14b3af4a6.org
+[2024-06-01T04:55:25.228+0000] {soc_dag.py:48} INFO - Analyzing domain: 31a5112006.co with original domain: stackoverflow.com
+[2024-06-01T04:55:26.018+0000] {soc_dag.py:64} INFO - Completed analysis for domain: 31a5112006.co
+[2024-06-01T04:55:26.019+0000] {soc_dag.py:48} INFO - Analyzing domain: 141e4f2b26.org with original domain: stackoverflow.com
+[2024-06-01T04:55:26.734+0000] {soc_dag.py:64} INFO - Completed analysis for domain: 141e4f2b26.org
+[2024-06-01T04:55:26.735+0000] {soc_dag.py:48} INFO - Analyzing domain: 270164cd0e.us with original domain: stackoverflow.com
+[2024-06-01T04:55:27.539+0000] {soc_dag.py:64} INFO - Completed analysis for domain: 270164cd0e.us
+[2024-06-01T04:55:27.540+0000] {soc_dag.py:48} INFO - Analyzing domain: 34170b0aec.com with original domain: stackoverflow.com
+[2024-06-01T04:55:28.289+0000] {soc_dag.py:64} INFO - Completed analysis for domain: 34170b0aec.com
+[2024-06-01T04:55:28.290+0000] {soc_dag.py:48} INFO - Analyzing domain: 84e0fbd7dc.org with original domain: stackoverflow.com
+[2024-06-01T04:55:28.998+0000] {soc_dag.py:64} INFO - Completed analysis for domain: 84e0fbd7dc.org
+[2024-06-01T04:55:28.999+0000] {soc_dag.py:48} INFO - Analyzing domain: d3f1949f13.us with original domain: stackoverflow.com
+[2024-06-01T04:55:29.770+0000] {soc_dag.py:64} INFO - Completed analysis for domain: d3f1949f13.us
+[2024-06-01T04:55:29.770+0000] {soc_dag.py:48} INFO - Analyzing domain: b1b9082b5c.com with original domain: stackoverflow.com
+[2024-06-01T04:55:30.600+0000] {soc_dag.py:64} INFO - Completed analysis for domain: b1b9082b5c.com
+[2024-06-01T04:55:30.601+0000] {soc_dag.py:48} INFO - Analyzing domain: ebca05e8e8.org with original domain: stackoverflow.com
+[2024-06-01T04:55:31.487+0000] {soc_dag.py:64} INFO - Completed analysis for domain: ebca05e8e8.org
+[2024-06-01T04:55:31.487+0000] {soc_dag.py:48} INFO - Analyzing domain: 0e87ac8bde.net with original domain: stackoverflow.com
+[2024-06-01T04:55:32.211+0000] {soc_dag.py:64} INFO - Completed analysis for domain: 0e87ac8bde.net
+[2024-06-01T04:55:32.211+0000] {soc_dag.py:48} INFO - Analyzing domain: e0774f7d2a.us with original domain: stackoverflow.com
+[2024-06-01T04:55:32.939+0000] {soc_dag.py:64} INFO - Completed analysis for domain: e0774f7d2a.us
+[2024-06-01T04:55:32.940+0000] {soc_dag.py:48} INFO - Analyzing domain: ff5bc51501.com with original domain: stackoverflow.com
+[2024-06-01T04:55:33.699+0000] {soc_dag.py:64} INFO - Completed analysis for domain: ff5bc51501.com
+[2024-06-01T04:55:33.700+0000] {soc_dag.py:48} INFO - Analyzing domain: d6887c2c4a.co with original domain: stackoverflow.com
+[2024-06-01T04:55:34.522+0000] {soc_dag.py:64} INFO - Completed analysis for domain: d6887c2c4a.co
+[2024-06-01T04:55:34.523+0000] {soc_dag.py:48} INFO - Analyzing domain: 189c5567b0.us with original domain: stackoverflow.com
+[2024-06-01T04:55:35.335+0000] {soc_dag.py:64} INFO - Completed analysis for domain: 189c5567b0.us
+[2024-06-01T04:55:35.336+0000] {soc_dag.py:48} INFO - Analyzing domain: d1b503fdcd.co with original domain: stackoverflow.com
+[2024-06-01T04:55:36.101+0000] {soc_dag.py:64} INFO - Completed analysis for domain: d1b503fdcd.co
+[2024-06-01T04:55:36.102+0000] {soc_dag.py:48} INFO - Analyzing domain: d37ef5fbe0.org with original domain: stackoverflow.com
+[2024-06-01T04:55:36.502+0000] {soc_dag.py:64} INFO - Completed analysis for domain: d37ef5fbe0.org
+[2024-06-01T04:55:36.502+0000] {soc_dag.py:48} INFO - Analyzing domain: 8ca555f422.net with original domain: stackoverflow.com
+[2024-06-01T04:55:36.928+0000] {soc_dag.py:64} INFO - Completed analysis for domain: 8ca555f422.net
+[2024-06-01T04:55:36.929+0000] {soc_dag.py:48} INFO - Analyzing domain: 399364d79e.net with original domain: stackoverflow.com
+[2024-06-01T04:55:37.428+0000] {soc_dag.py:64} INFO - Completed analysis for domain: 399364d79e.net
+[2024-06-01T04:55:37.429+0000] {soc_dag.py:48} INFO - Analyzing domain: 4a505cf8fc.com with original domain: stackoverflow.com
+[2024-06-01T04:55:37.871+0000] {soc_dag.py:64} INFO - Completed analysis for domain: 4a505cf8fc.com
+[2024-06-01T04:55:37.872+0000] {soc_dag.py:48} INFO - Analyzing domain: 48907a2cdd.org with original domain: stackoverflow.com
+[2024-06-01T04:55:38.280+0000] {soc_dag.py:64} INFO - Completed analysis for domain: 48907a2cdd.org
+[2024-06-01T04:55:38.281+0000] {soc_dag.py:48} INFO - Analyzing domain: 2ed16058af.us with original domain: stackoverflow.com
+[2024-06-01T04:55:38.778+0000] {soc_dag.py:64} INFO - Completed analysis for domain: 2ed16058af.us
+[2024-06-01T04:55:38.780+0000] {soc_dag.py:48} INFO - Analyzing domain: 41d535c074.co with original domain: stackoverflow.com
+[2024-06-01T04:55:39.270+0000] {soc_dag.py:64} INFO - Completed analysis for domain: 41d535c074.co
+[2024-06-01T04:55:39.271+0000] {soc_dag.py:48} INFO - Analyzing domain: 4c5bc03da6.us with original domain: stackoverflow.com
+[2024-06-01T04:55:39.773+0000] {soc_dag.py:64} INFO - Completed analysis for domain: 4c5bc03da6.us
+[2024-06-01T04:55:39.774+0000] {soc_dag.py:48} INFO - Analyzing domain: 60c0256c61.us with original domain: stackoverflow.com
+[2024-06-01T04:55:40.282+0000] {soc_dag.py:64} INFO - Completed analysis for domain: 60c0256c61.us
+[2024-06-01T04:55:40.283+0000] {soc_dag.py:48} INFO - Analyzing domain: be179cd5b3.us with original domain: stackoverflow.com
+[2024-06-01T04:55:40.750+0000] {soc_dag.py:64} INFO - Completed analysis for domain: be179cd5b3.us
+[2024-06-01T04:55:40.751+0000] {soc_dag.py:48} INFO - Analyzing domain: b205e74bea.net with original domain: microsoft.com
+[2024-06-01T04:55:43.116+0000] {soc_dag.py:64} INFO - Completed analysis for domain: b205e74bea.net
+[2024-06-01T04:55:43.117+0000] {soc_dag.py:48} INFO - Analyzing domain: 7fda43ea28.co with original domain: microsoft.com
+[2024-06-01T04:55:45.370+0000] {soc_dag.py:64} INFO - Completed analysis for domain: 7fda43ea28.co
+[2024-06-01T04:55:45.371+0000] {soc_dag.py:48} INFO - Analyzing domain: 5e7c8a5062.net with original domain: microsoft.com
+[2024-06-01T04:55:47.704+0000] {soc_dag.py:64} INFO - Completed analysis for domain: 5e7c8a5062.net
+[2024-06-01T04:55:47.705+0000] {soc_dag.py:48} INFO - Analyzing domain: 79789df609.org with original domain: microsoft.com
+[2024-06-01T04:55:50.192+0000] {soc_dag.py:64} INFO - Completed analysis for domain: 79789df609.org
+[2024-06-01T04:55:50.193+0000] {soc_dag.py:48} INFO - Analyzing domain: 6db22bddfe.co with original domain: microsoft.com
+[2024-06-01T04:55:52.319+0000] {soc_dag.py:64} INFO - Completed analysis for domain: 6db22bddfe.co
+[2024-06-01T04:55:52.319+0000] {soc_dag.py:48} INFO - Analyzing domain: 8902e4d22d.co with original domain: microsoft.com
+[2024-06-01T04:55:54.304+0000] {soc_dag.py:64} INFO - Completed analysis for domain: 8902e4d22d.co
+[2024-06-01T04:55:54.305+0000] {soc_dag.py:48} INFO - Analyzing domain: d6fda1d867.us with original domain: microsoft.com
+[2024-06-01T04:55:56.327+0000] {soc_dag.py:64} INFO - Completed analysis for domain: d6fda1d867.us
+[2024-06-01T04:55:56.328+0000] {soc_dag.py:48} INFO - Analyzing domain: 2b3c318a89.net with original domain: microsoft.com
+[2024-06-01T04:55:58.118+0000] {soc_dag.py:64} INFO - Completed analysis for domain: 2b3c318a89.net
+[2024-06-01T04:55:58.120+0000] {soc_dag.py:48} INFO - Analyzing domain: 79b9ca02f3.net with original domain: microsoft.com
+[2024-06-01T04:56:00.474+0000] {soc_dag.py:64} INFO - Completed analysis for domain: 79b9ca02f3.net
+[2024-06-01T04:56:00.475+0000] {soc_dag.py:48} INFO - Analyzing domain: 0693c411c6.co with original domain: microsoft.com
+[2024-06-01T04:56:02.546+0000] {soc_dag.py:64} INFO - Completed analysis for domain: 0693c411c6.co
+[2024-06-01T04:56:02.547+0000] {soc_dag.py:48} INFO - Analyzing domain: ec82670a4f.net with original domain: microsoft.com
+[2024-06-01T04:56:04.263+0000] {soc_dag.py:64} INFO - Completed analysis for domain: ec82670a4f.net
+[2024-06-01T04:56:04.263+0000] {soc_dag.py:48} INFO - Analyzing domain: 6e8fe792be.net with original domain: microsoft.com
+[2024-06-01T04:56:06.432+0000] {soc_dag.py:64} INFO - Completed analysis for domain: 6e8fe792be.net
+[2024-06-01T04:56:06.433+0000] {soc_dag.py:48} INFO - Analyzing domain: a39d825c6d.net with original domain: microsoft.com
+[2024-06-01T04:56:08.496+0000] {soc_dag.py:64} INFO - Completed analysis for domain: a39d825c6d.net
+[2024-06-01T04:56:08.498+0000] {soc_dag.py:48} INFO - Analyzing domain: a207c548ff.co with original domain: microsoft.com
+[2024-06-01T04:56:10.470+0000] {soc_dag.py:64} INFO - Completed analysis for domain: a207c548ff.co
+[2024-06-01T04:56:10.471+0000] {soc_dag.py:48} INFO - Analyzing domain: 4d12ac3fb9.us with original domain: microsoft.com
+[2024-06-01T04:56:12.728+0000] {soc_dag.py:64} INFO - Completed analysis for domain: 4d12ac3fb9.us
+[2024-06-01T04:56:12.729+0000] {soc_dag.py:48} INFO - Analyzing domain: b9c80b76e1.co with original domain: microsoft.com
+[2024-06-01T04:56:14.860+0000] {soc_dag.py:64} INFO - Completed analysis for domain: b9c80b76e1.co
+[2024-06-01T04:56:14.861+0000] {soc_dag.py:48} INFO - Analyzing domain: 688eac816b.net with original domain: microsoft.com
+[2024-06-01T04:56:17.129+0000] {soc_dag.py:64} INFO - Completed analysis for domain: 688eac816b.net
+[2024-06-01T04:56:17.130+0000] {soc_dag.py:48} INFO - Analyzing domain: 0565899fd7.co with original domain: microsoft.com
+[2024-06-01T04:56:19.150+0000] {soc_dag.py:64} INFO - Completed analysis for domain: 0565899fd7.co
+[2024-06-01T04:56:19.151+0000] {soc_dag.py:48} INFO - Analyzing domain: ec11c4d660.co with original domain: microsoft.com
+[2024-06-01T04:56:21.114+0000] {soc_dag.py:64} INFO - Completed analysis for domain: ec11c4d660.co
+[2024-06-01T04:56:21.115+0000] {soc_dag.py:48} INFO - Analyzing domain: d53cf22524.us with original domain: microsoft.com
+[2024-06-01T04:56:23.123+0000] {soc_dag.py:64} INFO - Completed analysis for domain: d53cf22524.us
+[2024-06-01T04:56:23.124+0000] {soc_dag.py:48} INFO - Analyzing domain: 0b6a1bd99c.org with original domain: microsoft.com
+[2024-06-01T04:56:24.899+0000] {soc_dag.py:64} INFO - Completed analysis for domain: 0b6a1bd99c.org
+[2024-06-01T04:56:24.900+0000] {soc_dag.py:48} INFO - Analyzing domain: 7149881ca0.net with original domain: microsoft.com
+[2024-06-01T04:56:27.430+0000] {soc_dag.py:64} INFO - Completed analysis for domain: 7149881ca0.net
+[2024-06-01T04:56:27.431+0000] {soc_dag.py:48} INFO - Analyzing domain: 07e752d950.net with original domain: microsoft.com
+[2024-06-01T04:56:29.428+0000] {soc_dag.py:64} INFO - Completed analysis for domain: 07e752d950.net
+[2024-06-01T04:56:29.430+0000] {soc_dag.py:48} INFO - Analyzing domain: 51e36110bb.com with original domain: microsoft.com
+[2024-06-01T04:56:31.408+0000] {soc_dag.py:64} INFO - Completed analysis for domain: 51e36110bb.com
+[2024-06-01T04:56:31.409+0000] {soc_dag.py:48} INFO - Analyzing domain: 09502e5460.net with original domain: microsoft.com
+[2024-06-01T04:56:33.441+0000] {soc_dag.py:64} INFO - Completed analysis for domain: 09502e5460.net
+[2024-06-01T04:56:33.442+0000] {soc_dag.py:48} INFO - Analyzing domain: 430cef8cf1.us with original domain: microsoft.com
+[2024-06-01T04:56:35.439+0000] {soc_dag.py:64} INFO - Completed analysis for domain: 430cef8cf1.us
+[2024-06-01T04:56:35.440+0000] {soc_dag.py:48} INFO - Analyzing domain: fb91ba182e.net with original domain: microsoft.com
+[2024-06-01T04:56:37.465+0000] {soc_dag.py:64} INFO - Completed analysis for domain: fb91ba182e.net
+[2024-06-01T04:56:37.466+0000] {soc_dag.py:48} INFO - Analyzing domain: d9b652e88c.org with original domain: microsoft.com
+[2024-06-01T04:56:39.365+0000] {soc_dag.py:64} INFO - Completed analysis for domain: d9b652e88c.org
+[2024-06-01T04:56:39.366+0000] {soc_dag.py:48} INFO - Analyzing domain: fa636ac80a.net with original domain: microsoft.com
+[2024-06-01T04:56:41.341+0000] {soc_dag.py:64} INFO - Completed analysis for domain: fa636ac80a.net
+[2024-06-01T04:56:41.342+0000] {soc_dag.py:48} INFO - Analyzing domain: b220832590.us with original domain: microsoft.com
+[2024-06-01T04:56:43.413+0000] {soc_dag.py:64} INFO - Completed analysis for domain: b220832590.us
+[2024-06-01T04:56:43.414+0000] {soc_dag.py:48} INFO - Analyzing domain: 6ef9f7fbe4.net with original domain: microsoft.com
+[2024-06-01T04:56:45.424+0000] {soc_dag.py:64} INFO - Completed analysis for domain: 6ef9f7fbe4.net
+[2024-06-01T04:56:45.425+0000] {soc_dag.py:48} INFO - Analyzing domain: ab08fc24e5.org with original domain: microsoft.com
+[2024-06-01T04:56:47.467+0000] {soc_dag.py:64} INFO - Completed analysis for domain: ab08fc24e5.org
+[2024-06-01T04:56:47.468+0000] {soc_dag.py:48} INFO - Analyzing domain: eb9adbcec7.org with original domain: microsoft.com
+[2024-06-01T04:56:49.616+0000] {soc_dag.py:64} INFO - Completed analysis for domain: eb9adbcec7.org
+[2024-06-01T04:56:49.617+0000] {soc_dag.py:48} INFO - Analyzing domain: 933ee87db4.org with original domain: microsoft.com
+[2024-06-01T04:56:51.495+0000] {soc_dag.py:64} INFO - Completed analysis for domain: 933ee87db4.org
+[2024-06-01T04:56:51.496+0000] {soc_dag.py:48} INFO - Analyzing domain: bb81b9c6b3.org with original domain: microsoft.com
+[2024-06-01T04:56:53.417+0000] {soc_dag.py:64} INFO - Completed analysis for domain: bb81b9c6b3.org
+[2024-06-01T04:56:53.418+0000] {soc_dag.py:48} INFO - Analyzing domain: 03f0b4038e.us with original domain: microsoft.com
+[2024-06-01T04:56:55.426+0000] {soc_dag.py:64} INFO - Completed analysis for domain: 03f0b4038e.us
+[2024-06-01T04:56:55.428+0000] {soc_dag.py:48} INFO - Analyzing domain: ffe41f1c57.co with original domain: apple.com
+[2024-06-01T04:56:56.353+0000] {soc_dag.py:64} INFO - Completed analysis for domain: ffe41f1c57.co
+[2024-06-01T04:56:56.355+0000] {soc_dag.py:48} INFO - Analyzing domain: d38d61561f.org with original domain: apple.com
+[2024-06-01T04:56:56.917+0000] {soc_dag.py:64} INFO - Completed analysis for domain: d38d61561f.org
+[2024-06-01T04:56:56.918+0000] {soc_dag.py:48} INFO - Analyzing domain: 72de57b824.us with original domain: apple.com
+[2024-06-01T04:56:57.566+0000] {soc_dag.py:64} INFO - Completed analysis for domain: 72de57b824.us
+[2024-06-01T04:56:57.567+0000] {soc_dag.py:48} INFO - Analyzing domain: 133facfb58.net with original domain: apple.com
+[2024-06-01T04:56:58.138+0000] {soc_dag.py:64} INFO - Completed analysis for domain: 133facfb58.net
+[2024-06-01T04:56:58.139+0000] {soc_dag.py:48} INFO - Analyzing domain: ce9cbfcd5c.co with original domain: apple.com
+[2024-06-01T04:56:58.945+0000] {soc_dag.py:64} INFO - Completed analysis for domain: ce9cbfcd5c.co
+[2024-06-01T04:56:58.946+0000] {soc_dag.py:48} INFO - Analyzing domain: 0ff33e992c.net with original domain: apple.com
+[2024-06-01T04:56:59.585+0000] {soc_dag.py:64} INFO - Completed analysis for domain: 0ff33e992c.net
+[2024-06-01T04:56:59.587+0000] {soc_dag.py:48} INFO - Analyzing domain: 3451da325f.org with original domain: apple.com
+[2024-06-01T04:57:00.148+0000] {soc_dag.py:64} INFO - Completed analysis for domain: 3451da325f.org
+[2024-06-01T04:57:00.150+0000] {soc_dag.py:48} INFO - Analyzing domain: e846ebb8a4.org with original domain: apple.com
+[2024-06-01T04:57:00.715+0000] {soc_dag.py:64} INFO - Completed analysis for domain: e846ebb8a4.org
+[2024-06-01T04:57:00.716+0000] {soc_dag.py:48} INFO - Analyzing domain: caccfc1a48.com with original domain: apple.com
+[2024-06-01T04:57:01.306+0000] {soc_dag.py:64} INFO - Completed analysis for domain: caccfc1a48.com
+[2024-06-01T04:57:01.307+0000] {soc_dag.py:48} INFO - Analyzing domain: 305d258a5b.us with original domain: apple.com
+[2024-06-01T04:57:01.945+0000] {soc_dag.py:64} INFO - Completed analysis for domain: 305d258a5b.us
+[2024-06-01T04:57:01.945+0000] {soc_dag.py:48} INFO - Analyzing domain: 7e8ecfbd44.com with original domain: apple.com
+[2024-06-01T04:57:02.482+0000] {soc_dag.py:64} INFO - Completed analysis for domain: 7e8ecfbd44.com
+[2024-06-01T04:57:02.483+0000] {soc_dag.py:48} INFO - Analyzing domain: 7702d2e59a.net with original domain: apple.com
+[2024-06-01T04:57:03.071+0000] {soc_dag.py:64} INFO - Completed analysis for domain: 7702d2e59a.net
+[2024-06-01T04:57:03.072+0000] {soc_dag.py:48} INFO - Analyzing domain: 6b47abbcc6.co with original domain: apple.com
+[2024-06-01T04:57:03.722+0000] {soc_dag.py:64} INFO - Completed analysis for domain: 6b47abbcc6.co
+[2024-06-01T04:57:03.723+0000] {soc_dag.py:48} INFO - Analyzing domain: ae807e1e84.net with original domain: apple.com
+[2024-06-01T04:57:04.250+0000] {soc_dag.py:64} INFO - Completed analysis for domain: ae807e1e84.net
+[2024-06-01T04:57:04.251+0000] {soc_dag.py:48} INFO - Analyzing domain: 8a6b048583.us with original domain: apple.com
+[2024-06-01T04:57:04.906+0000] {soc_dag.py:64} INFO - Completed analysis for domain: 8a6b048583.us
+[2024-06-01T04:57:04.907+0000] {soc_dag.py:48} INFO - Analyzing domain: b20134a58f.us with original domain: apple.com
+[2024-06-01T04:57:05.568+0000] {soc_dag.py:64} INFO - Completed analysis for domain: b20134a58f.us
+[2024-06-01T04:57:05.569+0000] {soc_dag.py:48} INFO - Analyzing domain: 14fbda9e6e.net with original domain: apple.com
+[2024-06-01T04:57:06.172+0000] {soc_dag.py:64} INFO - Completed analysis for domain: 14fbda9e6e.net
+[2024-06-01T04:57:06.174+0000] {soc_dag.py:48} INFO - Analyzing domain: 06137a0c07.us with original domain: apple.com
+[2024-06-01T04:57:06.816+0000] {soc_dag.py:64} INFO - Completed analysis for domain: 06137a0c07.us
+[2024-06-01T04:57:06.817+0000] {soc_dag.py:48} INFO - Analyzing domain: 9f4381f2f2.net with original domain: apple.com
+[2024-06-01T04:57:07.404+0000] {soc_dag.py:64} INFO - Completed analysis for domain: 9f4381f2f2.net
+[2024-06-01T04:57:07.405+0000] {soc_dag.py:48} INFO - Analyzing domain: e76954dfcc.org with original domain: apple.com
+[2024-06-01T04:57:07.989+0000] {soc_dag.py:64} INFO - Completed analysis for domain: e76954dfcc.org
+[2024-06-01T04:57:07.990+0000] {soc_dag.py:48} INFO - Analyzing domain: 5d09a82e2e.org with original domain: apple.com
+[2024-06-01T04:57:08.530+0000] {soc_dag.py:64} INFO - Completed analysis for domain: 5d09a82e2e.org
+[2024-06-01T04:57:08.531+0000] {soc_dag.py:48} INFO - Analyzing domain: f3d43f0243.org with original domain: apple.com
+[2024-06-01T04:57:09.233+0000] {soc_dag.py:64} INFO - Completed analysis for domain: f3d43f0243.org
+[2024-06-01T04:57:09.234+0000] {soc_dag.py:48} INFO - Analyzing domain: 83233e318e.us with original domain: apple.com
+[2024-06-01T04:57:09.862+0000] {soc_dag.py:64} INFO - Completed analysis for domain: 83233e318e.us
+[2024-06-01T04:57:09.864+0000] {soc_dag.py:48} INFO - Analyzing domain: bf30e6e925.net with original domain: apple.com
+[2024-06-01T04:57:10.444+0000] {soc_dag.py:64} INFO - Completed analysis for domain: bf30e6e925.net
+[2024-06-01T04:57:10.445+0000] {soc_dag.py:48} INFO - Analyzing domain: a8367bf973.org with original domain: apple.com
+[2024-06-01T04:57:10.974+0000] {soc_dag.py:64} INFO - Completed analysis for domain: a8367bf973.org
+[2024-06-01T04:57:10.975+0000] {soc_dag.py:48} INFO - Analyzing domain: f18ef2f812.us with original domain: apple.com
+[2024-06-01T04:57:11.668+0000] {soc_dag.py:64} INFO - Completed analysis for domain: f18ef2f812.us
+[2024-06-01T04:57:11.669+0000] {soc_dag.py:48} INFO - Analyzing domain: 19449e0aab.us with original domain: apple.com
+[2024-06-01T04:57:12.308+0000] {soc_dag.py:64} INFO - Completed analysis for domain: 19449e0aab.us
+[2024-06-01T04:57:12.308+0000] {soc_dag.py:48} INFO - Analyzing domain: 18b1bc2bc7.net with original domain: apple.com
+[2024-06-01T04:57:12.907+0000] {soc_dag.py:64} INFO - Completed analysis for domain: 18b1bc2bc7.net
+[2024-06-01T04:57:12.908+0000] {soc_dag.py:48} INFO - Analyzing domain: 77f6c6c816.co with original domain: apple.com
+[2024-06-01T04:57:13.600+0000] {soc_dag.py:64} INFO - Completed analysis for domain: 77f6c6c816.co
+[2024-06-01T04:57:13.601+0000] {soc_dag.py:48} INFO - Analyzing domain: 9b281f1f80.us with original domain: apple.com
+[2024-06-01T04:57:14.255+0000] {soc_dag.py:64} INFO - Completed analysis for domain: 9b281f1f80.us
+[2024-06-01T04:57:14.256+0000] {soc_dag.py:48} INFO - Analyzing domain: 380e1c951a.co with original domain: apple.com
+[2024-06-01T04:57:14.936+0000] {soc_dag.py:64} INFO - Completed analysis for domain: 380e1c951a.co
+[2024-06-01T04:57:14.937+0000] {soc_dag.py:48} INFO - Analyzing domain: 8e7d9408e6.us with original domain: apple.com
+[2024-06-01T04:57:15.562+0000] {soc_dag.py:64} INFO - Completed analysis for domain: 8e7d9408e6.us
+[2024-06-01T04:57:15.564+0000] {soc_dag.py:48} INFO - Analyzing domain: 503e381027.us with original domain: apple.com
+[2024-06-01T04:57:16.233+0000] {soc_dag.py:64} INFO - Completed analysis for domain: 503e381027.us
+[2024-06-01T04:57:16.234+0000] {soc_dag.py:48} INFO - Analyzing domain: 775488893e.org with original domain: apple.com
+[2024-06-01T04:57:16.798+0000] {soc_dag.py:64} INFO - Completed analysis for domain: 775488893e.org
+[2024-06-01T04:57:16.799+0000] {soc_dag.py:48} INFO - Analyzing domain: d71721714f.us with original domain: apple.com
+[2024-06-01T04:57:17.436+0000] {soc_dag.py:64} INFO - Completed analysis for domain: d71721714f.us
+[2024-06-01T04:57:17.436+0000] {soc_dag.py:48} INFO - Analyzing domain: cbb22bb608.co with original domain: apple.com
+[2024-06-01T04:57:18.062+0000] {soc_dag.py:64} INFO - Completed analysis for domain: cbb22bb608.co
+[2024-06-01T04:57:18.063+0000] {soc_dag.py:48} INFO - Analyzing domain: e670d0c8d1.co with original domain: apple.com
+[2024-06-01T04:57:18.701+0000] {soc_dag.py:64} INFO - Completed analysis for domain: e670d0c8d1.co
+[2024-06-01T04:57:18.702+0000] {soc_dag.py:48} INFO - Analyzing domain: 03cb5d3883.com with original domain: apple.com
+[2024-06-01T04:57:19.322+0000] {soc_dag.py:64} INFO - Completed analysis for domain: 03cb5d3883.com
+[2024-06-01T04:57:19.323+0000] {soc_dag.py:48} INFO - Analyzing domain: 27f2e7b4ff.net with original domain: amazon.com
+[2024-06-01T04:57:21.170+0000] {soc_dag.py:64} INFO - Completed analysis for domain: 27f2e7b4ff.net
+[2024-06-01T04:57:21.171+0000] {soc_dag.py:48} INFO - Analyzing domain: 5b4071c994.com with original domain: amazon.com
+[2024-06-01T04:57:22.895+0000] {soc_dag.py:64} INFO - Completed analysis for domain: 5b4071c994.com
+[2024-06-01T04:57:22.896+0000] {soc_dag.py:48} INFO - Analyzing domain: 8095b9c255.org with original domain: amazon.com
+[2024-06-01T04:57:24.604+0000] {soc_dag.py:64} INFO - Completed analysis for domain: 8095b9c255.org
+[2024-06-01T04:57:24.605+0000] {soc_dag.py:48} INFO - Analyzing domain: 680b0564f7.org with original domain: amazon.com
+[2024-06-01T04:57:26.585+0000] {soc_dag.py:64} INFO - Completed analysis for domain: 680b0564f7.org
+[2024-06-01T04:57:26.586+0000] {soc_dag.py:48} INFO - Analyzing domain: d6a48655c3.us with original domain: amazon.com
+[2024-06-01T04:57:28.380+0000] {soc_dag.py:64} INFO - Completed analysis for domain: d6a48655c3.us
+[2024-06-01T04:57:28.381+0000] {soc_dag.py:48} INFO - Analyzing domain: 50a2dd8123.co with original domain: amazon.com
+[2024-06-01T04:57:30.652+0000] {soc_dag.py:64} INFO - Completed analysis for domain: 50a2dd8123.co
+[2024-06-01T04:57:30.653+0000] {soc_dag.py:48} INFO - Analyzing domain: ca2a426a92.co with original domain: amazon.com
+[2024-06-01T04:57:32.432+0000] {soc_dag.py:64} INFO - Completed analysis for domain: ca2a426a92.co
+[2024-06-01T04:57:32.433+0000] {soc_dag.py:48} INFO - Analyzing domain: f66d0e4007.com with original domain: amazon.com
+[2024-06-01T04:57:34.580+0000] {soc_dag.py:64} INFO - Completed analysis for domain: f66d0e4007.com
+[2024-06-01T04:57:34.581+0000] {soc_dag.py:48} INFO - Analyzing domain: 003c665097.co with original domain: amazon.com
+[2024-06-01T04:57:36.378+0000] {soc_dag.py:64} INFO - Completed analysis for domain: 003c665097.co
+[2024-06-01T04:57:36.379+0000] {soc_dag.py:48} INFO - Analyzing domain: 71e67c71bd.org with original domain: amazon.com
+[2024-06-01T04:57:38.115+0000] {soc_dag.py:64} INFO - Completed analysis for domain: 71e67c71bd.org
+[2024-06-01T04:57:38.117+0000] {soc_dag.py:48} INFO - Analyzing domain: 1186427cea.net with original domain: amazon.com
+[2024-06-01T04:57:39.868+0000] {soc_dag.py:64} INFO - Completed analysis for domain: 1186427cea.net
+[2024-06-01T04:57:39.869+0000] {soc_dag.py:48} INFO - Analyzing domain: 1a7498d549.co with original domain: amazon.com
+[2024-06-01T04:57:42.218+0000] {soc_dag.py:64} INFO - Completed analysis for domain: 1a7498d549.co
+[2024-06-01T04:57:42.218+0000] {soc_dag.py:48} INFO - Analyzing domain: 0f8bf87e97.net with original domain: amazon.com
+[2024-06-01T04:57:44.524+0000] {soc_dag.py:64} INFO - Completed analysis for domain: 0f8bf87e97.net
+[2024-06-01T04:57:44.525+0000] {soc_dag.py:48} INFO - Analyzing domain: d48dcbdb7f.us with original domain: amazon.com
+[2024-06-01T04:57:46.258+0000] {soc_dag.py:64} INFO - Completed analysis for domain: d48dcbdb7f.us
+[2024-06-01T04:57:46.259+0000] {soc_dag.py:48} INFO - Analyzing domain: c975066bc8.net with original domain: amazon.com
+[2024-06-01T04:57:47.915+0000] {soc_dag.py:64} INFO - Completed analysis for domain: c975066bc8.net
+[2024-06-01T04:57:47.916+0000] {soc_dag.py:48} INFO - Analyzing domain: 7c8a022f1b.us with original domain: amazon.com
+[2024-06-01T04:57:49.723+0000] {soc_dag.py:64} INFO - Completed analysis for domain: 7c8a022f1b.us
+[2024-06-01T04:57:49.723+0000] {soc_dag.py:48} INFO - Analyzing domain: 836a04185e.co with original domain: amazon.com
+[2024-06-01T04:57:51.947+0000] {soc_dag.py:64} INFO - Completed analysis for domain: 836a04185e.co
+[2024-06-01T04:57:51.948+0000] {soc_dag.py:48} INFO - Analyzing domain: 6b74614c4c.org with original domain: amazon.com
+[2024-06-01T04:57:53.593+0000] {soc_dag.py:64} INFO - Completed analysis for domain: 6b74614c4c.org
+[2024-06-01T04:57:53.594+0000] {soc_dag.py:48} INFO - Analyzing domain: 7d00cda9b7.co with original domain: amazon.com
+[2024-06-01T04:57:55.324+0000] {soc_dag.py:64} INFO - Completed analysis for domain: 7d00cda9b7.co
+[2024-06-01T04:57:55.325+0000] {soc_dag.py:48} INFO - Analyzing domain: c0441b95e4.co with original domain: amazon.com
+[2024-06-01T04:57:57.079+0000] {soc_dag.py:64} INFO - Completed analysis for domain: c0441b95e4.co
+[2024-06-01T04:57:57.080+0000] {soc_dag.py:48} INFO - Analyzing domain: 0cf2f302e8.org with original domain: amazon.com
+[2024-06-01T04:57:59.256+0000] {soc_dag.py:64} INFO - Completed analysis for domain: 0cf2f302e8.org
+[2024-06-01T04:57:59.256+0000] {soc_dag.py:48} INFO - Analyzing domain: c0dbd51f8f.org with original domain: amazon.com
+[2024-06-01T04:58:00.969+0000] {soc_dag.py:64} INFO - Completed analysis for domain: c0dbd51f8f.org
+[2024-06-01T04:58:00.970+0000] {soc_dag.py:48} INFO - Analyzing domain: 95e75bafd7.net with original domain: amazon.com
+[2024-06-01T04:58:02.712+0000] {soc_dag.py:64} INFO - Completed analysis for domain: 95e75bafd7.net
+[2024-06-01T04:58:02.713+0000] {soc_dag.py:48} INFO - Analyzing domain: 591bfe2923.us with original domain: amazon.com
+[2024-06-01T04:58:04.921+0000] {soc_dag.py:64} INFO - Completed analysis for domain: 591bfe2923.us
+[2024-06-01T04:58:04.921+0000] {soc_dag.py:48} INFO - Analyzing domain: db9e2a9722.net with original domain: amazon.com
+[2024-06-01T04:58:06.629+0000] {soc_dag.py:64} INFO - Completed analysis for domain: db9e2a9722.net
+[2024-06-01T04:58:06.630+0000] {soc_dag.py:48} INFO - Analyzing domain: 203963380c.com with original domain: amazon.com
+[2024-06-01T04:58:08.366+0000] {soc_dag.py:64} INFO - Completed analysis for domain: 203963380c.com
+[2024-06-01T04:58:08.367+0000] {soc_dag.py:48} INFO - Analyzing domain: f1f899c54b.net with original domain: amazon.com
+[2024-06-01T04:58:10.636+0000] {soc_dag.py:64} INFO - Completed analysis for domain: f1f899c54b.net
+[2024-06-01T04:58:10.637+0000] {soc_dag.py:48} INFO - Analyzing domain: c9f18c47a9.org with original domain: amazon.com
+[2024-06-01T04:58:12.325+0000] {soc_dag.py:64} INFO - Completed analysis for domain: c9f18c47a9.org
+[2024-06-01T04:58:12.325+0000] {soc_dag.py:48} INFO - Analyzing domain: ee415b9717.com with original domain: amazon.com
+[2024-06-01T04:58:14.044+0000] {soc_dag.py:64} INFO - Completed analysis for domain: ee415b9717.com
+[2024-06-01T04:58:14.045+0000] {soc_dag.py:48} INFO - Analyzing domain: 240723d888.org with original domain: amazon.com
+[2024-06-01T04:58:15.705+0000] {soc_dag.py:64} INFO - Completed analysis for domain: 240723d888.org
+[2024-06-01T04:58:15.706+0000] {soc_dag.py:48} INFO - Analyzing domain: 89157c4299.net with original domain: amazon.com
+[2024-06-01T04:58:17.388+0000] {soc_dag.py:64} INFO - Completed analysis for domain: 89157c4299.net
+[2024-06-01T04:58:17.389+0000] {soc_dag.py:48} INFO - Analyzing domain: f839cdc6d9.co with original domain: amazon.com
+[2024-06-01T04:58:19.195+0000] {soc_dag.py:64} INFO - Completed analysis for domain: f839cdc6d9.co
+[2024-06-01T04:58:19.196+0000] {soc_dag.py:48} INFO - Analyzing domain: bcd2d362bf.us with original domain: amazon.com
+[2024-06-01T04:58:21.409+0000] {soc_dag.py:64} INFO - Completed analysis for domain: bcd2d362bf.us
+[2024-06-01T04:58:21.410+0000] {soc_dag.py:48} INFO - Analyzing domain: f7b532c810.co with original domain: amazon.com
+[2024-06-01T04:58:23.198+0000] {soc_dag.py:64} INFO - Completed analysis for domain: f7b532c810.co
+[2024-06-01T04:58:23.199+0000] {soc_dag.py:48} INFO - Analyzing domain: 51b7ea751a.co with original domain: amazon.com
+[2024-06-01T04:58:24.951+0000] {soc_dag.py:64} INFO - Completed analysis for domain: 51b7ea751a.co
+[2024-06-01T04:58:24.952+0000] {soc_dag.py:48} INFO - Analyzing domain: cc76219d60.us with original domain: amazon.com
+[2024-06-01T04:58:27.275+0000] {soc_dag.py:64} INFO - Completed analysis for domain: cc76219d60.us
+[2024-06-01T04:58:27.276+0000] {soc_dag.py:48} INFO - Analyzing domain: 01b0975057.co with original domain: facebook.com
+[2024-06-01T04:58:28.087+0000] {soc_dag.py:64} INFO - Completed analysis for domain: 01b0975057.co
+[2024-06-01T04:58:28.088+0000] {soc_dag.py:48} INFO - Analyzing domain: 3152972586.net with original domain: facebook.com
+[2024-06-01T04:58:28.886+0000] {soc_dag.py:64} INFO - Completed analysis for domain: 3152972586.net
+[2024-06-01T04:58:28.888+0000] {soc_dag.py:48} INFO - Analyzing domain: cd0ba3d33b.us with original domain: facebook.com
+[2024-06-01T04:58:29.743+0000] {soc_dag.py:64} INFO - Completed analysis for domain: cd0ba3d33b.us
+[2024-06-01T04:58:29.744+0000] {soc_dag.py:48} INFO - Analyzing domain: 0e736c84e3.net with original domain: facebook.com
+[2024-06-01T04:58:30.437+0000] {soc_dag.py:64} INFO - Completed analysis for domain: 0e736c84e3.net
+[2024-06-01T04:58:30.438+0000] {soc_dag.py:48} INFO - Analyzing domain: 3e4fa8a507.us with original domain: facebook.com
+[2024-06-01T04:58:31.165+0000] {soc_dag.py:64} INFO - Completed analysis for domain: 3e4fa8a507.us
+[2024-06-01T04:58:31.166+0000] {soc_dag.py:48} INFO - Analyzing domain: c06898ca73.us with original domain: facebook.com
+[2024-06-01T04:58:31.899+0000] {soc_dag.py:64} INFO - Completed analysis for domain: c06898ca73.us
+[2024-06-01T04:58:31.900+0000] {soc_dag.py:48} INFO - Analyzing domain: 430644ae67.com with original domain: facebook.com
+[2024-06-01T04:58:32.663+0000] {soc_dag.py:64} INFO - Completed analysis for domain: 430644ae67.com
+[2024-06-01T04:58:32.664+0000] {soc_dag.py:48} INFO - Analyzing domain: 1333b0571e.us with original domain: facebook.com
+[2024-06-01T04:58:33.424+0000] {soc_dag.py:64} INFO - Completed analysis for domain: 1333b0571e.us
+[2024-06-01T04:58:33.424+0000] {soc_dag.py:48} INFO - Analyzing domain: 72998c0662.com with original domain: facebook.com
+[2024-06-01T04:58:34.130+0000] {soc_dag.py:64} INFO - Completed analysis for domain: 72998c0662.com
+[2024-06-01T04:58:34.131+0000] {soc_dag.py:48} INFO - Analyzing domain: 29d538794c.us with original domain: facebook.com
+[2024-06-01T04:58:34.877+0000] {soc_dag.py:64} INFO - Completed analysis for domain: 29d538794c.us
+[2024-06-01T04:58:34.878+0000] {soc_dag.py:48} INFO - Analyzing domain: ebfa49ed76.net with original domain: facebook.com
+[2024-06-01T04:58:35.505+0000] {soc_dag.py:64} INFO - Completed analysis for domain: ebfa49ed76.net
+[2024-06-01T04:58:35.506+0000] {soc_dag.py:48} INFO - Analyzing domain: 776d14cca5.org with original domain: facebook.com
+[2024-06-01T04:58:36.198+0000] {soc_dag.py:64} INFO - Completed analysis for domain: 776d14cca5.org
+[2024-06-01T04:58:36.199+0000] {soc_dag.py:48} INFO - Analyzing domain: 0a9cea5ad3.net with original domain: facebook.com
+[2024-06-01T04:58:36.869+0000] {soc_dag.py:64} INFO - Completed analysis for domain: 0a9cea5ad3.net
+[2024-06-01T04:58:36.870+0000] {soc_dag.py:48} INFO - Analyzing domain: d6967b20e6.org with original domain: facebook.com
+[2024-06-01T04:58:37.512+0000] {soc_dag.py:64} INFO - Completed analysis for domain: d6967b20e6.org
+[2024-06-01T04:58:37.513+0000] {soc_dag.py:48} INFO - Analyzing domain: bb1a89a9a4.co with original domain: facebook.com
+[2024-06-01T04:58:38.557+0000] {soc_dag.py:64} INFO - Completed analysis for domain: bb1a89a9a4.co
+[2024-06-01T04:58:38.558+0000] {soc_dag.py:48} INFO - Analyzing domain: 900ce315ac.com with original domain: facebook.com
+[2024-06-01T04:58:39.386+0000] {soc_dag.py:64} INFO - Completed analysis for domain: 900ce315ac.com
+[2024-06-01T04:58:39.387+0000] {soc_dag.py:48} INFO - Analyzing domain: 0186402405.org with original domain: facebook.com
+[2024-06-01T04:58:40.039+0000] {soc_dag.py:64} INFO - Completed analysis for domain: 0186402405.org
+[2024-06-01T04:58:40.040+0000] {soc_dag.py:48} INFO - Analyzing domain: 7796e1f865.us with original domain: facebook.com
+[2024-06-01T04:58:40.119+0000] {local_task_job_runner.py:310} WARNING - State of this instance has been externally set to restarting. Terminating instance.
+[2024-06-01T04:58:40.120+0000] {local_task_job_runner.py:222} INFO - ::endgroup::
+[2024-06-01T04:58:40.121+0000] {process_utils.py:132} INFO - Sending 15 to group 832. PIDs of all processes in the group: [832]
+[2024-06-01T04:58:40.122+0000] {process_utils.py:87} INFO - Sending the signal 15 to group 832
+[2024-06-01T04:58:40.122+0000] {taskinstance.py:2611} ERROR - Received SIGTERM. Terminating subprocesses.
+[2024-06-01T04:58:40.123+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-06-01T04:58:40.130+0000] {taskinstance.py:2905} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 465, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 432, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 400, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 235, in execute
+    return_value = self.execute_callable()
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 252, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/airflow/dags/soc_dag.py", line 80, in iterate_domains
+    analyze_domain(session, domain, metadata, engine)
+  File "/opt/airflow/dags/soc_dag.py", line 49, in analyze_domain
+    result = DomainAnalysisOperator.compare_urls(original_domain, domain_result)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/airflow/operators/analysis.py", line 260, in compare_urls
+    result_old = DomainAnalysisOperator.get_favicon_hash(domain_old)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/airflow/operators/analysis.py", line 32, in get_favicon_hash
+    favicon_response = requests.get(f"{full_url}/favicon.ico", timeout=5)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/requests/api.py", line 73, in get
+    return request("get", url, params=params, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/requests/api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/requests/sessions.py", line 725, in send
+    history = [resp for resp in gen]
+              ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/requests/sessions.py", line 266, in resolve_redirects
+    resp = self.send(
+           ^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/requests/adapters.py", line 486, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/urllib3/connectionpool.py", line 793, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/urllib3/connectionpool.py", line 467, in _make_request
+    self._validate_conn(conn)
+  File "/home/airflow/.local/lib/python3.12/site-packages/urllib3/connectionpool.py", line 1099, in _validate_conn
+    conn.connect()
+  File "/home/airflow/.local/lib/python3.12/site-packages/urllib3/connection.py", line 653, in connect
+    sock_and_verified = _ssl_wrap_socket_and_match_hostname(
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/urllib3/connection.py", line 806, in _ssl_wrap_socket_and_match_hostname
+    ssl_sock = ssl_wrap_socket(
+               ^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/urllib3/util/ssl_.py", line 465, in ssl_wrap_socket
+    ssl_sock = _ssl_wrap_socket_impl(sock, context, tls_in_tls, server_hostname)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/urllib3/util/ssl_.py", line 509, in _ssl_wrap_socket_impl
+    return ssl_context.wrap_socket(sock, server_hostname=server_hostname)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/ssl.py", line 455, in wrap_socket
+    return self.sslsocket_class._create(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/ssl.py", line 1042, in _create
+    self.do_handshake()
+  File "/usr/local/lib/python3.12/ssl.py", line 1320, in do_handshake
+    self._sslobj.do_handshake()
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 2613, in signal_handler
+    raise AirflowTaskTerminated("Task received SIGTERM signal")
+airflow.exceptions.AirflowTaskTerminated: Task received SIGTERM signal
+[2024-06-01T04:58:40.134+0000] {taskinstance.py:1206} INFO - Marking task as UP_FOR_RETRY. dag_id=soc_domain_analysis, task_id=iterate_domains, run_id=manual__2024-06-01T04:52:36.288736+00:00, execution_date=20240601T045236, start_date=20240601T045236, end_date=20240601T045840
+[2024-06-01T04:58:40.155+0000] {process_utils.py:80} INFO - Process psutil.Process(pid=832, status='terminated', exitcode=2, started='04:52:36') (832) terminated with exit code 2

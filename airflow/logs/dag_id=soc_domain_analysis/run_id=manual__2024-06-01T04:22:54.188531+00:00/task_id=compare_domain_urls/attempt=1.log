@@ -1,0 +1,22 @@
+[2024-06-01T04:22:54.411+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-06-01T04:22:54.426+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: soc_domain_analysis.compare_domain_urls manual__2024-06-01T04:22:54.188531+00:00 [queued]>
+[2024-06-01T04:22:54.429+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: soc_domain_analysis.compare_domain_urls manual__2024-06-01T04:22:54.188531+00:00 [queued]>
+[2024-06-01T04:22:54.429+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2024-06-01T04:22:54.434+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): compare_domain_urls> on 2024-06-01 04:22:54.188531+00:00
+[2024-06-01T04:22:54.438+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61 DeprecationWarning: This process (pid=492) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2024-06-01T04:22:54.439+0000] {standard_task_runner.py:63} INFO - Started process 493 to run task
+[2024-06-01T04:22:54.439+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'soc_domain_analysis', 'compare_domain_urls', 'manual__2024-06-01T04:22:54.188531+00:00', '--job-id', '3715', '--raw', '--subdir', 'DAGS_FOLDER/soc_dag.py', '--cfg-path', '/tmp/tmpkq0gnif8']
+[2024-06-01T04:22:54.440+0000] {standard_task_runner.py:91} INFO - Job 3715: Subtask compare_domain_urls
+[2024-06-01T04:22:54.448+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.12/site-packages/***/settings.py:195 DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+[2024-06-01T04:22:54.465+0000] {task_command.py:426} INFO - Running <TaskInstance: soc_domain_analysis.compare_domain_urls manual__2024-06-01T04:22:54.188531+00:00 [running]> on host f74c39de7cd3
+[2024-06-01T04:22:54.504+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='soc_domain_analysis' AIRFLOW_CTX_TASK_ID='compare_domain_urls' AIRFLOW_CTX_EXECUTION_DATE='2024-06-01T04:22:54.188531+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-06-01T04:22:54.188531+00:00'
+[2024-06-01T04:22:54.504+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-06-01T04:22:54.509+0000] {soc_dag.py:23} INFO - Starting to compare domains
+[2024-06-01T04:22:55.874+0000] {soc_dag.py:25} INFO - COMPARE RESULT ------>
+[2024-06-01T04:22:55.874+0000] {soc_dag.py:26} INFO - {'content_length': 21383, 'alive': True, 'favicon_hash': 'f3418a443e7d841097c714d69ec4bcb8', 'url': 'http://google.com', 'mx': True, 'matchWebContent': False, 'matchFavicon': False, 'score': 100}
+[2024-06-01T04:22:55.874+0000] {python.py:237} INFO - Done. Returned value was: {'content_length': 21383, 'alive': True, 'favicon_hash': 'f3418a443e7d841097c714d69ec4bcb8', 'url': 'http://google.com', 'mx': True, 'matchWebContent': False, 'matchFavicon': False, 'score': 100}
+[2024-06-01T04:22:55.874+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-06-01T04:22:55.888+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=soc_domain_analysis, task_id=compare_domain_urls, run_id=manual__2024-06-01T04:22:54.188531+00:00, execution_date=20240601T042254, start_date=20240601T042254, end_date=20240601T042255
+[2024-06-01T04:22:55.918+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2024-06-01T04:22:55.926+0000] {taskinstance.py:3498} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-06-01T04:22:55.927+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

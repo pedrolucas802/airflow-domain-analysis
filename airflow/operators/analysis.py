@@ -4,7 +4,6 @@ from pathlib import Path
 from os.path import join
 from datetime import datetime
 from airflow.models import BaseOperator  # Correct import statement
-from flask import request
 import hashlib
 import whois
 import dns.resolver
@@ -149,7 +148,7 @@ class DomainAnalysisOperator(BaseOperator):
             score += 5
 
         if domain_info.get('ip'):
-            ip_reputation = check_ip_in_db(domain_info['ip'])
+            ip_reputation = DomainAnalysisOperator.check_ip_in_db(domain_info['ip'])
             if ip_reputation and ip_reputation[0] == "Malicious":
                 score -= 10
 
@@ -164,14 +163,14 @@ class DomainAnalysisOperator(BaseOperator):
         if not domain:
             return {"error": "Domain parameter is required."}
 
-        # domain_creation_date = DomainAnalysisOperator.get_domain_creation_date(domain)
-        # if 'error' in domain_creation_date:
-        #     return domain_creation_date
+        domain_creation_date = DomainAnalysisOperator.get_domain_creation_date(domain)
+        if 'error' in domain_creation_date:
+            return domain_creation_date
         mx_dns = DomainAnalysisOperator.check_mx_dns(domain)
         a_record = DomainAnalysisOperator.check_a_record(domain)
         cname_record = DomainAnalysisOperator.check_cname(domain)
         domain_info = {"domain": domain}
-        # domain_info.update(domain_creation_date)
+        domain_info.update(domain_creation_date)
         domain_info.update(mx_dns)
         domain_info.update(a_record)
         domain_info.update(cname_record)
@@ -252,3 +251,34 @@ class DomainAnalysisOperator(BaseOperator):
             }
 
         return result
+
+    @staticmethod
+    def compare_urls(domain_old, domain_new):
+        if not domain_old or not domain_new:
+            return {"error": "Both domain_old and domain_new parameters are required."}
+
+        result_old = DomainAnalysisOperator.get_favicon_hash(domain_old)
+        result_new = DomainAnalysisOperator.get_favicon_hash(domain_new)
+
+        favicon_match = result_old.get('favicon_hash') == result_new.get('favicon_hash')
+        content_length_match = result_old.get('Content-Length') == result_new.get('Content-Length')
+
+        domain_info_old = {}
+        mx_dns_old = DomainAnalysisOperator.check_mx_dns(domain_old)
+        domain_info_old.update(mx_dns_old)
+
+        score_old = DomainAnalysisOperator.calculate_score(domain_info_old)
+
+
+        response = {
+            "content_length": result_old.get('Content-Length', 0),
+            "alive": result_old.get('alive', False),
+            "favicon_hash": result_old.get('favicon_hash', ""),
+            "url": f"http://{domain_old}",
+            "mx": mx_dns_old.get('mx') == "true",
+            "matchWebContent": content_length_match,
+            "matchFavicon": favicon_match,
+            "score": score_old,
+        }
+
+        return response
