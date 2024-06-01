@@ -4,10 +4,10 @@ USER airflow
 
 RUN pip install apache-airflow[postgres]
 
+RUN pip install whois
+
 ENV AIRFLOW_HOME=/opt/airflow
 
-COPY ./dags /opt/airflow/dags
-
-ENTRYPOINT ["airflow", "standalone"]
+COPY airflow/dags /opt/airflow/dags
 
 EXPOSE 8080
