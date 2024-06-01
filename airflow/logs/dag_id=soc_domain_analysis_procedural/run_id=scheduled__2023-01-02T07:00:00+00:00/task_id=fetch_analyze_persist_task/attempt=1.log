@@ -1,0 +1,56 @@
+[2024-06-01T06:40:15.447+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-06-01T06:40:15.458+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: soc_domain_analysis_procedural.fetch_analyze_persist_task scheduled__2023-01-02T07:00:00+00:00 [queued]>
+[2024-06-01T06:40:15.461+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: soc_domain_analysis_procedural.fetch_analyze_persist_task scheduled__2023-01-02T07:00:00+00:00 [queued]>
+[2024-06-01T06:40:15.461+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2024-06-01T06:40:15.465+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): fetch_analyze_persist_task> on 2023-01-02 07:00:00+00:00
+[2024-06-01T06:40:15.467+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61 DeprecationWarning: This process (pid=229) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2024-06-01T06:40:15.468+0000] {standard_task_runner.py:63} INFO - Started process 230 to run task
+[2024-06-01T06:40:15.468+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'soc_domain_analysis_procedural', 'fetch_analyze_persist_task', 'scheduled__2023-01-02T07:00:00+00:00', '--job-id', '3787', '--raw', '--subdir', 'DAGS_FOLDER/asset_analysis_procedural.py', '--cfg-path', '/tmp/tmp41mul76r']
+[2024-06-01T06:40:15.469+0000] {standard_task_runner.py:91} INFO - Job 3787: Subtask fetch_analyze_persist_task
+[2024-06-01T06:40:15.475+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.12/site-packages/***/settings.py:195 DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+[2024-06-01T06:40:15.489+0000] {task_command.py:426} INFO - Running <TaskInstance: soc_domain_analysis_procedural.fetch_analyze_persist_task scheduled__2023-01-02T07:00:00+00:00 [running]> on host 8e61c612e452
+[2024-06-01T06:40:15.524+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='soc_domain_analysis_procedural' AIRFLOW_CTX_TASK_ID='fetch_analyze_persist_task' AIRFLOW_CTX_EXECUTION_DATE='2023-01-02T07:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2023-01-02T07:00:00+00:00'
+[2024-06-01T06:40:15.525+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-06-01T06:40:15.530+0000] {asset_analysis_procedural.py:27} INFO - Starting to fetch domains
+[2024-06-01T06:40:15.547+0000] {asset_analysis_procedural.py:43} INFO - Fetched domains
+[2024-06-01T06:40:15.547+0000] {asset_analysis_procedural.py:47} INFO - Analyzing domain: goggle.com with original domain: google.com
+[2024-06-01T06:40:16.495+0000] {asset_analysis_procedural.py:50} INFO - Persisting domain analysis for: goggle.com
+[2024-06-01T06:40:16.500+0000] {asset_analysis_procedural.py:63} INFO - Persisting URL analysis for: goggle.com
+[2024-06-01T06:40:16.502+0000] {asset_analysis_procedural.py:47} INFO - Analyzing domain: gooogle.com with original domain: google.com
+[2024-06-01T06:40:18.220+0000] {asset_analysis_procedural.py:50} INFO - Persisting domain analysis for: gooogle.com
+[2024-06-01T06:40:18.223+0000] {asset_analysis_procedural.py:63} INFO - Persisting URL analysis for: gooogle.com
+[2024-06-01T06:40:18.225+0000] {asset_analysis_procedural.py:47} INFO - Analyzing domain: googl3.com with original domain: google.com
+[2024-06-01T06:40:19.162+0000] {asset_analysis_procedural.py:50} INFO - Persisting domain analysis for: googl3.com
+[2024-06-01T06:40:19.165+0000] {asset_analysis_procedural.py:63} INFO - Persisting URL analysis for: googl3.com
+[2024-06-01T06:40:19.166+0000] {asset_analysis_procedural.py:47} INFO - Analyzing domain: goolge.com with original domain: google.com
+[2024-06-01T06:40:20.956+0000] {asset_analysis_procedural.py:50} INFO - Persisting domain analysis for: goolge.com
+[2024-06-01T06:40:20.961+0000] {asset_analysis_procedural.py:63} INFO - Persisting URL analysis for: goolge.com
+[2024-06-01T06:40:20.963+0000] {asset_analysis_procedural.py:47} INFO - Analyzing domain: go0gle.com with original domain: google.com
+[2024-06-01T06:40:21.935+0000] {asset_analysis_procedural.py:50} INFO - Persisting domain analysis for: go0gle.com
+[2024-06-01T06:40:21.938+0000] {asset_analysis_procedural.py:63} INFO - Persisting URL analysis for: go0gle.com
+[2024-06-01T06:40:21.940+0000] {asset_analysis_procedural.py:47} INFO - Analyzing domain: examp1e.com with original domain: example.com
+[2024-06-01T06:40:22.439+0000] {asset_analysis_procedural.py:50} INFO - Persisting domain analysis for: examp1e.com
+[2024-06-01T06:40:22.440+0000] {asset_analysis_procedural.py:63} INFO - Persisting URL analysis for: examp1e.com
+[2024-06-01T06:40:22.441+0000] {asset_analysis_procedural.py:47} INFO - Analyzing domain: exampel.com with original domain: example.com
+[2024-06-01T06:40:28.820+0000] {asset_analysis_procedural.py:50} INFO - Persisting domain analysis for: exampel.com
+[2024-06-01T06:40:28.824+0000] {asset_analysis_procedural.py:63} INFO - Persisting URL analysis for: exampel.com
+[2024-06-01T06:40:28.826+0000] {asset_analysis_procedural.py:47} INFO - Analyzing domain: exampel.com with original domain: example.com
+[2024-06-01T06:40:34.688+0000] {asset_analysis_procedural.py:50} INFO - Persisting domain analysis for: exampel.com
+[2024-06-01T06:40:34.691+0000] {asset_analysis_procedural.py:63} INFO - Persisting URL analysis for: exampel.com
+[2024-06-01T06:40:34.693+0000] {asset_analysis_procedural.py:47} INFO - Analyzing domain: exampl3.com with original domain: example.com
+[2024-06-01T06:40:35.869+0000] {asset_analysis_procedural.py:50} INFO - Persisting domain analysis for: exampl3.com
+[2024-06-01T06:40:35.872+0000] {asset_analysis_procedural.py:63} INFO - Persisting URL analysis for: exampl3.com
+[2024-06-01T06:40:35.874+0000] {asset_analysis_procedural.py:47} INFO - Analyzing domain: examp1e.com with original domain: example.com
+[2024-06-01T06:40:36.435+0000] {asset_analysis_procedural.py:50} INFO - Persisting domain analysis for: examp1e.com
+[2024-06-01T06:40:36.437+0000] {asset_analysis_procedural.py:63} INFO - Persisting URL analysis for: examp1e.com
+[2024-06-01T06:40:36.438+0000] {asset_analysis_procedural.py:47} INFO - Analyzing domain: 0penai.com with original domain: openai.com
+[2024-06-01T06:40:37.816+0000] {asset_analysis_procedural.py:50} INFO - Persisting domain analysis for: 0penai.com
+[2024-06-01T06:40:37.821+0000] {asset_analysis_procedural.py:63} INFO - Persisting URL analysis for: 0penai.com
+[2024-06-01T06:40:37.823+0000] {asset_analysis_procedural.py:47} INFO - Analyzing domain: openal.com with original domain: openai.com
+[2024-06-01T06:40:45.729+0000] {local_task_job_runner.py:310} WARNING - State of this instance has been externally set to failed. Terminating instance.
+[2024-06-01T06:40:45.730+0000] {local_task_job_runner.py:222} INFO - ::endgroup::
+[2024-06-01T06:40:45.731+0000] {process_utils.py:132} INFO - Sending 15 to group 230. PIDs of all processes in the group: [230]
+[2024-06-01T06:40:45.731+0000] {process_utils.py:87} INFO - Sending the signal 15 to group 230
+[2024-06-01T06:40:45.732+0000] {taskinstance.py:2611} ERROR - Received SIGTERM. Terminating subprocesses.
+[2024-06-01T06:40:45.733+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-06-01T06:40:45.750+0000] {process_utils.py:80} INFO - Process psutil.Process(pid=230, status='terminated', exitcode=0, started='06:40:15') (230) terminated with exit code 0

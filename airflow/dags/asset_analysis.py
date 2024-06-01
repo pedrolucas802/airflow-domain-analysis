@@ -104,17 +104,15 @@ def persist_url_analysis(**kwargs):
         
         for result in analysis_results:
             domain_result_id, domain_result, original_domain, analysis = result
-            urls = analysis.get('urls', [])
-            for url in urls:
-                logging.info(f"Persisting URL analysis for: {url}")
-                session.execute(
-                    url_analysis_table.insert().values(
-                        domain_result_id=domain_result_id,
-                        url=url,
-                        alive=True,
-                        dt_update=datetime.now()
-                    )
+            logging.info(f"Persisting URL analysis for: {url}")
+            session.execute(
+                url_analysis_table.insert().values(
+                    domain_result_id=domain_result_id,
+                    url=result.get('url', "null"),
+                    alive=result.get('alive', False),
+                    dt_update=datetime.now()
                 )
+            )
         session.commit()
         session.close()
     except Exception as e:

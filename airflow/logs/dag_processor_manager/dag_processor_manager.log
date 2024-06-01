@@ -7469,3 +7469,1075 @@ File Path                                   PID    Runtime      # DAGs    # Erro
 /opt/airflow/dags/old/test_analysis_dag.py                           0           0  0.04s           2024-06-01T06:00:35
 /opt/airflow/dags/old/soc_dag copy.py                                0           0  0.02s           2024-06-01T06:00:35
 ================================================================================
+[2024-06-01T06:01:31.355+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                   PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/asset_analysis.py                                  1           0  0.16s           2024-06-01T06:01:02
+/opt/airflow/dags/old/analysis_old.py                                0           0  0.05s           2024-06-01T06:01:06
+/opt/airflow/dags/old/test_analysis_dag.py                           0           0  0.04s           2024-06-01T06:01:06
+/opt/airflow/dags/old/soc_dag copy.py                                0           0  0.03s           2024-06-01T06:01:06
+================================================================================
+[2024-06-01T06:02:01.686+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                   PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/asset_analysis.py                                  1           0  0.17s           2024-06-01T06:01:32
+/opt/airflow/dags/old/analysis_old.py                                0           0  0.05s           2024-06-01T06:01:36
+/opt/airflow/dags/old/test_analysis_dag.py                           0           0  0.03s           2024-06-01T06:01:36
+/opt/airflow/dags/old/soc_dag copy.py                                0           0  0.02s           2024-06-01T06:01:36
+================================================================================
+[2024-06-01T06:02:32.010+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                   PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/asset_analysis.py                                  1           0  0.15s           2024-06-01T06:02:02
+/opt/airflow/dags/old/analysis_old.py                                0           0  0.03s           2024-06-01T06:02:06
+/opt/airflow/dags/old/test_analysis_dag.py                           0           0  0.02s           2024-06-01T06:02:06
+/opt/airflow/dags/old/soc_dag copy.py                                0           0  0.02s           2024-06-01T06:02:06
+================================================================================
+[2024-06-01T06:03:02.351+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                   PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/asset_analysis.py                                  1           0  0.17s           2024-06-01T06:02:33
+/opt/airflow/dags/old/analysis_old.py                                0           0  0.05s           2024-06-01T06:02:37
+/opt/airflow/dags/old/test_analysis_dag.py                           0           0  0.04s           2024-06-01T06:02:37
+/opt/airflow/dags/old/soc_dag copy.py                                0           0  0.02s           2024-06-01T06:02:37
+================================================================================
+[2024-06-01T06:03:32.685+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                   PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/asset_analysis.py                                  1           0  0.17s           2024-06-01T06:03:03
+/opt/airflow/dags/old/analysis_old.py                                0           0  0.04s           2024-06-01T06:03:07
+/opt/airflow/dags/old/test_analysis_dag.py                           0           0  0.04s           2024-06-01T06:03:07
+/opt/airflow/dags/old/soc_dag copy.py                                0           0  0.02s           2024-06-01T06:03:07
+================================================================================
+[2024-06-01T06:04:03.027+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                   PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/asset_analysis.py                                  1           0  0.16s           2024-06-01T06:03:33
+/opt/airflow/dags/old/analysis_old.py                                0           0  0.05s           2024-06-01T06:03:37
+/opt/airflow/dags/old/test_analysis_dag.py                           0           0  0.03s           2024-06-01T06:03:37
+/opt/airflow/dags/old/soc_dag copy.py                                0           0  0.02s           2024-06-01T06:03:37
+================================================================================
+[2024-06-01T06:04:04.043+0000] {manager.py:737} INFO - Searching for files in /opt/airflow/dags
+[2024-06-01T06:04:04.068+0000] {manager.py:740} INFO - There are 5 files in /opt/airflow/dags
+[2024-06-01T06:04:33.618+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/asset_analysis_parallel.py                           1           0  0.21s           2024-06-01T06:04:04
+/opt/airflow/dags/asset_analysis.py                                    1           0  0.18s           2024-06-01T06:04:04
+/opt/airflow/dags/old/analysis_old.py                                  0           0  0.04s           2024-06-01T06:04:08
+/opt/airflow/dags/old/test_analysis_dag.py                             0           0  0.04s           2024-06-01T06:04:08
+/opt/airflow/dags/old/soc_dag copy.py                                  0           0  0.02s           2024-06-01T06:04:08
+================================================================================
+[2024-06-01T06:05:04.127+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/asset_analysis.py                                    1           0  0.19s           2024-06-01T06:04:34
+/opt/airflow/dags/asset_analysis_parallel.py                           1           0  0.18s           2024-06-01T06:04:34
+/opt/airflow/dags/old/analysis_old.py                                  0           0  0.05s           2024-06-01T06:04:38
+/opt/airflow/dags/old/test_analysis_dag.py                             0           0  0.04s           2024-06-01T06:04:38
+/opt/airflow/dags/old/soc_dag copy.py                                  0           0  0.02s           2024-06-01T06:04:38
+================================================================================
+[2024-06-01T06:05:34.685+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/asset_analysis_parallel.py                           1           0  0.22s           2024-06-01T06:05:05
+/opt/airflow/dags/asset_analysis.py                                    1           0  0.18s           2024-06-01T06:05:05
+/opt/airflow/dags/old/analysis_old.py                                  0           0  0.05s           2024-06-01T06:05:09
+/opt/airflow/dags/old/test_analysis_dag.py                             0           0  0.04s           2024-06-01T06:05:09
+/opt/airflow/dags/old/soc_dag copy.py                                  0           0  0.02s           2024-06-01T06:05:09
+================================================================================
+[2024-06-01T06:06:05.221+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/asset_analysis.py                                    1           0  0.19s           2024-06-01T06:05:35
+/opt/airflow/dags/asset_analysis_parallel.py                           1           0  0.18s           2024-06-01T06:05:35
+/opt/airflow/dags/old/analysis_old.py                                  0           0  0.04s           2024-06-01T06:05:39
+/opt/airflow/dags/old/test_analysis_dag.py                             0           0  0.03s           2024-06-01T06:05:39
+/opt/airflow/dags/old/soc_dag copy.py                                  0           0  0.02s           2024-06-01T06:05:39
+================================================================================
+[2024-06-01T06:06:35.698+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/asset_analysis_parallel.py                           1           0  0.21s           2024-06-01T06:06:06
+/opt/airflow/dags/asset_analysis.py                                    1           0  0.18s           2024-06-01T06:06:06
+/opt/airflow/dags/old/analysis_old.py                                  0           0  0.03s           2024-06-01T06:06:10
+/opt/airflow/dags/old/test_analysis_dag.py                             0           0  0.02s           2024-06-01T06:06:10
+/opt/airflow/dags/old/soc_dag copy.py                                  0           0  0.02s           2024-06-01T06:06:10
+================================================================================
+[2024-06-01T06:07:06.190+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/asset_analysis.py                                    1           0  0.18s           2024-06-01T06:06:36
+/opt/airflow/dags/asset_analysis_parallel.py                           1           0  0.16s           2024-06-01T06:06:36
+/opt/airflow/dags/old/analysis_old.py                                  0           0  0.03s           2024-06-01T06:06:40
+/opt/airflow/dags/old/test_analysis_dag.py                             0           0  0.03s           2024-06-01T06:06:40
+/opt/airflow/dags/old/soc_dag copy.py                                  0           0  0.02s           2024-06-01T06:06:40
+================================================================================
+[2024-06-01T06:07:36.870+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/asset_analysis_parallel.py                           1           0  0.19s           2024-06-01T06:07:28
+/opt/airflow/dags/asset_analysis.py                                    1           0  0.15s           2024-06-01T06:07:07
+/opt/airflow/dags/old/analysis_old.py                                  0           0  0.04s           2024-06-01T06:07:11
+/opt/airflow/dags/old/test_analysis_dag.py                             0           0  0.03s           2024-06-01T06:07:11
+/opt/airflow/dags/old/soc_dag copy.py                                  0           0  0.02s           2024-06-01T06:07:11
+================================================================================
+[2024-06-01T06:08:07.290+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/asset_analysis.py                                    1           0  0.20s           2024-06-01T06:07:38
+/opt/airflow/dags/asset_analysis_parallel.py                           1           0  0.18s           2024-06-01T06:07:59
+/opt/airflow/dags/old/analysis_old.py                                  0           0  0.03s           2024-06-01T06:07:42
+/opt/airflow/dags/old/soc_dag copy.py                                  0           0  0.02s           2024-06-01T06:07:42
+/opt/airflow/dags/old/test_analysis_dag.py                             0           0  0.02s           2024-06-01T06:07:42
+================================================================================
+[2024-06-01T06:08:37.563+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/asset_analysis_parallel.py                           1           0  0.17s           2024-06-01T06:08:29
+/opt/airflow/dags/asset_analysis.py                                    1           0  0.15s           2024-06-01T06:08:08
+/opt/airflow/dags/old/analysis_old.py                                  0           0  0.02s           2024-06-01T06:08:12
+/opt/airflow/dags/old/test_analysis_dag.py                             0           0  0.02s           2024-06-01T06:08:12
+/opt/airflow/dags/old/soc_dag copy.py                                  0           0  0.01s           2024-06-01T06:08:12
+================================================================================
+[2024-06-01T06:09:04.110+0000] {manager.py:737} INFO - Searching for files in /opt/airflow/dags
+[2024-06-01T06:09:04.126+0000] {manager.py:740} INFO - There are 5 files in /opt/airflow/dags
+[2024-06-01T06:09:08.019+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/asset_analysis.py                                    1           0  0.16s           2024-06-01T06:08:38
+/opt/airflow/dags/asset_analysis_parallel.py                           1           0  0.14s           2024-06-01T06:09:00
+/opt/airflow/dags/old/analysis_old.py                                  0           0  0.05s           2024-06-01T06:08:42
+/opt/airflow/dags/old/test_analysis_dag.py                             0           0  0.04s           2024-06-01T06:08:42
+/opt/airflow/dags/old/soc_dag copy.py                                  0           0  0.02s           2024-06-01T06:08:42
+================================================================================
+[2024-06-01T06:09:38.495+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/asset_analysis_parallel.py                           1           0  0.18s           2024-06-01T06:09:30
+/opt/airflow/dags/asset_analysis.py                                    1           0  0.16s           2024-06-01T06:09:09
+/opt/airflow/dags/old/analysis_old.py                                  0           0  0.05s           2024-06-01T06:09:13
+/opt/airflow/dags/old/test_analysis_dag.py                             0           0  0.03s           2024-06-01T06:09:13
+/opt/airflow/dags/old/soc_dag copy.py                                  0           0  0.02s           2024-06-01T06:09:13
+================================================================================
+[2024-06-01T06:10:08.918+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/asset_analysis.py                                    1           0  0.17s           2024-06-01T06:09:39
+/opt/airflow/dags/asset_analysis_parallel.py                           1           0  0.16s           2024-06-01T06:10:01
+/opt/airflow/dags/old/analysis_old.py                                  0           0  0.03s           2024-06-01T06:09:43
+/opt/airflow/dags/old/soc_dag copy.py                                  0           0  0.03s           2024-06-01T06:09:43
+/opt/airflow/dags/old/test_analysis_dag.py                             0           0  0.03s           2024-06-01T06:09:43
+================================================================================
+[2024-06-01T06:10:39.305+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/asset_analysis_parallel.py                           1           0  0.21s           2024-06-01T06:10:31
+/opt/airflow/dags/asset_analysis.py                                    1           0  0.18s           2024-06-01T06:10:10
+/opt/airflow/dags/old/analysis_old.py                                  0           0  0.03s           2024-06-01T06:10:14
+/opt/airflow/dags/old/test_analysis_dag.py                             0           0  0.03s           2024-06-01T06:10:14
+/opt/airflow/dags/old/soc_dag copy.py                                  0           0  0.02s           2024-06-01T06:10:14
+================================================================================
+[2024-06-01T06:11:09.777+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/asset_analysis.py                                    1           0  0.18s           2024-06-01T06:10:40
+/opt/airflow/dags/asset_analysis_parallel.py                           1           0  0.16s           2024-06-01T06:11:01
+/opt/airflow/dags/old/analysis_old.py                                  0           0  0.05s           2024-06-01T06:10:44
+/opt/airflow/dags/old/test_analysis_dag.py                             0           0  0.03s           2024-06-01T06:10:44
+/opt/airflow/dags/old/soc_dag copy.py                                  0           0  0.02s           2024-06-01T06:10:44
+================================================================================
+[2024-06-01T06:11:40.276+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/asset_analysis_parallel.py                           1           0  0.16s           2024-06-01T06:11:32
+/opt/airflow/dags/asset_analysis.py                                    1           0  0.15s           2024-06-01T06:11:10
+/opt/airflow/dags/old/analysis_old.py                                  0           0  0.04s           2024-06-01T06:11:15
+/opt/airflow/dags/old/test_analysis_dag.py                             0           0  0.04s           2024-06-01T06:11:15
+/opt/airflow/dags/old/soc_dag copy.py                                  0           0  0.02s           2024-06-01T06:11:15
+================================================================================
+[2024-06-01T06:12:10.724+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/asset_analysis.py                                    1           0  0.17s           2024-06-01T06:11:41
+/opt/airflow/dags/asset_analysis_parallel.py                           1           0  0.17s           2024-06-01T06:12:02
+/opt/airflow/dags/old/analysis_old.py                                  0           0  0.04s           2024-06-01T06:11:45
+/opt/airflow/dags/old/test_analysis_dag.py                             0           0  0.03s           2024-06-01T06:11:45
+/opt/airflow/dags/old/soc_dag copy.py                                  0           0  0.02s           2024-06-01T06:11:45
+================================================================================
+[2024-06-01T06:12:41.129+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/asset_analysis.py                                    1           0  0.16s           2024-06-01T06:12:11
+/opt/airflow/dags/asset_analysis_parallel.py                           1           0  0.15s           2024-06-01T06:12:33
+/opt/airflow/dags/old/analysis_old.py                                  0           0  0.02s           2024-06-01T06:12:15
+/opt/airflow/dags/old/test_analysis_dag.py                             0           0  0.02s           2024-06-01T06:12:15
+/opt/airflow/dags/old/soc_dag copy.py                                  0           0  0.02s           2024-06-01T06:12:15
+================================================================================
+[2024-06-01T06:13:11.592+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/asset_analysis.py                                    1           0  0.16s           2024-06-01T06:12:42
+/opt/airflow/dags/asset_analysis_parallel.py                           1           0  0.15s           2024-06-01T06:13:03
+/opt/airflow/dags/old/analysis_old.py                                  0           0  0.04s           2024-06-01T06:12:46
+/opt/airflow/dags/old/test_analysis_dag.py                             0           0  0.04s           2024-06-01T06:12:46
+/opt/airflow/dags/old/soc_dag copy.py                                  0           0  0.02s           2024-06-01T06:12:46
+================================================================================
+[2024-06-01T06:13:42.064+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/asset_analysis_parallel.py                           1           0  0.19s           2024-06-01T06:13:34
+/opt/airflow/dags/asset_analysis.py                                    1           0  0.17s           2024-06-01T06:13:12
+/opt/airflow/dags/old/analysis_old.py                                  0           0  0.05s           2024-06-01T06:13:16
+/opt/airflow/dags/old/test_analysis_dag.py                             0           0  0.03s           2024-06-01T06:13:16
+/opt/airflow/dags/old/soc_dag copy.py                                  0           0  0.02s           2024-06-01T06:13:16
+================================================================================
+[2024-06-01T06:14:04.449+0000] {manager.py:737} INFO - Searching for files in /opt/airflow/dags
+[2024-06-01T06:14:04.457+0000] {manager.py:740} INFO - There are 6 files in /opt/airflow/dags
+[2024-06-01T06:14:12.689+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                       PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/asset_analysis_procedural.py                           1           0  0.18s           2024-06-01T06:14:04
+/opt/airflow/dags/asset_analysis.py                                      1           0  0.16s           2024-06-01T06:13:43
+/opt/airflow/dags/asset_analysis_parallel.py                             1           0  0.15s           2024-06-01T06:14:04
+/opt/airflow/dags/old/analysis_old.py                                    0           0  0.04s           2024-06-01T06:13:47
+/opt/airflow/dags/old/test_analysis_dag.py                               0           0  0.04s           2024-06-01T06:13:47
+/opt/airflow/dags/old/soc_dag copy.py                                    0           0  0.02s           2024-06-01T06:13:47
+================================================================================
+[2024-06-01T06:14:42.915+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                       PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/asset_analysis_procedural.py                           1           0  0.16s           2024-06-01T06:14:35
+/opt/airflow/dags/asset_analysis.py                                      1           0  0.16s           2024-06-01T06:14:13
+/opt/airflow/dags/asset_analysis_parallel.py                             1           0  0.15s           2024-06-01T06:14:35
+/opt/airflow/dags/old/analysis_old.py                                    0           0  0.02s           2024-06-01T06:14:17
+/opt/airflow/dags/old/test_analysis_dag.py                               0           0  0.02s           2024-06-01T06:14:17
+/opt/airflow/dags/old/soc_dag copy.py                                    0           0  0.02s           2024-06-01T06:14:17
+================================================================================
+[2024-06-01T06:15:13.509+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                       PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/asset_analysis_procedural.py                           1           0  0.18s           2024-06-01T06:15:05
+/opt/airflow/dags/asset_analysis_parallel.py                             1           0  0.17s           2024-06-01T06:15:05
+/opt/airflow/dags/asset_analysis.py                                      1           0  0.17s           2024-06-01T06:14:44
+/opt/airflow/dags/old/analysis_old.py                                    0           0  0.02s           2024-06-01T06:14:48
+/opt/airflow/dags/old/test_analysis_dag.py                               0           0  0.02s           2024-06-01T06:14:48
+/opt/airflow/dags/old/soc_dag copy.py                                    0           0  0.02s           2024-06-01T06:14:48
+================================================================================
+[2024-06-01T06:15:44.046+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                       PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/asset_analysis_procedural.py                           1           0  0.21s           2024-06-01T06:15:35
+/opt/airflow/dags/asset_analysis_parallel.py                             1           0  0.18s           2024-06-01T06:15:35
+/opt/airflow/dags/asset_analysis.py                                      1           0  0.17s           2024-06-01T06:15:14
+/opt/airflow/dags/old/analysis_old.py                                    0           0  0.02s           2024-06-01T06:15:18
+/opt/airflow/dags/old/test_analysis_dag.py                               0           0  0.02s           2024-06-01T06:15:18
+/opt/airflow/dags/old/soc_dag copy.py                                    0           0  0.02s           2024-06-01T06:15:18
+================================================================================
+[2024-06-01T06:16:14.391+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                       PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/asset_analysis_procedural.py                           1           0  0.18s           2024-06-01T06:16:06
+/opt/airflow/dags/asset_analysis_parallel.py                             1           0  0.17s           2024-06-01T06:16:06
+/opt/airflow/dags/asset_analysis.py                                      1           0  0.15s           2024-06-01T06:15:45
+/opt/airflow/dags/old/analysis_old.py                                    0           0  0.02s           2024-06-01T06:15:49
+/opt/airflow/dags/old/test_analysis_dag.py                               0           0  0.02s           2024-06-01T06:15:49
+/opt/airflow/dags/old/soc_dag copy.py                                    0           0  0.02s           2024-06-01T06:15:49
+================================================================================
+[2024-06-01T06:16:44.922+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                       PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/asset_analysis.py                                      1           0  0.19s           2024-06-01T06:16:15
+/opt/airflow/dags/asset_analysis_procedural.py                           1           0  0.15s           2024-06-01T06:16:36
+/opt/airflow/dags/asset_analysis_parallel.py                             1           0  0.15s           2024-06-01T06:16:36
+/opt/airflow/dags/old/analysis_old.py                                    0           0  0.02s           2024-06-01T06:16:19
+/opt/airflow/dags/old/test_analysis_dag.py                               0           0  0.02s           2024-06-01T06:16:19
+/opt/airflow/dags/old/soc_dag copy.py                                    0           0  0.02s           2024-06-01T06:16:19
+================================================================================
+[2024-06-01T06:17:15.403+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                       PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/asset_analysis_procedural.py                           1           0  0.29s           2024-06-01T06:17:07
+/opt/airflow/dags/asset_analysis_parallel.py                             1           0  0.23s           2024-06-01T06:17:07
+/opt/airflow/dags/asset_analysis.py                                      1           0  0.16s           2024-06-01T06:16:46
+/opt/airflow/dags/old/analysis_old.py                                    0           0  0.02s           2024-06-01T06:16:49
+/opt/airflow/dags/old/test_analysis_dag.py                               0           0  0.02s           2024-06-01T06:16:49
+/opt/airflow/dags/old/soc_dag copy.py                                    0           0  0.02s           2024-06-01T06:16:50
+================================================================================
+[2024-06-01T06:17:45.813+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                       PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/asset_analysis_procedural.py                           1           0  0.21s           2024-06-01T06:17:37
+/opt/airflow/dags/asset_analysis_parallel.py                             1           0  0.19s           2024-06-01T06:17:37
+/opt/airflow/dags/asset_analysis.py                                      1           0  0.16s           2024-06-01T06:17:16
+/opt/airflow/dags/old/analysis_old.py                                    0           0  0.03s           2024-06-01T06:17:20
+/opt/airflow/dags/old/test_analysis_dag.py                               0           0  0.03s           2024-06-01T06:17:20
+/opt/airflow/dags/old/soc_dag copy.py                                    0           0  0.02s           2024-06-01T06:17:20
+================================================================================
+[2024-06-01T06:18:16.428+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                       PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/asset_analysis.py                                      1           0  0.19s           2024-06-01T06:17:47
+/opt/airflow/dags/asset_analysis_procedural.py                           1           0  0.17s           2024-06-01T06:18:08
+/opt/airflow/dags/asset_analysis_parallel.py                             1           0  0.16s           2024-06-01T06:18:08
+/opt/airflow/dags/old/analysis_old.py                                    0           0  0.03s           2024-06-01T06:17:51
+/opt/airflow/dags/old/test_analysis_dag.py                               0           0  0.03s           2024-06-01T06:17:51
+/opt/airflow/dags/old/soc_dag copy.py                                    0           0  0.03s           2024-06-01T06:17:51
+================================================================================
+[2024-06-01T06:18:46.930+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                       PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/asset_analysis_procedural.py                           1           0  0.20s           2024-06-01T06:18:38
+/opt/airflow/dags/asset_analysis_parallel.py                             1           0  0.17s           2024-06-01T06:18:38
+/opt/airflow/dags/asset_analysis.py                                      1           0  0.16s           2024-06-01T06:18:17
+/opt/airflow/dags/old/analysis_old.py                                    0           0  0.05s           2024-06-01T06:18:21
+/opt/airflow/dags/old/test_analysis_dag.py                               0           0  0.04s           2024-06-01T06:18:21
+/opt/airflow/dags/old/soc_dag copy.py                                    0           0  0.02s           2024-06-01T06:18:21
+================================================================================
+[2024-06-01T06:19:05.084+0000] {manager.py:737} INFO - Searching for files in /opt/airflow/dags
+[2024-06-01T06:19:05.096+0000] {manager.py:740} INFO - There are 6 files in /opt/airflow/dags
+[2024-06-01T06:19:17.226+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                       PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/asset_analysis_procedural.py                           1           0  0.17s           2024-06-01T06:19:09
+/opt/airflow/dags/asset_analysis_parallel.py                             1           0  0.16s           2024-06-01T06:19:09
+/opt/airflow/dags/asset_analysis.py                                      1           0  0.16s           2024-06-01T06:18:48
+/opt/airflow/dags/old/analysis_old.py                                    0           0  0.02s           2024-06-01T06:18:51
+/opt/airflow/dags/old/soc_dag copy.py                                    0           0  0.02s           2024-06-01T06:18:52
+/opt/airflow/dags/old/test_analysis_dag.py                               0           0  0.02s           2024-06-01T06:18:51
+================================================================================
+[2024-06-01T06:19:47.823+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                       PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/asset_analysis.py                                      1           0  0.18s           2024-06-01T06:19:18
+/opt/airflow/dags/asset_analysis_procedural.py                           1           0  0.17s           2024-06-01T06:19:39
+/opt/airflow/dags/asset_analysis_parallel.py                             1           0  0.16s           2024-06-01T06:19:39
+/opt/airflow/dags/old/analysis_old.py                                    0           0  0.02s           2024-06-01T06:19:22
+/opt/airflow/dags/old/test_analysis_dag.py                               0           0  0.02s           2024-06-01T06:19:22
+/opt/airflow/dags/old/soc_dag copy.py                                    0           0  0.02s           2024-06-01T06:19:22
+================================================================================
+[2024-06-01T06:20:18.316+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                       PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/asset_analysis_procedural.py                           1           0  0.19s           2024-06-01T06:20:10
+/opt/airflow/dags/asset_analysis.py                                      1           0  0.15s           2024-06-01T06:19:48
+/opt/airflow/dags/asset_analysis_parallel.py                             1           0  0.15s           2024-06-01T06:20:10
+/opt/airflow/dags/old/analysis_old.py                                    0           0  0.04s           2024-06-01T06:19:52
+/opt/airflow/dags/old/test_analysis_dag.py                               0           0  0.03s           2024-06-01T06:19:52
+/opt/airflow/dags/old/soc_dag copy.py                                    0           0  0.02s           2024-06-01T06:19:52
+================================================================================
+[2024-06-01T06:20:48.650+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                       PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/asset_analysis_procedural.py                           1           0  0.18s           2024-06-01T06:20:40
+/opt/airflow/dags/asset_analysis_parallel.py                             1           0  0.17s           2024-06-01T06:20:40
+/opt/airflow/dags/asset_analysis.py                                      1           0  0.14s           2024-06-01T06:20:19
+/opt/airflow/dags/old/analysis_old.py                                    0           0  0.05s           2024-06-01T06:20:23
+/opt/airflow/dags/old/test_analysis_dag.py                               0           0  0.04s           2024-06-01T06:20:23
+/opt/airflow/dags/old/soc_dag copy.py                                    0           0  0.02s           2024-06-01T06:20:23
+================================================================================
+[2024-06-01T06:21:24.571+0000] {manager.py:470} INFO - Processing files using up to 2 processes at a time 
+[2024-06-01T06:21:24.571+0000] {manager.py:471} INFO - Process each file at most once every 30 seconds
+[2024-06-01T06:21:24.571+0000] {manager.py:472} INFO - Checking for new files in /opt/airflow/dags every 300 seconds
+[2024-06-01T06:21:24.572+0000] {manager.py:737} INFO - Searching for files in /opt/airflow/dags
+[2024-06-01T06:21:24.576+0000] {manager.py:740} INFO - There are 6 files in /opt/airflow/dags
+[2024-06-01T06:21:24.614+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                         PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------  -----  ---------  --------  ----------  --------------  ----------
+/opt/airflow/dags/asset_analysis_procedural.py    166  0.02s             0           0
+/opt/airflow/dags/asset_analysis.py                                      0           0
+/opt/airflow/dags/asset_analysis_parallel.py      169  0.02s             0           0
+/opt/airflow/dags/old/test_analysis_dag.py                               0           0
+/opt/airflow/dags/old/soc_dag copy.py                                    0           0
+/opt/airflow/dags/old/analysis_old.py                                    0           0
+================================================================================
+[2024-06-01T06:21:55.306+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                         PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/asset_analysis_parallel.py      201  0.02s             1           0  0.30s           2024-06-01T06:21:24
+/opt/airflow/dags/asset_analysis_procedural.py                           1           0  0.16s           2024-06-01T06:21:52
+/opt/airflow/dags/asset_analysis.py               204  0.01s             1           0  0.07s           2024-06-01T06:21:24
+/opt/airflow/dags/old/analysis_old.py                                    0           0  0.02s           2024-06-01T06:21:24
+/opt/airflow/dags/old/soc_dag copy.py                                    0           0  0.02s           2024-06-01T06:21:25
+/opt/airflow/dags/old/test_analysis_dag.py                               0           0  0.02s           2024-06-01T06:21:24
+================================================================================
+[2024-06-01T06:22:25.814+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                         PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/asset_analysis.py               236  0.01s             1           0  0.14s           2024-06-01T06:21:55
+/opt/airflow/dags/asset_analysis_procedural.py                           1           0  0.12s           2024-06-01T06:22:22
+/opt/airflow/dags/asset_analysis_parallel.py      233  0.02s             1           0  0.12s           2024-06-01T06:21:55
+/opt/airflow/dags/old/analysis_old.py                                    0           0  0.02s           2024-06-01T06:21:55
+/opt/airflow/dags/old/test_analysis_dag.py                               0           0  0.02s           2024-06-01T06:21:55
+/opt/airflow/dags/old/soc_dag copy.py                                    0           0  0.02s           2024-06-01T06:21:55
+================================================================================
+[2024-06-01T06:22:56.303+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                         PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/asset_analysis_parallel.py      263  0.02s             1           0  0.13s           2024-06-01T06:22:25
+/opt/airflow/dags/asset_analysis.py               266  0.01s             1           0  0.11s           2024-06-01T06:22:25
+/opt/airflow/dags/asset_analysis_procedural.py                           1           0  0.11s           2024-06-01T06:22:53
+/opt/airflow/dags/old/test_analysis_dag.py                               0           0  0.02s           2024-06-01T06:22:25
+/opt/airflow/dags/old/analysis_old.py                                    0           0  0.02s           2024-06-01T06:22:25
+/opt/airflow/dags/old/soc_dag copy.py                                    0           0  0.01s           2024-06-01T06:22:25
+================================================================================
+[2024-06-01T06:23:26.737+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                         PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/asset_analysis_parallel.py      293  0.01s             1           0  0.12s           2024-06-01T06:22:56
+/opt/airflow/dags/asset_analysis.py               296  0.00s             1           0  0.11s           2024-06-01T06:22:56
+/opt/airflow/dags/asset_analysis_procedural.py                           1           0  0.11s           2024-06-01T06:23:23
+/opt/airflow/dags/old/test_analysis_dag.py                               0           0  0.02s           2024-06-01T06:22:56
+/opt/airflow/dags/old/soc_dag copy.py                                    0           0  0.02s           2024-06-01T06:22:56
+/opt/airflow/dags/old/analysis_old.py                                    0           0  0.02s           2024-06-01T06:22:56
+================================================================================
+[2024-06-01T06:23:57.130+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                         PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/asset_analysis_procedural.py                           1           0  0.12s           2024-06-01T06:23:54
+/opt/airflow/dags/asset_analysis_parallel.py      323  0.02s             1           0  0.11s           2024-06-01T06:23:26
+/opt/airflow/dags/asset_analysis.py               326  0.00s             1           0  0.10s           2024-06-01T06:23:26
+/opt/airflow/dags/old/test_analysis_dag.py                               0           0  0.02s           2024-06-01T06:23:26
+/opt/airflow/dags/old/analysis_old.py                                    0           0  0.02s           2024-06-01T06:23:26
+/opt/airflow/dags/old/soc_dag copy.py                                    0           0  0.02s           2024-06-01T06:23:26
+================================================================================
+[2024-06-01T06:24:27.555+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                         PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/asset_analysis_parallel.py      353  0.01s             1           0  0.13s           2024-06-01T06:23:57
+/opt/airflow/dags/asset_analysis.py               356  0.00s             1           0  0.11s           2024-06-01T06:23:57
+/opt/airflow/dags/asset_analysis_procedural.py                           1           0  0.11s           2024-06-01T06:24:24
+/opt/airflow/dags/old/test_analysis_dag.py                               0           0  0.02s           2024-06-01T06:23:57
+/opt/airflow/dags/old/soc_dag copy.py                                    0           0  0.02s           2024-06-01T06:23:57
+/opt/airflow/dags/old/analysis_old.py                                    0           0  0.02s           2024-06-01T06:23:57
+================================================================================
+[2024-06-01T06:24:57.993+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                         PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/asset_analysis_procedural.py                           1           0  0.12s           2024-06-01T06:24:55
+/opt/airflow/dags/asset_analysis_parallel.py      383  0.01s             1           0  0.10s           2024-06-01T06:24:27
+/opt/airflow/dags/asset_analysis.py               386  0.00s             1           0  0.09s           2024-06-01T06:24:27
+/opt/airflow/dags/old/test_analysis_dag.py                               0           0  0.02s           2024-06-01T06:24:27
+/opt/airflow/dags/old/analysis_old.py                                    0           0  0.02s           2024-06-01T06:24:27
+/opt/airflow/dags/old/soc_dag copy.py                                    0           0  0.02s           2024-06-01T06:24:27
+================================================================================
+[2024-06-01T06:25:28.415+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                         PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/asset_analysis_parallel.py      413  0.01s             1           0  0.10s           2024-06-01T06:24:58
+/opt/airflow/dags/asset_analysis.py               416  0.00s             1           0  0.09s           2024-06-01T06:24:58
+/opt/airflow/dags/asset_analysis_procedural.py                           1           0  0.09s           2024-06-01T06:25:25
+/opt/airflow/dags/old/test_analysis_dag.py                               0           0  0.02s           2024-06-01T06:24:58
+/opt/airflow/dags/old/analysis_old.py                                    0           0  0.02s           2024-06-01T06:24:58
+/opt/airflow/dags/old/soc_dag copy.py                                    0           0  0.02s           2024-06-01T06:24:58
+================================================================================
+[2024-06-01T06:25:58.851+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                         PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/asset_analysis_procedural.py                           1           0  0.11s           2024-06-01T06:25:55
+/opt/airflow/dags/asset_analysis_parallel.py      443  0.01s             1           0  0.10s           2024-06-01T06:25:28
+/opt/airflow/dags/asset_analysis.py               446  0.00s             1           0  0.09s           2024-06-01T06:25:28
+/opt/airflow/dags/old/test_analysis_dag.py                               0           0  0.02s           2024-06-01T06:25:28
+/opt/airflow/dags/old/soc_dag copy.py                                    0           0  0.02s           2024-06-01T06:25:28
+/opt/airflow/dags/old/analysis_old.py                                    0           0  0.02s           2024-06-01T06:25:28
+================================================================================
+[2024-06-01T06:26:25.218+0000] {manager.py:737} INFO - Searching for files in /opt/airflow/dags
+[2024-06-01T06:26:25.233+0000] {manager.py:740} INFO - There are 6 files in /opt/airflow/dags
+[2024-06-01T06:26:29.397+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                         PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/asset_analysis_parallel.py                             1           0  0.13s           2024-06-01T06:26:28
+/opt/airflow/dags/asset_analysis_procedural.py                           1           0  0.12s           2024-06-01T06:26:28
+/opt/airflow/dags/asset_analysis.py               483  0.01s             1           0  0.09s           2024-06-01T06:25:58
+/opt/airflow/dags/old/test_analysis_dag.py                               0           0  0.02s           2024-06-01T06:25:58
+/opt/airflow/dags/old/analysis_old.py             486  0.00s             0           0  0.02s           2024-06-01T06:25:58
+/opt/airflow/dags/old/soc_dag copy.py                                    0           0  0.02s           2024-06-01T06:25:58
+================================================================================
+[2024-06-01T06:26:59.785+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                         PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/asset_analysis_parallel.py                             1           0  0.11s           2024-06-01T06:26:58
+/opt/airflow/dags/asset_analysis.py               513  0.01s             1           0  0.11s           2024-06-01T06:26:29
+/opt/airflow/dags/asset_analysis_procedural.py                           1           0  0.10s           2024-06-01T06:26:58
+/opt/airflow/dags/old/analysis_old.py             516  0.00s             0           0  0.03s           2024-06-01T06:26:29
+/opt/airflow/dags/old/test_analysis_dag.py                               0           0  0.02s           2024-06-01T06:26:29
+/opt/airflow/dags/old/soc_dag copy.py                                    0           0  0.02s           2024-06-01T06:26:29
+================================================================================
+[2024-06-01T06:27:30.127+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                         PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/asset_analysis_parallel.py                             1           0  0.12s           2024-06-01T06:27:29
+/opt/airflow/dags/asset_analysis_procedural.py                           1           0  0.11s           2024-06-01T06:27:29
+/opt/airflow/dags/asset_analysis.py               543  0.01s             1           0  0.10s           2024-06-01T06:26:59
+/opt/airflow/dags/old/analysis_old.py             546  0.00s             0           0  0.03s           2024-06-01T06:26:59
+/opt/airflow/dags/old/test_analysis_dag.py                               0           0  0.02s           2024-06-01T06:26:59
+/opt/airflow/dags/old/soc_dag copy.py                                    0           0  0.02s           2024-06-01T06:26:59
+================================================================================
+[2024-06-01T06:28:00.481+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                         PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/asset_analysis_parallel.py                             1           0  0.12s           2024-06-01T06:27:59
+/opt/airflow/dags/asset_analysis_procedural.py                           1           0  0.11s           2024-06-01T06:27:59
+/opt/airflow/dags/asset_analysis.py               573  0.01s             1           0  0.11s           2024-06-01T06:27:30
+/opt/airflow/dags/old/analysis_old.py             576  0.00s             0           0  0.03s           2024-06-01T06:27:30
+/opt/airflow/dags/old/test_analysis_dag.py                               0           0  0.02s           2024-06-01T06:27:30
+/opt/airflow/dags/old/soc_dag copy.py                                    0           0  0.02s           2024-06-01T06:27:30
+================================================================================
+[2024-06-01T06:28:30.890+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                         PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/asset_analysis_parallel.py                             1           0  0.11s           2024-06-01T06:28:29
+/opt/airflow/dags/asset_analysis.py               603  0.02s             1           0  0.10s           2024-06-01T06:28:00
+/opt/airflow/dags/asset_analysis_procedural.py                           1           0  0.10s           2024-06-01T06:28:29
+/opt/airflow/dags/old/analysis_old.py             606  0.01s             0           0  0.03s           2024-06-01T06:28:00
+/opt/airflow/dags/old/test_analysis_dag.py                               0           0  0.02s           2024-06-01T06:28:00
+/opt/airflow/dags/old/soc_dag copy.py                                    0           0  0.02s           2024-06-01T06:28:00
+================================================================================
+[2024-06-01T06:29:01.334+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                         PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/asset_analysis_parallel.py                             1           0  0.13s           2024-06-01T06:29:00
+/opt/airflow/dags/asset_analysis.py               633  0.01s             1           0  0.12s           2024-06-01T06:28:30
+/opt/airflow/dags/asset_analysis_procedural.py                           1           0  0.12s           2024-06-01T06:29:00
+/opt/airflow/dags/old/analysis_old.py             636  0.00s             0           0  0.04s           2024-06-01T06:28:30
+/opt/airflow/dags/old/test_analysis_dag.py                               0           0  0.02s           2024-06-01T06:28:30
+/opt/airflow/dags/old/soc_dag copy.py                                    0           0  0.02s           2024-06-01T06:28:30
+================================================================================
+[2024-06-01T06:29:31.767+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                         PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/asset_analysis_parallel.py                             1           0  0.12s           2024-06-01T06:29:30
+/opt/airflow/dags/asset_analysis.py               663  0.01s             1           0  0.11s           2024-06-01T06:29:01
+/opt/airflow/dags/asset_analysis_procedural.py                           1           0  0.11s           2024-06-01T06:29:30
+/opt/airflow/dags/old/analysis_old.py             666  0.01s             0           0  0.04s           2024-06-01T06:29:01
+/opt/airflow/dags/old/test_analysis_dag.py                               0           0  0.02s           2024-06-01T06:29:01
+/opt/airflow/dags/old/soc_dag copy.py                                    0           0  0.02s           2024-06-01T06:29:01
+================================================================================
+[2024-06-01T06:30:02.171+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                         PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/asset_analysis.py               693  0.01s             1           0  0.11s           2024-06-01T06:29:31
+/opt/airflow/dags/asset_analysis_parallel.py                             1           0  0.09s           2024-06-01T06:30:01
+/opt/airflow/dags/asset_analysis_procedural.py                           1           0  0.09s           2024-06-01T06:30:01
+/opt/airflow/dags/old/analysis_old.py             696  0.00s             0           0  0.04s           2024-06-01T06:29:31
+/opt/airflow/dags/old/test_analysis_dag.py                               0           0  0.02s           2024-06-01T06:29:31
+/opt/airflow/dags/old/soc_dag copy.py                                    0           0  0.02s           2024-06-01T06:29:31
+================================================================================
+[2024-06-01T06:30:32.622+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                         PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/asset_analysis_parallel.py                             1           0  0.12s           2024-06-01T06:30:31
+/opt/airflow/dags/asset_analysis.py               723  0.01s             1           0  0.11s           2024-06-01T06:30:02
+/opt/airflow/dags/asset_analysis_procedural.py                           1           0  0.10s           2024-06-01T06:30:31
+/opt/airflow/dags/old/analysis_old.py             726  0.00s             0           0  0.04s           2024-06-01T06:30:02
+/opt/airflow/dags/old/test_analysis_dag.py                               0           0  0.02s           2024-06-01T06:30:02
+/opt/airflow/dags/old/soc_dag copy.py                                    0           0  0.02s           2024-06-01T06:30:02
+================================================================================
+[2024-06-01T06:31:03.054+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                         PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/asset_analysis.py               753  0.01s             1           0  0.15s           2024-06-01T06:30:32
+/opt/airflow/dags/asset_analysis_parallel.py                             1           0  0.10s           2024-06-01T06:31:02
+/opt/airflow/dags/asset_analysis_procedural.py                           1           0  0.09s           2024-06-01T06:31:02
+/opt/airflow/dags/old/analysis_old.py             756  0.01s             0           0  0.04s           2024-06-01T06:30:32
+/opt/airflow/dags/old/soc_dag copy.py                                    0           0  0.03s           2024-06-01T06:30:32
+/opt/airflow/dags/old/test_analysis_dag.py                               0           0  0.02s           2024-06-01T06:30:32
+================================================================================
+[2024-06-01T06:31:25.341+0000] {manager.py:737} INFO - Searching for files in /opt/airflow/dags
+[2024-06-01T06:31:25.366+0000] {manager.py:740} INFO - There are 6 files in /opt/airflow/dags
+[2024-06-01T06:31:33.468+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                         PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/asset_analysis.py               783  0.02s             1           0  0.11s           2024-06-01T06:31:03
+/opt/airflow/dags/asset_analysis_parallel.py                             1           0  0.10s           2024-06-01T06:31:07
+/opt/airflow/dags/asset_analysis_procedural.py                           1           0  0.10s           2024-06-01T06:31:07
+/opt/airflow/dags/old/analysis_old.py             786  0.01s             0           0  0.03s           2024-06-01T06:31:03
+/opt/airflow/dags/old/test_analysis_dag.py                               0           0  0.03s           2024-06-01T06:31:03
+/opt/airflow/dags/old/soc_dag copy.py                                    0           0  0.02s           2024-06-01T06:31:03
+================================================================================
+[2024-06-01T06:32:03.866+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                         PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/asset_analysis.py               813  0.02s             1           0  0.12s           2024-06-01T06:31:33
+/opt/airflow/dags/asset_analysis_parallel.py                             1           0  0.11s           2024-06-01T06:31:37
+/opt/airflow/dags/asset_analysis_procedural.py                           1           0  0.10s           2024-06-01T06:31:37
+/opt/airflow/dags/old/analysis_old.py             816  0.01s             0           0  0.04s           2024-06-01T06:31:33
+/opt/airflow/dags/old/test_analysis_dag.py                               0           0  0.02s           2024-06-01T06:31:33
+/opt/airflow/dags/old/soc_dag copy.py                                    0           0  0.02s           2024-06-01T06:31:33
+================================================================================
+[2024-06-01T06:32:34.312+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                         PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/asset_analysis.py               843  0.01s             1           0  0.11s           2024-06-01T06:32:03
+/opt/airflow/dags/asset_analysis_parallel.py                             1           0  0.11s           2024-06-01T06:32:08
+/opt/airflow/dags/asset_analysis_procedural.py                           1           0  0.10s           2024-06-01T06:32:08
+/opt/airflow/dags/old/analysis_old.py             846  0.00s             0           0  0.04s           2024-06-01T06:32:03
+/opt/airflow/dags/old/test_analysis_dag.py                               0           0  0.02s           2024-06-01T06:32:03
+/opt/airflow/dags/old/soc_dag copy.py                                    0           0  0.02s           2024-06-01T06:32:03
+================================================================================
+[2024-06-01T06:33:04.760+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                         PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/asset_analysis_parallel.py                             1           0  0.12s           2024-06-01T06:32:38
+/opt/airflow/dags/asset_analysis.py               873  0.02s             1           0  0.11s           2024-06-01T06:32:34
+/opt/airflow/dags/asset_analysis_procedural.py                           1           0  0.11s           2024-06-01T06:32:38
+/opt/airflow/dags/old/analysis_old.py             876  0.01s             0           0  0.03s           2024-06-01T06:32:34
+/opt/airflow/dags/old/test_analysis_dag.py                               0           0  0.02s           2024-06-01T06:32:34
+/opt/airflow/dags/old/soc_dag copy.py                                    0           0  0.02s           2024-06-01T06:32:34
+================================================================================
+[2024-06-01T06:33:35.152+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                         PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/asset_analysis.py               903  0.01s             1           0  0.12s           2024-06-01T06:33:04
+/opt/airflow/dags/asset_analysis_parallel.py                             1           0  0.10s           2024-06-01T06:33:08
+/opt/airflow/dags/asset_analysis_procedural.py                           1           0  0.09s           2024-06-01T06:33:08
+/opt/airflow/dags/old/analysis_old.py             906  0.00s             0           0  0.04s           2024-06-01T06:33:04
+/opt/airflow/dags/old/test_analysis_dag.py                               0           0  0.02s           2024-06-01T06:33:04
+/opt/airflow/dags/old/soc_dag copy.py                                    0           0  0.02s           2024-06-01T06:33:04
+================================================================================
+[2024-06-01T06:34:05.601+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                         PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/asset_analysis.py               933  0.01s             1           0  0.12s           2024-06-01T06:33:35
+/opt/airflow/dags/asset_analysis_parallel.py                             1           0  0.11s           2024-06-01T06:33:39
+/opt/airflow/dags/asset_analysis_procedural.py                           1           0  0.10s           2024-06-01T06:33:39
+/opt/airflow/dags/old/analysis_old.py             936  0.00s             0           0  0.04s           2024-06-01T06:33:35
+/opt/airflow/dags/old/test_analysis_dag.py                               0           0  0.02s           2024-06-01T06:33:35
+/opt/airflow/dags/old/soc_dag copy.py                                    0           0  0.02s           2024-06-01T06:33:35
+================================================================================
+[2024-06-01T06:34:36.039+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                         PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/asset_analysis_parallel.py                             1           0  0.11s           2024-06-01T06:34:09
+/opt/airflow/dags/asset_analysis.py               963  0.01s             1           0  0.11s           2024-06-01T06:34:05
+/opt/airflow/dags/asset_analysis_procedural.py                           1           0  0.10s           2024-06-01T06:34:09
+/opt/airflow/dags/old/analysis_old.py             966  0.00s             0           0  0.03s           2024-06-01T06:34:05
+/opt/airflow/dags/old/test_analysis_dag.py                               0           0  0.02s           2024-06-01T06:34:05
+/opt/airflow/dags/old/soc_dag copy.py                                    0           0  0.02s           2024-06-01T06:34:05
+================================================================================
+[2024-06-01T06:35:06.427+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                         PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/asset_analysis.py               993  0.01s             1           0  0.11s           2024-06-01T06:34:36
+/opt/airflow/dags/asset_analysis_parallel.py                             1           0  0.11s           2024-06-01T06:34:40
+/opt/airflow/dags/asset_analysis_procedural.py                           1           0  0.10s           2024-06-01T06:34:40
+/opt/airflow/dags/old/analysis_old.py             996  0.01s             0           0  0.03s           2024-06-01T06:34:36
+/opt/airflow/dags/old/test_analysis_dag.py                               0           0  0.02s           2024-06-01T06:34:36
+/opt/airflow/dags/old/soc_dag copy.py                                    0           0  0.02s           2024-06-01T06:34:36
+================================================================================
+[2024-06-01T06:35:36.842+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                         PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/asset_analysis.py              1023  0.01s             1           0  0.11s           2024-06-01T06:35:06
+/opt/airflow/dags/asset_analysis_parallel.py                             1           0  0.11s           2024-06-01T06:35:10
+/opt/airflow/dags/asset_analysis_procedural.py                           1           0  0.10s           2024-06-01T06:35:10
+/opt/airflow/dags/old/analysis_old.py            1026  0.00s             0           0  0.04s           2024-06-01T06:35:06
+/opt/airflow/dags/old/test_analysis_dag.py                               0           0  0.02s           2024-06-01T06:35:06
+/opt/airflow/dags/old/soc_dag copy.py                                    0           0  0.02s           2024-06-01T06:35:06
+================================================================================
+[2024-06-01T06:36:07.206+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                         PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/asset_analysis.py              1053  0.02s             1           0  0.11s           2024-06-01T06:35:36
+/opt/airflow/dags/asset_analysis_parallel.py                             1           0  0.10s           2024-06-01T06:35:41
+/opt/airflow/dags/asset_analysis_procedural.py                           1           0  0.09s           2024-06-01T06:35:41
+/opt/airflow/dags/old/analysis_old.py            1056  0.01s             0           0  0.03s           2024-06-01T06:35:36
+/opt/airflow/dags/old/test_analysis_dag.py                               0           0  0.02s           2024-06-01T06:35:36
+/opt/airflow/dags/old/soc_dag copy.py                                    0           0  0.02s           2024-06-01T06:35:36
+================================================================================
+[2024-06-01T06:36:25.472+0000] {manager.py:737} INFO - Searching for files in /opt/airflow/dags
+[2024-06-01T06:36:25.501+0000] {manager.py:740} INFO - There are 6 files in /opt/airflow/dags
+[2024-06-01T06:36:37.676+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                         PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/asset_analysis.py              1085  0.02s             1           0  0.12s           2024-06-01T06:36:07
+/opt/airflow/dags/asset_analysis_parallel.py                             1           0  0.10s           2024-06-01T06:36:11
+/opt/airflow/dags/asset_analysis_procedural.py                           1           0  0.10s           2024-06-01T06:36:11
+/opt/airflow/dags/old/analysis_old.py            1088  0.01s             0           0  0.04s           2024-06-01T06:36:07
+/opt/airflow/dags/old/test_analysis_dag.py                               0           0  0.02s           2024-06-01T06:36:07
+/opt/airflow/dags/old/soc_dag copy.py                                    0           0  0.02s           2024-06-01T06:36:07
+================================================================================
+[2024-06-01T06:37:08.180+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                         PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/asset_analysis_parallel.py                             1           0  0.12s           2024-06-01T06:36:41
+/opt/airflow/dags/asset_analysis.py                                      1           0  0.10s           2024-06-01T06:36:39
+/opt/airflow/dags/asset_analysis_procedural.py                           1           0  0.10s           2024-06-01T06:36:41
+/opt/airflow/dags/old/analysis_old.py            1120  0.01s             0           0  0.04s           2024-06-01T06:36:37
+/opt/airflow/dags/old/test_analysis_dag.py       1123  0.00s             0           0  0.02s           2024-06-01T06:36:37
+/opt/airflow/dags/old/soc_dag copy.py                                    0           0  0.02s           2024-06-01T06:36:37
+================================================================================
+[2024-06-01T06:37:38.573+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                         PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/asset_analysis.py                                      1           0  0.12s           2024-06-01T06:37:10
+/opt/airflow/dags/asset_analysis_parallel.py                             1           0  0.10s           2024-06-01T06:37:12
+/opt/airflow/dags/asset_analysis_procedural.py                           1           0  0.10s           2024-06-01T06:37:12
+/opt/airflow/dags/old/analysis_old.py            1152  0.02s             0           0  0.04s           2024-06-01T06:37:08
+/opt/airflow/dags/old/test_analysis_dag.py       1155  0.01s             0           0  0.03s           2024-06-01T06:37:08
+/opt/airflow/dags/old/soc_dag copy.py                                    0           0  0.02s           2024-06-01T06:37:08
+================================================================================
+[2024-06-01T06:38:09.058+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                         PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/asset_analysis.py                                      1           0  0.12s           2024-06-01T06:37:40
+/opt/airflow/dags/asset_analysis_parallel.py                             1           0  0.11s           2024-06-01T06:37:42
+/opt/airflow/dags/asset_analysis_procedural.py                           1           0  0.10s           2024-06-01T06:37:42
+/opt/airflow/dags/old/analysis_old.py            1200  0.01s             0           0  0.05s           2024-06-01T06:37:38
+/opt/airflow/dags/old/test_analysis_dag.py       1203  0.00s             0           0  0.04s           2024-06-01T06:37:38
+/opt/airflow/dags/old/soc_dag copy.py                                    0           0  0.02s           2024-06-01T06:37:38
+================================================================================
+[2024-06-01T06:38:39.512+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                         PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/asset_analysis_parallel.py                             1           0  0.12s           2024-06-01T06:38:13
+/opt/airflow/dags/asset_analysis.py                                      1           0  0.11s           2024-06-01T06:38:11
+/opt/airflow/dags/asset_analysis_procedural.py                           1           0  0.11s           2024-06-01T06:38:13
+/opt/airflow/dags/old/analysis_old.py            1244  0.01s             0           0  0.04s           2024-06-01T06:38:09
+/opt/airflow/dags/old/test_analysis_dag.py       1247  0.00s             0           0  0.03s           2024-06-01T06:38:09
+/opt/airflow/dags/old/soc_dag copy.py                                    0           0  0.02s           2024-06-01T06:38:09
+================================================================================
+[2024-06-01T06:39:09.894+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                         PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/asset_analysis.py                                      1           0  0.11s           2024-06-01T06:38:41
+/opt/airflow/dags/asset_analysis_parallel.py                             1           0  0.09s           2024-06-01T06:38:43
+/opt/airflow/dags/asset_analysis_procedural.py                           1           0  0.09s           2024-06-01T06:38:43
+/opt/airflow/dags/old/analysis_old.py            1294  0.00s             0           0  0.04s           2024-06-01T06:38:39
+/opt/airflow/dags/old/test_analysis_dag.py       1297  0.00s             0           0  0.04s           2024-06-01T06:38:39
+/opt/airflow/dags/old/soc_dag copy.py                                    0           0  0.02s           2024-06-01T06:38:39
+================================================================================
+[2024-06-01T06:39:40.997+0000] {manager.py:470} INFO - Processing files using up to 2 processes at a time 
+[2024-06-01T06:39:41.000+0000] {manager.py:471} INFO - Process each file at most once every 30 seconds
+[2024-06-01T06:39:41.000+0000] {manager.py:472} INFO - Checking for new files in /opt/airflow/dags every 300 seconds
+[2024-06-01T06:39:41.001+0000] {manager.py:737} INFO - Searching for files in /opt/airflow/dags
+[2024-06-01T06:39:41.007+0000] {manager.py:740} INFO - There are 6 files in /opt/airflow/dags
+[2024-06-01T06:39:41.042+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                         PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------  -----  ---------  --------  ----------  --------------  ----------
+/opt/airflow/dags/asset_analysis_procedural.py    167  0.02s             0           0
+/opt/airflow/dags/asset_analysis.py               170  0.01s             0           0
+/opt/airflow/dags/asset_analysis_parallel.py                             0           0
+/opt/airflow/dags/old/test_analysis_dag.py                               0           0
+/opt/airflow/dags/old/soc_dag copy.py                                    0           0
+/opt/airflow/dags/old/analysis_old.py                                    0           0
+================================================================================
+[2024-06-01T06:40:11.765+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                         PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/asset_analysis.py               202  0.01s             1           0  0.31s           2024-06-01T06:39:41
+/opt/airflow/dags/asset_analysis_procedural.py    199  0.02s             1           0  0.31s           2024-06-01T06:39:41
+/opt/airflow/dags/asset_analysis_parallel.py                             1           0  0.11s           2024-06-01T06:39:41
+/opt/airflow/dags/old/analysis_old.py                                    0           0  0.02s           2024-06-01T06:39:41
+/opt/airflow/dags/old/test_analysis_dag.py                               0           0  0.02s           2024-06-01T06:39:41
+/opt/airflow/dags/old/soc_dag copy.py                                    0           0  0.02s           2024-06-01T06:39:41
+================================================================================
+[2024-06-01T06:40:42.340+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                         PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/asset_analysis_procedural.py    233  0.02s             1           0  0.13s           2024-06-01T06:40:11
+/opt/airflow/dags/asset_analysis.py               236  0.00s             1           0  0.12s           2024-06-01T06:40:11
+/opt/airflow/dags/asset_analysis_parallel.py                             1           0  0.07s           2024-06-01T06:40:11
+/opt/airflow/dags/old/analysis_old.py                                    0           0  0.02s           2024-06-01T06:40:11
+/opt/airflow/dags/old/soc_dag copy.py                                    0           0  0.02s           2024-06-01T06:40:11
+/opt/airflow/dags/old/test_analysis_dag.py                               0           0  0.02s           2024-06-01T06:40:11
+================================================================================
+[2024-06-01T06:41:12.844+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                         PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/asset_analysis_procedural.py    263  0.01s             1           0  0.13s           2024-06-01T06:40:42
+/opt/airflow/dags/asset_analysis.py               266  0.00s             1           0  0.11s           2024-06-01T06:40:42
+/opt/airflow/dags/asset_analysis_parallel.py                             1           0  0.08s           2024-06-01T06:40:42
+/opt/airflow/dags/old/analysis_old.py                                    0           0  0.02s           2024-06-01T06:40:42
+/opt/airflow/dags/old/test_analysis_dag.py                               0           0  0.02s           2024-06-01T06:40:42
+/opt/airflow/dags/old/soc_dag copy.py                                    0           0  0.02s           2024-06-01T06:40:42
+================================================================================
+[2024-06-01T06:41:43.389+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                         PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/asset_analysis_procedural.py    293  0.02s             1           0  0.10s           2024-06-01T06:41:12
+/opt/airflow/dags/asset_analysis.py               296  0.01s             1           0  0.09s           2024-06-01T06:41:12
+/opt/airflow/dags/asset_analysis_parallel.py                             1           0  0.07s           2024-06-01T06:41:13
+/opt/airflow/dags/old/analysis_old.py                                    0           0  0.02s           2024-06-01T06:41:13
+/opt/airflow/dags/old/soc_dag copy.py                                    0           0  0.01s           2024-06-01T06:41:13
+/opt/airflow/dags/old/test_analysis_dag.py                               0           0  0.01s           2024-06-01T06:41:13
+================================================================================
+[2024-06-01T06:42:13.916+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                         PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/asset_analysis_procedural.py    323  0.02s             1           0  0.12s           2024-06-01T06:41:43
+/opt/airflow/dags/asset_analysis.py               326  0.00s             1           0  0.10s           2024-06-01T06:41:43
+/opt/airflow/dags/asset_analysis_parallel.py                             1           0  0.07s           2024-06-01T06:41:43
+/opt/airflow/dags/old/analysis_old.py                                    0           0  0.02s           2024-06-01T06:41:43
+/opt/airflow/dags/old/test_analysis_dag.py                               0           0  0.02s           2024-06-01T06:41:43
+/opt/airflow/dags/old/soc_dag copy.py                                    0           0  0.02s           2024-06-01T06:41:43
+================================================================================
+[2024-06-01T06:42:44.419+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                         PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/asset_analysis_procedural.py    353  0.02s             1           0  0.12s           2024-06-01T06:42:14
+/opt/airflow/dags/asset_analysis.py               356  0.01s             1           0  0.11s           2024-06-01T06:42:14
+/opt/airflow/dags/asset_analysis_parallel.py                             1           0  0.07s           2024-06-01T06:42:14
+/opt/airflow/dags/old/analysis_old.py                                    0           0  0.02s           2024-06-01T06:42:14
+/opt/airflow/dags/old/test_analysis_dag.py                               0           0  0.02s           2024-06-01T06:42:14
+/opt/airflow/dags/old/soc_dag copy.py                                    0           0  0.02s           2024-06-01T06:42:14
+================================================================================
+[2024-06-01T06:43:14.938+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                         PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/asset_analysis_procedural.py    383  0.02s             1           0  0.12s           2024-06-01T06:42:44
+/opt/airflow/dags/asset_analysis.py               386  0.00s             1           0  0.10s           2024-06-01T06:42:44
+/opt/airflow/dags/asset_analysis_parallel.py                             1           0  0.07s           2024-06-01T06:42:44
+/opt/airflow/dags/old/analysis_old.py                                    0           0  0.02s           2024-06-01T06:42:44
+/opt/airflow/dags/old/soc_dag copy.py                                    0           0  0.01s           2024-06-01T06:42:44
+/opt/airflow/dags/old/test_analysis_dag.py                               0           0  0.01s           2024-06-01T06:42:44
+================================================================================
